@@ -3,8 +3,8 @@ import openpyxl as xl
 import logging
 import settings as s
 
-# Version 0.9 real stuff heh
-noWorry = True
+# Version 0.9 real stuff
+
 
 # Logging settings
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
