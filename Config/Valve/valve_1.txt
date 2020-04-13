@@ -1,0 +1,14 @@
+[gen.codebody_begin]
+this is codebody    valve1
+# ID    @ID
+# CFG   @CFG
+# CMT   @CMT
+[gen.codebody_end]
+
+[gen.var_begin]
+"I*@ID" : Bool;
+[gen.var_end]
+
+[gen.symbol_begin]
+"Q*@ID","%@INDEX.0","Bool","True","True","False","@CMT","","True"
+[gen.symbol_end]
