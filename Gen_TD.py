@@ -1,9 +1,8 @@
 import os
-import openpyxl as xl
 import logging
 import settings as s
 
-# Version 0.9 real stuff
+# Version 0.9
 
 
 # Logging settings
