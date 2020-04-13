@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586814086579</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test2, funkar detta?">
+      <created>1586814131295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586814131295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="test comment lol" />
-    <option name="LAST_COMMIT_MESSAGE" value="test comment lol" />
+    <MESSAGE value="Test2, funkar detta?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test2, funkar detta?" />
   </component>
 </project>
