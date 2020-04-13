@@ -3,22 +3,22 @@ import openpyxl as xl
 import logging
 import settings as s
 
-# Version 0.081
+# Version 0.9
 
 
 # Logging settings
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
-logging.info('start')
+logging.info('START')
 
 # Open excel file
-wb = xl.load_workbook(s.FILENAME, data_only=True)
+wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)
 
-#is this github?
+
 # Funtions
 def td_single(config_file, ref_txt):
-    """Read a text file and copy the relevant data to memory"""
+    """Read a text file and copy the data inside notifiers to memory"""
     with open(config_file, 'r') as config:
         exists_in_config = False
         section_found = False
@@ -42,7 +42,7 @@ def td_single(config_file, ref_txt):
 
 
 def td_multiple(config_file, ref_txt, excelsheet):
-    """Get text lines from config file and replace by data in excel, then append the new lines"""
+    """Get text lines from config file and replace by data in excel, then append the new lines to memory"""
 
     # Check if sheet exists
     sheets = wb.sheetnames
@@ -180,12 +180,17 @@ def td_multiple_config(sub_dir, ref_txt, excelsheet):
 
 # DI function
 def td_gen_di():
+    """Create and concetenate all text lines to different files"""
     # setup variables
     config_file = os.path.join(s.CONFIG_PATH, 'Config_DI.txt')
     sheet = 'DI'
 
+    # Check what output path to use, if 'None' create in current directory, otherwise as specified
+    if s.OUTPUT_PATH is None:
+        file_path = 'Generated DI'
+    else:
+        file_path = os.path.join(s.OUTPUT_PATH, 'Generated DI')
     # Create sub-directory if it doesn't exist
-    file_path = 'Generated DI'
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
@@ -243,18 +248,23 @@ def td_gen_di():
             itFile.write(it_data)
             print(filename, 'created')
             logging.info(filename + ' created')
-    print('Generated files put in /', file_path, 'folder')
-    logging.info('Generated DI files put in /' + file_path + ' folder')
+    print('Generated files put in...', file_path)
+    logging.info('Generated DI files put in ' + file_path)
 
 
 # DO function
 def td_gen_do():
+    """Create and concetenate all text lines to different files"""
     # setup variables
     config_file = os.path.join(s.CONFIG_PATH, 'Config_DO.txt')
     sheet = 'DO'
 
+    # Check what output path to use, if 'None' create in current directory, otherwise as specified
+    if s.OUTPUT_PATH is None:
+        file_path = 'Generated DO'
+    else:
+        file_path = os.path.join(s.OUTPUT_PATH, 'Generated DO')
     # Create sub-directory if it doesn't exist
-    file_path = 'Generated DO'
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
@@ -312,18 +322,24 @@ def td_gen_do():
             itFile.write(it_data)
             print(filename, 'created')
             logging.info(filename + ' created')
-    print('Generated files put in /', file_path, 'folder')
-    logging.info('Generated DO files put in /' + file_path + ' folder')
+    print('Generated files put in...', file_path)
+    logging.info('Generated DO files put in ' + file_path)
 
 
 # Valve function
 def td_gen_valve():
+    """Create and concetenate all text lines to different files"""
+    # TODO rest of the code
     # setup variables
     config_file = os.path.join(s.CONFIG_PATH_VALVE, 'Config_valve.txt')
     sheet = 'Valves'
 
+    # Check what output path to use, if 'None' create in current directory, otherwise as specified
+    if s.OUTPUT_PATH is None:
+        file_path = 'Generated Valve'
+    else:
+        file_path = os.path.join(s.OUTPUT_PATH, 'Generated Valve')
     # Create sub-directory if it doesn't exist
-    file_path = 'Generated Valve'
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
@@ -340,30 +356,30 @@ def td_gen_valve():
         print(filename, 'created')
         logging.info(filename + ' created')
 
-    print('Generated files put in /', file_path, 'folder')
-    logging.info('Generated DO files put in /' + file_path + ' folder')
+    print('Generated files put in...', file_path)
+    logging.info('Generated DO files put in ' + file_path)
 
 
-# Call functions, don't execute if disabled in settings.py
+"""Call functions, don't execute if disabled in settings.py"""
 # DI
-if not s.DI_DISABLE:
-    td_gen_di()
-else:
+if s.DI_DISABLE:
     print('DI not generated, disabled in settings file')
     logging.warning('DI not generated, disabled in settings file')
+else:
+    td_gen_di()
 
 # DO
-if not s.DO_DISABLE:
-    td_gen_do()
-else:
+if s.DO_DISABLE:
     print('DO not generated, disabled in settings file')
     logging.warning('DO not generated, Disabled in settings file')
+else:
+    td_gen_do()
 
 # Valve
-if not s.VALVE_DISABLE:
-    td_gen_valve()
-else:
+if s.VALVE_DISABLE:
     print('Valve not generated, disabled in settings file')
     logging.warning('Valve not generated, Disabled in settings file')
+else:
+    td_gen_valve()
 
-logging.info('stop')
+logging.info('STOP')
