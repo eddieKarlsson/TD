@@ -15,7 +15,7 @@ logging.info('start')
 # Open excel file
 wb = xl.load_workbook(s.FILENAME, data_only=True)
 
-
+#is this github?
 # Funtions
 def td_single(config_file, ref_txt):
     """Read a text file and copy the relevant data to memory"""
