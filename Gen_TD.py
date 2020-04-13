@@ -3,7 +3,7 @@ import openpyxl as xl
 import logging
 import settings as s
 
-# Version 0.9
+# Version 0.9 real stuff
 
 
 # Logging settings
