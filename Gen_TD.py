@@ -1,4 +1,5 @@
 import os
+import openpyxl as xl
 import logging
 import settings as s
 
@@ -13,6 +14,8 @@ logging.info('START')
 
 # Open excel file
 wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)
+
+goodDay = True
 
 
 # Funtions
