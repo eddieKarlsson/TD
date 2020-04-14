@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0ad30b3-7024-496e-a26c-880ec287acee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gen_TD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gen_TD.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,22 +22,16 @@
   </component>
   <component name="ProjectId" id="1aBKNruX061IeCpssRDs8On23Qq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slask/TD" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Gen_TD" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -168,5 +164,15 @@
     <MESSAGE value="Test2, funkar detta?" />
     <MESSAGE value="Test3" />
     <option name="LAST_COMMIT_MESSAGE" value="Test3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="277" y="103" key="SettingsEditor" timestamp="1586845298706">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="277" y="103" key="SettingsEditor/0.0.1536.920/1920.0.1536.920@0.0.1536.920" timestamp="1586845298706" />
+    <state x="465" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1586845314894">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="465" y="284" key="com.intellij.ide.util.TipDialog/0.0.1536.920/1920.0.1536.920@0.0.1536.920" timestamp="1586845314894" />
   </component>
 </project>
