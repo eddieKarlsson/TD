@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0ad30b3-7024-496e-a26c-880ec287acee" name="Default Changelist" comment="Test2, funkar detta?">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b0ad30b3-7024-496e-a26c-880ec287acee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Gen_TD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gen_TD.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,7 +125,28 @@
       <option name="project" value="LOCAL" />
       <updated>1586814481265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Test2, funkar detta?">
+      <created>1586842348486</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586842348486</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Test3">
+      <created>1586842430494</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586842430494</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Test3">
+      <created>1586842444885</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586842444885</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +166,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="test comment lol" />
     <MESSAGE value="Test2, funkar detta?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test2, funkar detta?" />
+    <MESSAGE value="Test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test3" />
   </component>
 </project>
