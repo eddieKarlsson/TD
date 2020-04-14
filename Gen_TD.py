@@ -1,7 +1,7 @@
 import os
-import openpyxl as xl
 import logging
 import settings as s
+import openpyxl as xl
 
 # Version 0.9
 
