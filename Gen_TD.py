@@ -11,7 +11,6 @@ logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 logging.info('START')
 
-#PC jobb
 
 # Open excel file
 wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0ad30b3-7024-496e-a26c-880ec287acee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gen_TD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gen_TD.py" afterDir="false" />
     </list>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586842444885</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test4">
+      <created>1586845338921</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586845338921</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,13 +168,22 @@
     <MESSAGE value="test comment lol" />
     <MESSAGE value="Test2, funkar detta?" />
     <MESSAGE value="Test3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test3" />
+    <MESSAGE value="Test4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test4" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="51" key="CommitChangelistDialog2" timestamp="1586845338460">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="424" y="51" key="CommitChangelistDialog2/0.0.1536.920/1920.0.1536.920@0.0.1536.920" timestamp="1586845338460" />
     <state x="277" y="103" key="SettingsEditor" timestamp="1586845298706">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="277" y="103" key="SettingsEditor/0.0.1536.920/1920.0.1536.920@0.0.1536.920" timestamp="1586845298706" />
+    <state x="361" y="193" key="Vcs.Push.Dialog.v2" timestamp="1586845369818">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="361" y="193" key="Vcs.Push.Dialog.v2/0.0.1536.920/1920.0.1536.920@0.0.1536.920" timestamp="1586845369818" />
     <state x="465" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1586845314894">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
