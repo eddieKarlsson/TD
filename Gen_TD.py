@@ -15,8 +15,6 @@ logging.info('START')
 # Open excel file
 wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)
 
-goodDay = True
-
 
 # Funtions
 def td_single(config_file, ref_txt):
