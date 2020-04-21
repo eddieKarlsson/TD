@@ -1,8 +1,8 @@
 """General settings for Gen_TD.py"""
-EXCEL_FILE = 'C:\Downloads\TD - Kivik -  Kivik CIP & Kyl-lager - 190095.xlsx'  # full path and extension
+EXCEL_FILE = r'C:\Downloads\TD - Kivik -  Kivik CIP & Kyl-lager - 190095.xlsx'  # full path and extension
 CONFIG_PATH = 'Config'  # sub-directory of config files
 CONFIG_PATH_VALVE = 'Config/Valve'  # sub-directory for valve config
-OUTPUT_PATH = 'C:\Project\Python\slask'  # If 'None' files are created in current directory
+OUTPUT_PATH = r'C:\Project\Python\slask'  # If 'None' files are created in current directory
 
 """Excel settings"""
 ROW = 6  # Excel start row of data

@@ -1,19 +1,33 @@
 import os
+import sys
 import logging
 import settings as s
-import openpyxl as xl
-
-# Version 0.9
-
 
 # Logging settings
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 logging.info('START')
 
+"""Try to import openpyxl, otherwise prompt user"""
+try:
+    import openpyxl as xl
+except ModuleNotFoundError:
+    print('Error! openpyxl module not found, please install it')
+    logging.error('openpyxl module not found, please install it')
+    sys.exit()
+
+# Version 0.92
+
 
 # Open excel file
-wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)
+try:
+    wb = xl.load_workbook(s.EXCEL_FILE, data_only=True)
+except FileNotFoundError as e:
+    print(e)
+    logging.error(e)
+    print('Error! Excel file not found, program will exit')
+    logging.error('Excel file not found, program will exit')
+    sys.exit()
 
 
 # Funtions
@@ -55,57 +69,58 @@ def td_multiple(config_file, ref_txt, excelsheet):
     if sheet_exists:
         active_sheet = wb[excelsheet]  # Open sheet
     else:
-        print(excelsheet, "Sheet doesn't exist!")
-        logging.error(excelsheet + " sheet doesn't exist!")
-        # TODO stop program execution
+        print('Error!', excelsheet, "Sheet doesn't exist!", "program will exit")
+        logging.error(excelsheet + " sheet doesn't exist!" + " program will exit")
+        sys.exit()
 
-    with open(config_file, 'r') as config:
-        exists_in_config = False
-        section_found = False
-        inst_data = ''
-        begin = '[gen.' + ref_txt + '_begin]'
-        end = '[gen.' + ref_txt + '_end]'
-        zero_index = 0
+    if sheet_exists:
+        with open(config_file, 'r') as config:
+            exists_in_config = False
+            section_found = False
+            inst_data = ''
+            begin = '[gen.' + ref_txt + '_begin]'
+            end = '[gen.' + ref_txt + '_end]'
+            zero_index = 0
 
-        for i in range(s.ROW, active_sheet.max_row + 1):
-            cell_id = active_sheet.cell(row=i, column=s.COL_ID)
-            cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
-            cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
-            zero_index += 1
+            for i in range(s.ROW, active_sheet.max_row + 1):
+                cell_id = active_sheet.cell(row=i, column=s.COL_ID)
+                cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
+                cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
+                zero_index += 1
 
-            if cell_id.value is None:
-                break
+                if cell_id.value is None:
+                    break
 
-            config.seek(0, 0)  # Seek to beginning of file
-            for index, line in enumerate(config, start=1):
-                if end in str(line):
-                    section_found = False
-                if section_found:
-                    line = line.replace(s.ID_REPLACE, cell_id.value)
+                config.seek(0, 0)  # Seek to beginning of file
+                for index, line in enumerate(config, start=1):
+                    if end in str(line):
+                        section_found = False
+                    if section_found:
+                        line = line.replace(s.ID_REPLACE, cell_id.value)
 
-                    if cell_config.value is not None:
-                        line = line.replace(s.CONFIG_REPLACE, cell_config.value)
-                    line = line.replace(s.INDEX_REPLACE, str(zero_index))
+                        if cell_config.value is not None:
+                            line = line.replace(s.CONFIG_REPLACE, cell_config.value)
+                        line = line.replace(s.INDEX_REPLACE, str(zero_index))
 
-                    # check if comment exists, if insert empty string
-                    if cell_comment.value is None:
-                        line = line.replace(s.COMMENT_REPLACE, '')
-                    else:
-                        line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
+                        # check if comment exists, if insert empty string
+                        if cell_comment.value is None:
+                            line = line.replace(s.COMMENT_REPLACE, '')
+                        else:
+                            line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
 
-                    inst_data += line  # Create instance data
-                if begin in str(line):
-                    exists_in_config = True
-                    section_found = True
-        if not exists_in_config:
-            print(ref_txt, 'in config file not found!')
-            logging.warning(ref_txt + ' in config file not found!')
-        else:
-            print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
-            logging.info(
-                'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
+                        inst_data += line  # Create instance data
+                    if begin in str(line):
+                        exists_in_config = True
+                        section_found = True
+            if not exists_in_config:
+                print(ref_txt, 'in config file not found!')
+                logging.warning(ref_txt + ' in config file not found!')
+            else:
+                print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
+                logging.info(
+                    'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
 
-    return inst_data
+        return inst_data
 
 
 def td_multiple_config(sub_dir, ref_txt, excelsheet):
@@ -121,61 +136,62 @@ def td_multiple_config(sub_dir, ref_txt, excelsheet):
     if sheet_exists:
         active_sheet = wb[excelsheet]  # Open sheet
     else:
-        print(excelsheet, "Sheet doesn't exist!")
-        logging.error(excelsheet + " sheet doesn't exist!")
-        # TODO stop program execution
+        print('Error!', excelsheet, "Sheet doesn't exist!", "program will exit")
+        logging.error(excelsheet + " sheet doesn't exist!" + " program will exit")
+        sys.exit()
 
-    # Setup variables
-    exists_in_config = False
-    section_found = False
-    inst_data = ''
-    begin = '[gen.' + ref_txt + '_begin]'
-    end = '[gen.' + ref_txt + '_end]'
-    zero_index = 0
+    if sheet_exists:
+        # Setup variables
+        exists_in_config = False
+        section_found = False
+        inst_data = ''
+        begin = '[gen.' + ref_txt + '_begin]'
+        end = '[gen.' + ref_txt + '_end]'
+        zero_index = 0
 
-    # loop through excel rows, get value at corresponding cell
-    for i in range(s.ROW, active_sheet.max_row + 1):
-        cell_id = active_sheet.cell(row=i, column=s.COL_ID)
-        cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
-        cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
-        zero_index += 1
+        # loop through excel rows, get value at corresponding cell
+        for i in range(s.ROW, active_sheet.max_row + 1):
+            cell_id = active_sheet.cell(row=i, column=s.COL_ID)
+            cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
+            cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
+            zero_index += 1
 
-        if cell_id.value is None:
-            break
+            if cell_id.value is None:
+                break
 
-        # combine file path and open corresponding file
-        filename = cell_config.value + '.txt'
-        file_and_path = os.path.join(sub_dir, filename)
-        with open(file_and_path, 'r') as config:
-            for line in config:
-                if end in str(line):
-                    section_found = False
-                if section_found:
-                    line = line.replace(s.ID_REPLACE, cell_id.value)
+            # combine file path and open corresponding file
+            filename = cell_config.value + '.txt'
+            file_and_path = os.path.join(sub_dir, filename)
+            with open(file_and_path, 'r') as config:
+                for line in config:
+                    if end in str(line):
+                        section_found = False
+                    if section_found:
+                        line = line.replace(s.ID_REPLACE, cell_id.value)
 
-                    if cell_config.value is not None:
-                        line = line.replace(s.CONFIG_REPLACE, cell_config.value)
-                    line = line.replace(s.INDEX_REPLACE, str(zero_index))
+                        if cell_config.value is not None:
+                            line = line.replace(s.CONFIG_REPLACE, cell_config.value)
+                        line = line.replace(s.INDEX_REPLACE, str(zero_index))
 
-                    # check if comment exists, if insert empty string
-                    if cell_comment.value is None:
-                        line = line.replace(s.COMMENT_REPLACE, '')
-                    else:
-                        line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
+                        # check if comment exists, if insert empty string
+                        if cell_comment.value is None:
+                            line = line.replace(s.COMMENT_REPLACE, '')
+                        else:
+                            line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
 
-                    inst_data += line  # Create instance data
-                if begin in str(line):
-                    exists_in_config = True
-                    section_found = True
-    if not exists_in_config:
-        print(ref_txt, 'in config file not found!')
-        logging.warning(ref_txt + ' in config file not found!')
-    else:
-        print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
-        logging.info(
-            'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
+                        inst_data += line  # Create instance data
+                    if begin in str(line):
+                        exists_in_config = True
+                        section_found = True
+        if not exists_in_config:
+            print(ref_txt, 'in config file not found!')
+            logging.warning(ref_txt + ' in config file not found!')
+        else:
+            print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
+            logging.info(
+                'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
 
-    return inst_data
+        return inst_data
 
 
 # DI function
