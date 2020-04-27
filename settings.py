@@ -18,6 +18,6 @@ CONFIG_REPLACE = '@CFG'  # string to be replaced in config file
 COL_CONFIG = 4  # Excel column index of Config, 4 = D column
 
 """Disable options"""
-DI_DISABLE = True
-DO_DISABLE = True
+DI_DISABLE = False
+DO_DISABLE = False
 VALVE_DISABLE = False
