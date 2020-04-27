@@ -16,7 +16,7 @@ except ModuleNotFoundError:
     logging.error('openpyxl module not found, please install it')
     sys.exit()
 
-# Version 0.92
+# Version 0.93
 
 
 # Open excel file
@@ -57,91 +57,16 @@ def td_single(config_file, ref_txt):
 
 def td_multiple(config_file, ref_txt, excelsheet):
     """Get text lines from config file and replace by data in excel, then append the new lines to memory"""
-
-    # Check if sheet exists
-    sheets = wb.sheetnames
-    for sheet in sheets:
-        if sheet == excelsheet:
-            sheet_exists = True
-            break
-        else:
-            sheet_exists = False
-    if sheet_exists:
-        active_sheet = wb[excelsheet]  # Open sheet
-    else:
-        print('Error!', excelsheet, "Sheet doesn't exist!", "program will exit")
-        logging.error(excelsheet + " sheet doesn't exist!" + " program will exit")
+    # Try to open excelsheet, otherwise prompt user
+    try:
+        active_sheet = wb[excelsheet]  # open sheet
+    except KeyError:
+        msg = f'Error! {excelsheet} sheet does not exist, program will exit'
+        print(msg)
+        logging.error(msg)
         sys.exit()
 
-    if sheet_exists:
-        with open(config_file, 'r') as config:
-            exists_in_config = False
-            section_found = False
-            inst_data = ''
-            begin = '[gen.' + ref_txt + '_begin]'
-            end = '[gen.' + ref_txt + '_end]'
-            zero_index = 0
-
-            for i in range(s.ROW, active_sheet.max_row + 1):
-                cell_id = active_sheet.cell(row=i, column=s.COL_ID)
-                cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
-                cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
-                zero_index += 1
-
-                if cell_id.value is None:
-                    break
-
-                config.seek(0, 0)  # Seek to beginning of file
-                for index, line in enumerate(config, start=1):
-                    if end in str(line):
-                        section_found = False
-                    if section_found:
-                        line = line.replace(s.ID_REPLACE, cell_id.value)
-
-                        if cell_config.value is not None:
-                            line = line.replace(s.CONFIG_REPLACE, cell_config.value)
-                        line = line.replace(s.INDEX_REPLACE, str(zero_index))
-
-                        # check if comment exists, if insert empty string
-                        if cell_comment.value is None:
-                            line = line.replace(s.COMMENT_REPLACE, '')
-                        else:
-                            line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
-
-                        inst_data += line  # Create instance data
-                    if begin in str(line):
-                        exists_in_config = True
-                        section_found = True
-            if not exists_in_config:
-                print(ref_txt, 'in config file not found!')
-                logging.warning(ref_txt + ' in config file not found!')
-            else:
-                print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
-                logging.info(
-                    'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
-
-        return inst_data
-
-
-def td_multiple_config(sub_dir, ref_txt, excelsheet):
-    """Same as td_multiple, but config stored in different files"""
-    # Check if sheet exists
-    sheets = wb.sheetnames
-    for sheet in sheets:
-        if sheet == excelsheet:
-            sheet_exists = True
-            break
-        else:
-            sheet_exists = False
-    if sheet_exists:
-        active_sheet = wb[excelsheet]  # Open sheet
-    else:
-        print('Error!', excelsheet, "Sheet doesn't exist!", "program will exit")
-        logging.error(excelsheet + " sheet doesn't exist!" + " program will exit")
-        sys.exit()
-
-    if sheet_exists:
-        # Setup variables
+    with open(config_file, 'r') as config:
         exists_in_config = False
         section_found = False
         inst_data = ''
@@ -149,7 +74,6 @@ def td_multiple_config(sub_dir, ref_txt, excelsheet):
         end = '[gen.' + ref_txt + '_end]'
         zero_index = 0
 
-        # loop through excel rows, get value at corresponding cell
         for i in range(s.ROW, active_sheet.max_row + 1):
             cell_id = active_sheet.cell(row=i, column=s.COL_ID)
             cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
@@ -159,39 +83,100 @@ def td_multiple_config(sub_dir, ref_txt, excelsheet):
             if cell_id.value is None:
                 break
 
-            # combine file path and open corresponding file
-            filename = cell_config.value + '.txt'
-            file_and_path = os.path.join(sub_dir, filename)
-            with open(file_and_path, 'r') as config:
-                for line in config:
-                    if end in str(line):
-                        section_found = False
-                    if section_found:
-                        line = line.replace(s.ID_REPLACE, cell_id.value)
+            config.seek(0, 0)  # Seek to beginning of file
+            for index, line in enumerate(config, start=1):
+                if end in str(line):
+                    section_found = False
+                if section_found:
+                    line = line.replace(s.ID_REPLACE, cell_id.value)
 
-                        if cell_config.value is not None:
-                            line = line.replace(s.CONFIG_REPLACE, cell_config.value)
-                        line = line.replace(s.INDEX_REPLACE, str(zero_index))
+                    if cell_config.value is not None:
+                        line = line.replace(s.CONFIG_REPLACE, cell_config.value)
+                    line = line.replace(s.INDEX_REPLACE, str(zero_index))
 
-                        # check if comment exists, if insert empty string
-                        if cell_comment.value is None:
-                            line = line.replace(s.COMMENT_REPLACE, '')
-                        else:
-                            line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
+                    # check if comment exists, if insert empty string
+                    if cell_comment.value is None:
+                        line = line.replace(s.COMMENT_REPLACE, '')
+                    else:
+                        line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
 
-                        inst_data += line  # Create instance data
-                    if begin in str(line):
-                        exists_in_config = True
-                        section_found = True
+                    inst_data += line  # Create instance data
+                if begin in str(line):
+                    exists_in_config = True
+                    section_found = True
         if not exists_in_config:
             print(ref_txt, 'in config file not found!')
             logging.warning(ref_txt + ' in config file not found!')
         else:
             print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
             logging.info(
-                'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
+                'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(
+                    active_sheet))
 
-        return inst_data
+    return inst_data
+
+
+def td_multiple_config(sub_dir, ref_txt, excelsheet):
+    """Same as td_multiple, but config stored in different files"""
+    # Try to open excelsheet, otherwise prompt user
+    try:
+        active_sheet = wb[excelsheet]  # open sheet
+    except KeyError:
+        msg = f'Error! {excelsheet} sheet does not exist, program will exit'
+        print(msg)
+        logging.error(msg)
+        sys.exit()
+
+    # Setup variables
+    exists_in_config = False
+    section_found = False
+    inst_data = ''
+    begin = '[gen.' + ref_txt + '_begin]'
+    end = '[gen.' + ref_txt + '_end]'
+    zero_index = 0
+
+    # loop through excel rows, get value at corresponding cell
+    for i in range(s.ROW, active_sheet.max_row + 1):
+        cell_id = active_sheet.cell(row=i, column=s.COL_ID)
+        cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
+        cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
+        zero_index += 1
+
+        if cell_id.value is None:
+            break
+
+        # combine file path and open corresponding file
+        filename = cell_config.value + '.txt'
+        file_and_path = os.path.join(sub_dir, filename)
+        with open(file_and_path, 'r') as config:
+            for line in config:
+                if end in str(line):
+                    section_found = False
+                if section_found:
+                    line = line.replace(s.ID_REPLACE, cell_id.value)
+
+                    if cell_config.value is not None:
+                        line = line.replace(s.CONFIG_REPLACE, cell_config.value)
+                    line = line.replace(s.INDEX_REPLACE, str(zero_index))
+
+                    # check if comment exists, if insert empty string
+                    if cell_comment.value is None:
+                        line = line.replace(s.COMMENT_REPLACE, '')
+                    else:
+                        line = line.replace(s.COMMENT_REPLACE, cell_comment.value)
+
+                    inst_data += line  # Create instance data
+                if begin in str(line):
+                    exists_in_config = True
+                    section_found = True
+    if not exists_in_config:
+        print(ref_txt, 'in config file not found!')
+        logging.warning(ref_txt + ' in config file not found!')
+    else:
+        print('Generated from row:', s.ROW, 'to', i - 1, 'of', ref_txt, 'in', active_sheet)
+        logging.info(
+            'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
+    return inst_data
 
 
 # DI function
@@ -345,9 +330,8 @@ def td_gen_do():
 # Valve function
 def td_gen_valve():
     """Create and concetenate all text lines to different files"""
-    # TODO rest of the code
     # setup variables
-    config_file = os.path.join(s.CONFIG_PATH_VALVE, 'Config_valve.txt')
+    config_file = s.CONFIG_PATH_VALVE
     sheet = 'Valves'
 
     # Check what output path to use, if 'None' create in current directory, otherwise as specified
@@ -360,20 +344,19 @@ def td_gen_valve():
         os.makedirs(file_path)
 
     # PLC function, concatenate data
-    codebody_data = td_multiple_config(s.CONFIG_PATH_VALVE, 'codebody', sheet)
+    codebody_data = td_multiple_config(config_file, 'codebody', sheet)
 
     # Create file and put it inside path created above
     filename = 'PLC_' + sheet + '.awl'
     file_and_path = os.path.join(file_path, filename)
     with open(file_and_path, 'w') as functionFile:
         data = codebody_data
-
         functionFile.write(data)
         print(filename, 'created')
         logging.info(filename + ' created')
 
     print('Generated files put in...', file_path)
-    logging.info('Generated DO files put in ' + file_path)
+    logging.info('Generated Valve files put in ' + file_path)
 
 
 """Call functions, don't execute if disabled in settings.py"""
