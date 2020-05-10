@@ -16,7 +16,7 @@ except ModuleNotFoundError:
     logging.error('openpyxl module not found, please install it')
     sys.exit()
 
-# Version 0.93
+# Version 0.94
 
 
 # Open excel file
@@ -360,25 +360,31 @@ def td_gen_valve():
 
 
 """Call functions, don't execute if disabled in settings.py"""
-# DI
-if s.DI_DISABLE:
-    print('DI not generated, disabled in settings file')
-    logging.warning('DI not generated, disabled in settings file')
-else:
-    td_gen_di()
 
-# DO
-if s.DO_DISABLE:
-    print('DO not generated, disabled in settings file')
-    logging.warning('DO not generated, Disabled in settings file')
-else:
-    td_gen_do()
 
-# Valve
-if s.VALVE_DISABLE:
-    print('Valve not generated, disabled in settings file')
-    logging.warning('Valve not generated, Disabled in settings file')
-else:
-    td_gen_valve()
+def gen_all():
+    # DI
+    if s.DI_DISABLE:
+        print('DI not generated, disabled in settings file')
+        logging.warning('DI not generated, disabled in settings file')
+    else:
+        td_gen_di()
+
+    # DO
+    if s.DO_DISABLE:
+        print('DO not generated, disabled in settings file')
+        logging.warning('DO not generated, Disabled in settings file')
+    else:
+        td_gen_do()
+
+    # Valve
+    if s.VALVE_DISABLE:
+        print('Valve not generated, disabled in settings file')
+        logging.warning('Valve not generated, Disabled in settings file')
+    else:
+        td_gen_valve()
+
+
+gen_all()
 
 logging.info('STOP')
