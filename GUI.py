@@ -10,6 +10,7 @@ if path.exists('user_data.pickle'):
         user_data = pickle.load(f)
         print("loaded")
 else:
+    # if file doesn't exist initialize data to start-values
     user_data = {
         'excel_path': 'no file loaded',
         'output_path': 'no path selected',
