@@ -5,8 +5,8 @@ import os
 from os import path
 
 # load user data if it exists, otherwise create dict
-if path.exists('user_data.pickle'):
-    with open('user_data.pickle', 'rb') as f:
+if path.exists('../user_data.pickle'):
+    with open('../user_data.pickle', 'rb') as f:
         user_data = pickle.load(f)
         print("loaded")
 else:
@@ -120,6 +120,6 @@ app = TdUI(master=root)
 app.mainloop()
 
 # dump user data
-with open('user_data.pickle', 'wb') as f:
+with open('../user_data.pickle', 'wb') as f:
     pickle.dump(user_data, f)
-    print("dump")
+    print("Dumped user data")

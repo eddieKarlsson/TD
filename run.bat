@@ -1,1 +1,1 @@
-python Gen_TD.py
+python GenTD.py

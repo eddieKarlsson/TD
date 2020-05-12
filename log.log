@@ -1,1001 +1,124 @@
-lol2020-05-12 20:09:08,664:INFO:START
-2020-05-12 20:09:11,160:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:09:11,163:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:09:11,164:INFO:PLC_DI.awl created
-2020-05-12 20:09:11,167:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:09:11,167:INFO:PLC_DI_DB.db created
-2020-05-12 20:09:11,170:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:09:11,170:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:09:11,172:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:09:11,173:INFO:IT_DI.csv created
-2020-05-12 20:09:11,173:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:09:11,175:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:09:11,177:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:09:11,178:INFO:PLC_DO.awl created
-2020-05-12 20:09:11,179:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:09:11,180:INFO:PLC_DO_DB.db created
-2020-05-12 20:09:11,181:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:09:11,182:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:09:11,183:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:09:11,184:INFO:IT_DO.csv created
-2020-05-12 20:09:11,184:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:09:11,188:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:09:11,188:INFO:PLC_Valves.awl created
-2020-05-12 20:09:11,188:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:09:11,188:INFO:STOP
-2020-05-12 20:11:34,392:INFO:START
-2020-05-12 20:11:35,643:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:11:35,646:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:11:35,646:INFO:PLC_DI.awl created
-2020-05-12 20:11:35,649:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:11:35,649:INFO:PLC_DI_DB.db created
-2020-05-12 20:11:35,651:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:11:35,651:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:11:35,655:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:11:35,655:INFO:IT_DI.csv created
-2020-05-12 20:11:35,655:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:11:35,656:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:11:35,658:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:11:35,659:INFO:PLC_DO.awl created
-2020-05-12 20:11:35,660:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:11:35,660:INFO:PLC_DO_DB.db created
-2020-05-12 20:11:35,662:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:11:35,662:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:11:35,663:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:11:35,664:INFO:IT_DO.csv created
-2020-05-12 20:11:35,664:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:11:35,667:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:11:35,667:INFO:PLC_Valves.awl created
-2020-05-12 20:11:35,667:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:11:35,667:INFO:STOP
-2020-05-12 20:12:34,956:INFO:START
-2020-05-12 20:12:36,203:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:12:36,207:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:12:36,207:INFO:PLC_DI.awl created
-2020-05-12 20:12:36,209:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:12:36,209:INFO:PLC_DI_DB.db created
-2020-05-12 20:12:36,212:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:12:36,212:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:12:36,216:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:12:36,216:INFO:IT_DI.csv created
-2020-05-12 20:12:36,216:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:12:36,218:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:12:36,219:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:12:36,219:INFO:PLC_DO.awl created
-2020-05-12 20:12:36,220:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:12:36,221:INFO:PLC_DO_DB.db created
-2020-05-12 20:12:36,222:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:12:36,223:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:12:36,224:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:12:36,224:INFO:IT_DO.csv created
-2020-05-12 20:12:36,225:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:12:36,228:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:12:36,228:INFO:PLC_Valves.awl created
-2020-05-12 20:12:36,228:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:12:36,228:INFO:STOP
-2020-05-12 20:13:12,097:INFO:START
-2020-05-12 20:13:13,351:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:13:13,354:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:13:13,355:INFO:PLC_DI.awl created
-2020-05-12 20:13:13,357:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:13:13,357:INFO:PLC_DI_DB.db created
-2020-05-12 20:13:13,360:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:13:13,360:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:13:13,363:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:13:13,364:INFO:IT_DI.csv created
-2020-05-12 20:13:13,364:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:13:13,365:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:13:13,367:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:13:13,367:INFO:PLC_DO.awl created
-2020-05-12 20:13:13,368:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:13:13,369:INFO:PLC_DO_DB.db created
-2020-05-12 20:13:13,370:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:13:13,370:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:13:13,372:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:13:13,372:INFO:IT_DO.csv created
-2020-05-12 20:13:13,372:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:13:13,375:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:13:13,375:INFO:PLC_Valves.awl created
-2020-05-12 20:13:13,376:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:13:13,376:INFO:STOP
-2020-05-12 20:13:54,993:INFO:START
-2020-05-12 20:13:56,262:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:13:56,265:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:13:56,266:INFO:PLC_DI.awl created
-2020-05-12 20:13:56,268:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:13:56,269:INFO:PLC_DI_DB.db created
-2020-05-12 20:13:56,271:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:13:56,271:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:13:56,274:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:13:56,274:INFO:IT_DI.csv created
-2020-05-12 20:13:56,274:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:13:56,275:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:13:56,277:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:13:56,277:INFO:PLC_DO.awl created
-2020-05-12 20:13:56,278:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:13:56,279:INFO:PLC_DO_DB.db created
-2020-05-12 20:13:56,280:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:13:56,280:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:13:56,281:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:13:56,282:INFO:IT_DO.csv created
-2020-05-12 20:13:56,282:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:13:56,284:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:13:56,284:INFO:PLC_Valves.awl created
-2020-05-12 20:13:56,285:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:13:56,285:INFO:STOP
-2020-05-12 20:14:07,654:INFO:START
-2020-05-12 20:14:08,934:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:14:08,937:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:14:08,938:INFO:PLC_DI.awl created
-2020-05-12 20:14:08,940:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:14:08,941:INFO:PLC_DI_DB.db created
-2020-05-12 20:14:08,943:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:14:08,944:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:14:08,946:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:14:08,946:INFO:IT_DI.csv created
-2020-05-12 20:14:08,947:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:14:08,948:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:14:08,949:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:14:08,950:INFO:PLC_DO.awl created
-2020-05-12 20:14:08,951:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:14:08,952:INFO:PLC_DO_DB.db created
-2020-05-12 20:14:08,953:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:14:08,953:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:14:08,954:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:14:08,954:INFO:IT_DO.csv created
-2020-05-12 20:14:08,954:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:14:08,957:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:14:08,957:INFO:PLC_Valves.awl created
-2020-05-12 20:14:08,957:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:14:08,958:INFO:STOP
-2020-05-12 20:14:40,437:INFO:START
-2020-05-12 20:14:41,723:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:14:41,726:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:14:41,727:INFO:PLC_DI.awl created
-2020-05-12 20:14:41,729:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:14:41,730:INFO:PLC_DI_DB.db created
-2020-05-12 20:14:41,732:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:14:41,733:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:14:41,735:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:14:41,736:INFO:IT_DI.csv created
-2020-05-12 20:14:41,737:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:14:41,738:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:14:41,739:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:14:41,740:INFO:PLC_DO.awl created
-2020-05-12 20:14:41,741:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:14:41,742:INFO:PLC_DO_DB.db created
-2020-05-12 20:14:41,744:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:14:41,744:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:14:41,746:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:14:41,746:INFO:IT_DO.csv created
-2020-05-12 20:14:41,747:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:14:41,749:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:14:41,749:INFO:PLC_Valves.awl created
-2020-05-12 20:14:41,751:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:14:41,751:INFO:STOP
-2020-05-12 20:15:15,293:INFO:START
-2020-05-12 20:15:16,565:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:15:16,568:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:15:16,569:INFO:PLC_DI.awl created
-2020-05-12 20:15:16,571:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:15:16,572:INFO:PLC_DI_DB.db created
-2020-05-12 20:15:16,574:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:15:16,575:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:15:16,578:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:15:16,579:INFO:IT_DI.csv created
-2020-05-12 20:15:16,579:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:15:16,580:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:15:16,582:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:15:16,582:INFO:PLC_DO.awl created
-2020-05-12 20:15:16,584:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:15:16,585:INFO:PLC_DO_DB.db created
-2020-05-12 20:15:16,587:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:15:16,587:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:15:16,588:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:15:16,589:INFO:IT_DO.csv created
-2020-05-12 20:15:16,590:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:15:16,592:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:15:16,592:INFO:PLC_Valves.awl created
-2020-05-12 20:15:16,593:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:15:16,593:INFO:STOP
-2020-05-12 20:15:34,226:INFO:START
-2020-05-12 20:15:35,502:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:15:35,505:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:15:35,506:INFO:PLC_DI.awl created
-2020-05-12 20:15:35,508:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:15:35,509:INFO:PLC_DI_DB.db created
-2020-05-12 20:15:35,511:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:15:35,511:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:15:35,514:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:15:35,514:INFO:IT_DI.csv created
-2020-05-12 20:15:35,514:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:15:35,515:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:15:35,517:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:15:35,517:INFO:PLC_DO.awl created
-2020-05-12 20:15:35,518:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:15:35,519:INFO:PLC_DO_DB.db created
-2020-05-12 20:15:35,520:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:15:35,520:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:15:35,521:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:15:35,522:INFO:IT_DO.csv created
-2020-05-12 20:15:35,522:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:15:35,524:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:15:35,525:INFO:PLC_Valves.awl created
-2020-05-12 20:15:35,525:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:15:35,525:INFO:STOP
-2020-05-12 20:17:14,724:INFO:START
-2020-05-12 20:17:16,039:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:17:16,042:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:17:16,043:INFO:PLC_DI.awl created
-2020-05-12 20:17:16,045:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:17:16,046:INFO:PLC_DI_DB.db created
-2020-05-12 20:17:16,048:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:17:16,048:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:17:16,051:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:17:16,051:INFO:IT_DI.csv created
-2020-05-12 20:17:16,051:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:17:16,053:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:17:16,054:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:17:16,054:INFO:PLC_DO.awl created
-2020-05-12 20:17:16,056:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:17:16,056:INFO:PLC_DO_DB.db created
-2020-05-12 20:17:16,057:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:17:16,058:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:17:16,059:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:17:16,059:INFO:IT_DO.csv created
-2020-05-12 20:17:16,059:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:17:16,062:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:17:16,062:INFO:PLC_Valves.awl created
-2020-05-12 20:17:16,062:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:17:16,063:INFO:STOP
-2020-05-12 20:17:44,241:INFO:START
-2020-05-12 20:17:45,498:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:17:45,500:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:17:45,501:INFO:PLC_DI.awl created
-2020-05-12 20:17:45,503:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:17:45,504:INFO:PLC_DI_DB.db created
-2020-05-12 20:17:45,506:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:17:45,507:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:17:45,509:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:17:45,509:INFO:IT_DI.csv created
-2020-05-12 20:17:45,510:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:17:45,511:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:17:45,512:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:17:45,513:INFO:PLC_DO.awl created
-2020-05-12 20:17:45,514:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:17:45,515:INFO:PLC_DO_DB.db created
-2020-05-12 20:17:45,516:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:17:45,516:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:17:45,517:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:17:45,518:INFO:IT_DO.csv created
-2020-05-12 20:17:45,518:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:17:45,521:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:17:45,521:INFO:PLC_Valves.awl created
-2020-05-12 20:17:45,521:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:17:45,521:INFO:STOP
-2020-05-12 20:17:54,986:INFO:START
-2020-05-12 20:17:56,216:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:17:56,219:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:17:56,220:INFO:PLC_DI.awl created
-2020-05-12 20:17:56,223:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:17:56,223:INFO:PLC_DI_DB.db created
-2020-05-12 20:17:56,226:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:17:56,226:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:17:56,229:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:17:56,230:INFO:IT_DI.csv created
-2020-05-12 20:17:56,230:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:17:56,232:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:17:56,234:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:17:56,235:INFO:PLC_DO.awl created
-2020-05-12 20:17:56,238:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:17:56,238:INFO:PLC_DO_DB.db created
-2020-05-12 20:17:56,240:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:17:56,240:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:17:56,241:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:17:56,242:INFO:IT_DO.csv created
-2020-05-12 20:17:56,242:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:17:56,245:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:17:56,245:INFO:PLC_Valves.awl created
-2020-05-12 20:17:56,248:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:17:56,248:INFO:STOP
-2020-05-12 20:17:57,317:INFO:START
-2020-05-12 20:17:58,566:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:17:58,570:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:17:58,570:INFO:PLC_DI.awl created
-2020-05-12 20:17:58,573:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:17:58,573:INFO:PLC_DI_DB.db created
-2020-05-12 20:17:58,576:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:17:58,577:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:17:58,579:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:17:58,580:INFO:IT_DI.csv created
-2020-05-12 20:17:58,580:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:17:58,581:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:17:58,583:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:17:58,583:INFO:PLC_DO.awl created
-2020-05-12 20:17:58,586:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:17:58,586:INFO:PLC_DO_DB.db created
-2020-05-12 20:17:58,589:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:17:58,589:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:17:58,590:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:17:58,591:INFO:IT_DO.csv created
-2020-05-12 20:17:58,592:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:17:58,594:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:17:58,595:INFO:PLC_Valves.awl created
-2020-05-12 20:17:58,596:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:17:58,596:INFO:STOP
-2020-05-12 20:18:19,231:INFO:START
-2020-05-12 20:18:20,508:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:18:20,511:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:18:20,511:INFO:PLC_DI.awl created
-2020-05-12 20:18:20,514:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:18:20,514:INFO:PLC_DI_DB.db created
-2020-05-12 20:18:20,517:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:18:20,517:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:18:20,520:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:18:20,521:INFO:IT_DI.csv created
-2020-05-12 20:18:20,521:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:18:20,523:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:18:20,524:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:18:20,524:INFO:PLC_DO.awl created
-2020-05-12 20:18:20,526:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:18:20,527:INFO:PLC_DO_DB.db created
-2020-05-12 20:18:20,529:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:18:20,529:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:18:20,531:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:18:20,531:INFO:IT_DO.csv created
-2020-05-12 20:18:20,532:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:18:20,534:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:18:20,534:INFO:PLC_Valves.awl created
-2020-05-12 20:18:20,535:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:18:20,535:INFO:STOP
-2020-05-12 20:18:24,583:INFO:START
-2020-05-12 20:18:25,849:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:18:25,852:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:18:25,854:INFO:PLC_DI.awl created
-2020-05-12 20:18:25,857:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:18:25,858:INFO:PLC_DI_DB.db created
-2020-05-12 20:18:25,862:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:18:25,862:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:18:25,865:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:18:25,865:INFO:IT_DI.csv created
-2020-05-12 20:18:25,866:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:18:25,869:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:18:25,872:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:18:25,873:INFO:PLC_DO.awl created
-2020-05-12 20:18:25,874:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:18:25,875:INFO:PLC_DO_DB.db created
-2020-05-12 20:18:25,876:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:18:25,878:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:18:25,879:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:18:25,880:INFO:IT_DO.csv created
-2020-05-12 20:18:25,880:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:18:25,883:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:18:25,884:INFO:PLC_Valves.awl created
-2020-05-12 20:18:25,885:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:18:25,885:INFO:STOP
-2020-05-12 20:18:28,166:INFO:START
-2020-05-12 20:18:29,458:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:18:29,461:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:18:29,462:INFO:PLC_DI.awl created
-2020-05-12 20:18:29,464:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:18:29,465:INFO:PLC_DI_DB.db created
-2020-05-12 20:18:29,467:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:18:29,467:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:18:29,471:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:18:29,471:INFO:IT_DI.csv created
-2020-05-12 20:18:29,472:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:18:29,474:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:18:29,475:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:18:29,476:INFO:PLC_DO.awl created
-2020-05-12 20:18:29,477:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:18:29,478:INFO:PLC_DO_DB.db created
-2020-05-12 20:18:29,480:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:18:29,480:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:18:29,482:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:18:29,483:INFO:IT_DO.csv created
-2020-05-12 20:18:29,483:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:18:29,486:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:18:29,487:INFO:PLC_Valves.awl created
-2020-05-12 20:18:29,490:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:18:29,490:INFO:STOP
-2020-05-12 20:18:35,250:INFO:START
-2020-05-12 20:18:36,494:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:18:36,497:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:18:36,498:INFO:PLC_DI.awl created
-2020-05-12 20:18:36,500:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:18:36,501:INFO:PLC_DI_DB.db created
-2020-05-12 20:18:36,504:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:18:36,504:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:18:36,506:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:18:36,507:INFO:IT_DI.csv created
-2020-05-12 20:18:36,507:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:18:36,509:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:18:36,510:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:18:36,511:INFO:PLC_DO.awl created
-2020-05-12 20:18:36,512:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:18:36,513:INFO:PLC_DO_DB.db created
-2020-05-12 20:18:36,515:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:18:36,515:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:18:36,516:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:18:36,517:INFO:IT_DO.csv created
-2020-05-12 20:18:36,518:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:18:36,520:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:18:36,521:INFO:PLC_Valves.awl created
-2020-05-12 20:18:36,522:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:18:36,522:INFO:STOP
-2020-05-12 20:19:03,779:INFO:START
-2020-05-12 20:19:05,045:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:19:05,049:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:19:05,049:INFO:PLC_DI.awl created
-2020-05-12 20:19:05,052:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:19:05,052:INFO:PLC_DI_DB.db created
-2020-05-12 20:19:05,055:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:19:05,056:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:19:05,059:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:19:05,059:INFO:IT_DI.csv created
-2020-05-12 20:19:05,060:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:19:05,061:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:19:05,063:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:19:05,064:INFO:PLC_DO.awl created
-2020-05-12 20:19:05,066:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:19:05,067:INFO:PLC_DO_DB.db created
-2020-05-12 20:19:05,069:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:19:05,069:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:19:05,071:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:19:05,071:INFO:IT_DO.csv created
-2020-05-12 20:19:05,072:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:19:05,075:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:19:05,075:INFO:PLC_Valves.awl created
-2020-05-12 20:19:05,078:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:19:05,078:INFO:STOP
-2020-05-12 20:27:56,799:INFO:START
-2020-05-12 20:27:58,130:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:27:58,132:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:27:58,132:INFO:PLC_DI.awl created
-2020-05-12 20:27:58,135:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:27:58,135:INFO:PLC_DI_DB.db created
-2020-05-12 20:27:58,138:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:27:58,138:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:27:58,141:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:27:58,141:INFO:IT_DI.csv created
-2020-05-12 20:27:58,141:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:27:58,143:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:27:58,144:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:27:58,145:INFO:PLC_DO.awl created
-2020-05-12 20:27:58,146:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:27:58,146:INFO:PLC_DO_DB.db created
-2020-05-12 20:27:58,148:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:27:58,148:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:27:58,149:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:27:58,149:INFO:IT_DO.csv created
-2020-05-12 20:27:58,149:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:27:58,152:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:27:58,153:INFO:PLC_Valves.awl created
-2020-05-12 20:27:58,153:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:27:58,153:INFO:STOP
-2020-05-12 20:28:09,184:INFO:START
-2020-05-12 20:28:10,485:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:10,488:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:10,489:INFO:PLC_DI.awl created
-2020-05-12 20:28:10,491:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:10,492:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:10,494:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:10,495:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:10,497:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:10,498:INFO:IT_DI.csv created
-2020-05-12 20:28:10,498:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:10,499:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:10,501:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:10,501:INFO:PLC_DO.awl created
-2020-05-12 20:28:10,503:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:10,503:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:10,505:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:10,506:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:10,507:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:10,507:INFO:IT_DO.csv created
-2020-05-12 20:28:10,508:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:10,510:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:10,511:INFO:PLC_Valves.awl created
-2020-05-12 20:28:10,511:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:10,511:INFO:STOP
-2020-05-12 20:28:18,039:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:18,044:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:18,044:INFO:PLC_DI.awl created
-2020-05-12 20:28:18,047:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:18,047:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:18,049:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:18,050:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:18,052:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:18,053:INFO:IT_DI.csv created
-2020-05-12 20:28:18,053:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:18,055:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:18,057:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:18,059:INFO:PLC_DO.awl created
-2020-05-12 20:28:18,060:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:18,061:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:18,062:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:18,062:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:18,064:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:18,064:INFO:IT_DO.csv created
-2020-05-12 20:28:18,064:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:18,067:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:18,067:INFO:PLC_Valves.awl created
-2020-05-12 20:28:18,070:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:23,960:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:23,966:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:23,966:INFO:PLC_DI.awl created
-2020-05-12 20:28:23,970:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:23,970:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:23,972:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:23,973:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:23,975:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:23,976:INFO:IT_DI.csv created
-2020-05-12 20:28:23,976:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:23,977:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:23,979:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:23,979:INFO:PLC_DO.awl created
-2020-05-12 20:28:23,981:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:23,981:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:23,983:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:23,984:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:23,985:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:23,985:INFO:IT_DO.csv created
-2020-05-12 20:28:23,985:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:23,988:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:23,988:INFO:PLC_Valves.awl created
-2020-05-12 20:28:23,991:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:24,947:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:24,952:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:24,953:INFO:PLC_DI.awl created
-2020-05-12 20:28:24,955:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:24,956:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:24,959:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:24,959:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:24,962:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:24,962:INFO:IT_DI.csv created
-2020-05-12 20:28:24,963:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:24,964:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:24,966:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:24,966:INFO:PLC_DO.awl created
-2020-05-12 20:28:24,968:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:24,969:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:24,970:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:24,971:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:24,972:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:24,972:INFO:IT_DO.csv created
-2020-05-12 20:28:24,973:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:24,975:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:24,978:INFO:PLC_Valves.awl created
-2020-05-12 20:28:24,978:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:25,500:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:25,505:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:25,506:INFO:PLC_DI.awl created
-2020-05-12 20:28:25,508:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:25,510:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:25,512:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:25,512:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:25,515:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:25,515:INFO:IT_DI.csv created
-2020-05-12 20:28:25,516:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:25,517:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:25,519:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:25,519:INFO:PLC_DO.awl created
-2020-05-12 20:28:25,521:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:25,522:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:25,523:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:25,524:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:25,525:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:25,525:INFO:IT_DO.csv created
-2020-05-12 20:28:25,526:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:25,529:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:25,529:INFO:PLC_Valves.awl created
-2020-05-12 20:28:25,532:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:26,597:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:26,600:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:26,601:INFO:PLC_DI.awl created
-2020-05-12 20:28:26,603:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:26,603:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:26,606:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:26,606:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:26,609:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:26,609:INFO:IT_DI.csv created
-2020-05-12 20:28:26,609:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:26,611:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:26,612:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:26,613:INFO:PLC_DO.awl created
-2020-05-12 20:28:26,614:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:26,617:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:26,618:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:26,619:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:26,620:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:26,620:INFO:IT_DO.csv created
-2020-05-12 20:28:26,621:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:26,624:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:26,624:INFO:PLC_Valves.awl created
-2020-05-12 20:28:26,627:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:27,185:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:27,189:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:27,189:INFO:PLC_DI.awl created
-2020-05-12 20:28:27,192:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:27,192:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:27,195:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:27,195:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:27,198:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:27,198:INFO:IT_DI.csv created
-2020-05-12 20:28:27,199:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:27,200:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:27,202:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:27,202:INFO:PLC_DO.awl created
-2020-05-12 20:28:27,204:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:27,205:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:27,207:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:27,207:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:27,208:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:27,209:INFO:IT_DO.csv created
-2020-05-12 20:28:27,209:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:27,212:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:27,213:INFO:PLC_Valves.awl created
-2020-05-12 20:28:27,216:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:27,680:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:27,684:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:27,684:INFO:PLC_DI.awl created
-2020-05-12 20:28:27,687:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:27,689:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:27,691:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:27,691:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:27,694:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:27,694:INFO:IT_DI.csv created
-2020-05-12 20:28:27,694:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:27,696:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:27,697:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:27,698:INFO:PLC_DO.awl created
-2020-05-12 20:28:27,700:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:27,701:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:27,702:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:27,703:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:27,704:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:27,705:INFO:IT_DO.csv created
-2020-05-12 20:28:27,706:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:27,708:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:27,709:INFO:PLC_Valves.awl created
-2020-05-12 20:28:27,711:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:28,212:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:28,217:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:28,218:INFO:PLC_DI.awl created
-2020-05-12 20:28:28,221:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:28,221:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:28,224:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:28,224:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:28,227:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:28,227:INFO:IT_DI.csv created
-2020-05-12 20:28:28,228:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:28,229:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:28,230:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:28,231:INFO:PLC_DO.awl created
-2020-05-12 20:28:28,233:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:28,235:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:28,237:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:28,237:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:28,239:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:28,239:INFO:IT_DO.csv created
-2020-05-12 20:28:28,239:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:28,243:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:28,243:INFO:PLC_Valves.awl created
-2020-05-12 20:28:28,245:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:28,734:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:28,739:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:28,740:INFO:PLC_DI.awl created
-2020-05-12 20:28:28,743:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:28,744:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:28,746:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:28,747:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:28,749:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:28,749:INFO:IT_DI.csv created
-2020-05-12 20:28:28,750:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:28,751:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:28,753:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:28,753:INFO:PLC_DO.awl created
-2020-05-12 20:28:28,755:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:28,756:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:28,758:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:28,758:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:28,759:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:28,760:INFO:IT_DO.csv created
-2020-05-12 20:28:28,760:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:28,763:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:28,764:INFO:PLC_Valves.awl created
-2020-05-12 20:28:28,767:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:29,175:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:29,179:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:29,179:INFO:PLC_DI.awl created
-2020-05-12 20:28:29,182:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:29,183:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:29,185:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:29,186:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:29,188:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:29,189:INFO:IT_DI.csv created
-2020-05-12 20:28:29,189:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:29,190:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:29,192:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:29,192:INFO:PLC_DO.awl created
-2020-05-12 20:28:29,193:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:29,194:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:29,196:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:29,198:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:29,199:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:29,200:INFO:IT_DO.csv created
-2020-05-12 20:28:29,200:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:29,203:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:29,203:INFO:PLC_Valves.awl created
-2020-05-12 20:28:29,205:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:29,527:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:29,530:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:29,531:INFO:PLC_DI.awl created
-2020-05-12 20:28:29,534:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:29,534:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:29,536:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:29,537:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:29,539:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:29,540:INFO:IT_DI.csv created
-2020-05-12 20:28:29,541:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:29,542:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:29,543:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:29,544:INFO:PLC_DO.awl created
-2020-05-12 20:28:29,545:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:29,546:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:29,548:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:29,548:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:29,550:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:29,550:INFO:IT_DO.csv created
-2020-05-12 20:28:29,551:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:29,553:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:29,553:INFO:PLC_Valves.awl created
-2020-05-12 20:28:29,555:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:29,862:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:29,867:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:29,868:INFO:PLC_DI.awl created
-2020-05-12 20:28:29,870:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:29,872:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:29,874:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:29,874:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:29,877:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:29,877:INFO:IT_DI.csv created
-2020-05-12 20:28:29,878:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:29,879:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:29,880:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:29,881:INFO:PLC_DO.awl created
-2020-05-12 20:28:29,884:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:29,884:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:29,885:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:29,886:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:29,887:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:29,888:INFO:IT_DO.csv created
-2020-05-12 20:28:29,888:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:29,891:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:29,891:INFO:PLC_Valves.awl created
-2020-05-12 20:28:29,894:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:51,542:INFO:START
-2020-05-12 20:28:52,890:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:28:52,893:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:28:52,894:INFO:PLC_DI.awl created
-2020-05-12 20:28:52,897:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:28:52,897:INFO:PLC_DI_DB.db created
-2020-05-12 20:28:52,899:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:28:52,900:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:28:52,902:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:28:52,902:INFO:IT_DI.csv created
-2020-05-12 20:28:52,903:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:28:52,904:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:28:52,906:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:28:52,906:INFO:PLC_DO.awl created
-2020-05-12 20:28:52,907:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:28:52,908:INFO:PLC_DO_DB.db created
-2020-05-12 20:28:52,909:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:28:52,909:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:28:52,910:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:28:52,910:INFO:IT_DO.csv created
-2020-05-12 20:28:52,910:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:28:52,912:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:28:52,913:INFO:PLC_Valves.awl created
-2020-05-12 20:28:52,913:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:28:52,913:INFO:STOP
-2020-05-12 20:29:03,263:INFO:START
-2020-05-12 20:29:04,560:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:29:04,563:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:29:04,564:INFO:PLC_DI.awl created
-2020-05-12 20:29:04,567:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:29:04,567:INFO:PLC_DI_DB.db created
-2020-05-12 20:29:04,570:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:29:04,570:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:29:04,573:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:29:04,573:INFO:IT_DI.csv created
-2020-05-12 20:29:04,573:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:29:04,575:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:29:04,576:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:29:04,577:INFO:PLC_DO.awl created
-2020-05-12 20:29:04,578:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:29:04,579:INFO:PLC_DO_DB.db created
-2020-05-12 20:29:04,580:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:29:04,581:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:29:04,582:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:29:04,582:INFO:IT_DO.csv created
-2020-05-12 20:29:04,583:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:29:04,585:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:29:04,586:INFO:PLC_Valves.awl created
-2020-05-12 20:29:04,586:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:29:04,586:INFO:STOP
-2020-05-12 20:29:34,220:INFO:START
-2020-05-12 20:29:35,470:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:29:35,473:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:29:35,473:INFO:PLC_DI.awl created
-2020-05-12 20:29:35,476:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:29:35,476:INFO:PLC_DI_DB.db created
-2020-05-12 20:29:35,479:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:29:35,479:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:29:35,482:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:29:35,482:INFO:IT_DI.csv created
-2020-05-12 20:29:35,483:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:29:35,484:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:29:35,485:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:29:35,486:INFO:PLC_DO.awl created
-2020-05-12 20:29:35,487:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:29:35,488:INFO:PLC_DO_DB.db created
-2020-05-12 20:29:35,489:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:29:35,490:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:29:35,491:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:29:35,491:INFO:IT_DO.csv created
-2020-05-12 20:29:35,492:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:29:35,494:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:29:35,495:INFO:PLC_Valves.awl created
-2020-05-12 20:29:35,495:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:29:35,495:INFO:STOP
-2020-05-12 20:29:52,802:INFO:START
-2020-05-12 20:29:54,040:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:29:54,043:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:29:54,044:INFO:PLC_DI.awl created
-2020-05-12 20:29:54,046:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:29:54,047:INFO:PLC_DI_DB.db created
-2020-05-12 20:29:54,049:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:29:54,049:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:29:54,051:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:29:54,051:INFO:IT_DI.csv created
-2020-05-12 20:29:54,052:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:29:54,053:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:29:54,054:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:29:54,055:INFO:PLC_DO.awl created
-2020-05-12 20:29:54,056:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:29:54,057:INFO:PLC_DO_DB.db created
-2020-05-12 20:29:54,059:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:29:54,060:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:29:54,061:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:29:54,062:INFO:IT_DO.csv created
-2020-05-12 20:29:54,062:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:29:54,065:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:29:54,066:INFO:PLC_Valves.awl created
-2020-05-12 20:29:54,067:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:29:54,067:INFO:STOP
-2020-05-12 20:30:20,604:INFO:START
-2020-05-12 20:30:21,851:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:30:21,854:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:30:21,855:INFO:PLC_DI.awl created
-2020-05-12 20:30:21,857:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:30:21,858:INFO:PLC_DI_DB.db created
-2020-05-12 20:30:21,860:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:30:21,861:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:30:21,864:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:30:21,864:INFO:IT_DI.csv created
-2020-05-12 20:30:21,865:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:30:21,866:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:30:21,868:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:30:21,868:INFO:PLC_DO.awl created
-2020-05-12 20:30:21,869:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:30:21,870:INFO:PLC_DO_DB.db created
-2020-05-12 20:30:21,872:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:30:21,872:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:30:21,875:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:30:21,875:INFO:IT_DO.csv created
-2020-05-12 20:30:21,875:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:30:21,878:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:30:21,879:INFO:PLC_Valves.awl created
-2020-05-12 20:30:21,881:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:30:21,881:INFO:STOP
-2020-05-12 20:30:29,138:INFO:START
-2020-05-12 20:30:30,435:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:30:30,438:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:30:30,438:INFO:PLC_DI.awl created
-2020-05-12 20:30:30,442:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:30:30,443:INFO:PLC_DI_DB.db created
-2020-05-12 20:30:30,446:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:30:30,446:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:30:30,449:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:30:30,449:INFO:IT_DI.csv created
-2020-05-12 20:30:30,450:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:30:30,451:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:30:30,453:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:30:30,455:INFO:PLC_DO.awl created
-2020-05-12 20:30:30,456:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:30:30,458:INFO:PLC_DO_DB.db created
-2020-05-12 20:30:30,462:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:30:30,462:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:30:30,465:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:30:30,466:INFO:IT_DO.csv created
-2020-05-12 20:30:30,469:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:30:30,473:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:30:30,474:INFO:PLC_Valves.awl created
-2020-05-12 20:30:30,477:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:30:30,477:INFO:STOP
-2020-05-12 20:30:32,822:INFO:START
-2020-05-12 20:30:34,065:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:30:34,068:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:30:34,069:INFO:PLC_DI.awl created
-2020-05-12 20:30:34,072:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:30:34,072:INFO:PLC_DI_DB.db created
-2020-05-12 20:30:34,075:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:30:34,075:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:30:34,078:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:30:34,078:INFO:IT_DI.csv created
-2020-05-12 20:30:34,079:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:30:34,082:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:30:34,082:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:30:34,083:INFO:PLC_DO.awl created
-2020-05-12 20:30:34,085:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:30:34,086:INFO:PLC_DO_DB.db created
-2020-05-12 20:30:34,088:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:30:34,088:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:30:34,090:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:30:34,090:INFO:IT_DO.csv created
-2020-05-12 20:30:34,092:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:30:34,095:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:30:34,096:INFO:PLC_Valves.awl created
-2020-05-12 20:30:34,096:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:30:34,096:INFO:STOP
-2020-05-12 20:30:45,759:INFO:START
-2020-05-12 20:30:47,048:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:30:47,051:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:30:47,052:INFO:PLC_DI.awl created
-2020-05-12 20:30:47,055:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:30:47,055:INFO:PLC_DI_DB.db created
-2020-05-12 20:30:47,058:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:30:47,058:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:30:47,061:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:30:47,061:INFO:IT_DI.csv created
-2020-05-12 20:30:47,062:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:30:47,063:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:30:47,065:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:30:47,065:INFO:PLC_DO.awl created
-2020-05-12 20:30:47,067:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:30:47,068:INFO:PLC_DO_DB.db created
-2020-05-12 20:30:47,070:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:30:47,070:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:30:47,072:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:30:47,072:INFO:IT_DO.csv created
-2020-05-12 20:30:47,073:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:30:47,075:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:30:47,076:INFO:PLC_Valves.awl created
-2020-05-12 20:30:47,079:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:30:47,079:INFO:STOP
-2020-05-12 20:30:58,728:INFO:START
-2020-05-12 20:31:00,040:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
-2020-05-12 20:31:00,044:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
-2020-05-12 20:31:00,044:INFO:PLC_DI.awl created
-2020-05-12 20:31:00,048:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
-2020-05-12 20:31:00,048:INFO:PLC_DI_DB.db created
-2020-05-12 20:31:00,051:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
-2020-05-12 20:31:00,051:INFO:PLC_DI_Symbol.sdf created
-2020-05-12 20:31:00,054:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
-2020-05-12 20:31:00,054:INFO:IT_DI.csv created
-2020-05-12 20:31:00,054:INFO:Generated DI files put in C:\Project\Python\slask\Generated DI
-2020-05-12 20:31:00,056:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
-2020-05-12 20:31:00,057:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
-2020-05-12 20:31:00,058:INFO:PLC_DO.awl created
-2020-05-12 20:31:00,059:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
-2020-05-12 20:31:00,060:INFO:PLC_DO_DB.db created
-2020-05-12 20:31:00,062:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
-2020-05-12 20:31:00,063:INFO:PLC_DO_Symbol.sdf created
-2020-05-12 20:31:00,064:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
-2020-05-12 20:31:00,064:INFO:IT_DO.csv created
-2020-05-12 20:31:00,065:INFO:Generated DO files put in C:\Project\Python\slask\Generated DO
-2020-05-12 20:31:00,068:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
-2020-05-12 20:31:00,068:INFO:PLC_Valves.awl created
-2020-05-12 20:31:00,069:INFO:Generated Valve files put in C:\Project\Python\slask\Generated Valve
-2020-05-12 20:31:00,069:INFO:STOP
+2020-05-12 23:43:51,402:INFO:START
+2020-05-12 23:43:52,059:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-12 23:43:52,059:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-12 23:43:52,059:INFO:PLC_DI.awl created
+2020-05-12 23:43:52,059:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-12 23:43:52,059:INFO:PLC_DI_DB.db created
+2020-05-12 23:43:52,067:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-12 23:43:52,067:INFO:PLC_DI_Symbol.sdf created
+2020-05-12 23:43:52,067:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-12 23:43:52,067:INFO:IT_DI.csv created
+2020-05-12 23:43:52,067:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-05-12 23:43:52,067:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-12 23:43:52,067:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-12 23:43:52,067:INFO:PLC_DO.awl created
+2020-05-12 23:43:52,077:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-12 23:43:52,077:INFO:PLC_DO_DB.db created
+2020-05-12 23:43:52,079:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-12 23:43:52,079:INFO:PLC_DO_Symbol.sdf created
+2020-05-12 23:43:52,079:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-12 23:43:52,079:INFO:IT_DO.csv created
+2020-05-12 23:43:52,079:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop\Generated DO
+2020-05-12 23:43:52,079:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-12 23:43:52,079:INFO:PLC_Valves.awl created
+2020-05-12 23:43:52,079:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-05-12 23:55:00,658:INFO:START
+2020-05-12 23:55:01,334:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-12 23:55:01,334:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-12 23:55:01,334:INFO:PLC_DI.awl created
+2020-05-12 23:55:01,334:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-12 23:55:01,334:INFO:PLC_DI_DB.db created
+2020-05-12 23:55:01,342:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-12 23:55:01,344:INFO:PLC_DI_Symbol.sdf created
+2020-05-12 23:55:01,344:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-12 23:55:01,344:INFO:IT_DI.csv created
+2020-05-12 23:55:01,344:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-05-12 23:55:01,344:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-12 23:55:01,344:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-12 23:55:01,344:INFO:PLC_DO.awl created
+2020-05-12 23:55:01,352:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-12 23:55:01,352:INFO:PLC_DO_DB.db created
+2020-05-12 23:55:01,354:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-12 23:55:01,354:INFO:PLC_DO_Symbol.sdf created
+2020-05-12 23:55:01,354:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-12 23:55:01,354:INFO:IT_DO.csv created
+2020-05-12 23:55:01,354:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop\Generated DO
+2020-05-12 23:55:01,354:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-12 23:55:01,354:INFO:PLC_Valves.awl created
+2020-05-12 23:55:01,354:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-05-12 23:55:01,354:INFO:STOP
+2020-05-12 23:55:15,740:INFO:START
+2020-05-12 23:55:16,398:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-12 23:55:16,398:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-12 23:55:16,407:INFO:PLC_DI.awl created
+2020-05-12 23:55:16,407:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-12 23:55:16,407:INFO:PLC_DI_DB.db created
+2020-05-12 23:55:16,407:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-12 23:55:16,407:INFO:PLC_DI_Symbol.sdf created
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-12 23:55:16,417:INFO:IT_DI.csv created
+2020-05-12 23:55:16,417:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-12 23:55:16,417:INFO:PLC_DO.awl created
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-12 23:55:16,417:INFO:PLC_DO_DB.db created
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-12 23:55:16,417:INFO:PLC_DO_Symbol.sdf created
+2020-05-12 23:55:16,417:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-12 23:55:16,432:INFO:IT_DO.csv created
+2020-05-12 23:55:16,432:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop\Generated DO
+2020-05-12 23:55:16,432:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-12 23:55:16,432:INFO:PLC_Valves.awl created
+2020-05-12 23:55:16,432:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-05-12 23:55:16,432:INFO:STOP
+2020-05-12 23:57:24,452:INFO:START
+2020-05-12 23:57:25,110:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-12 23:57:25,112:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-12 23:57:25,112:INFO:PLC_DI.awl created
+2020-05-12 23:57:25,112:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-12 23:57:25,112:INFO:PLC_DI_DB.db created
+2020-05-12 23:57:25,120:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-12 23:57:25,122:INFO:PLC_DI_Symbol.sdf created
+2020-05-12 23:57:25,122:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-12 23:57:25,122:INFO:IT_DI.csv created
+2020-05-12 23:57:25,122:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-05-12 23:57:25,130:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-12 23:57:25,130:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-12 23:57:25,130:INFO:PLC_DO.awl created
+2020-05-12 23:57:25,130:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-12 23:57:25,130:INFO:PLC_DO_DB.db created
+2020-05-12 23:57:25,130:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-12 23:57:25,130:INFO:PLC_DO_Symbol.sdf created
+2020-05-12 23:57:25,130:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-12 23:57:25,130:INFO:IT_DO.csv created
+2020-05-12 23:57:25,130:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop\Generated DO
+2020-05-12 23:57:25,140:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-12 23:57:25,140:INFO:PLC_Valves.awl created
+2020-05-12 23:57:25,140:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-05-12 23:57:25,140:INFO:STOP
+2020-05-12 23:57:44,672:INFO:START
+2020-05-12 23:57:45,331:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-12 23:57:45,333:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-12 23:57:45,333:INFO:PLC_DI.awl created
+2020-05-12 23:57:45,333:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-12 23:57:45,333:INFO:PLC_DI_DB.db created
+2020-05-12 23:57:45,341:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-12 23:57:45,341:INFO:PLC_DI_Symbol.sdf created
+2020-05-12 23:57:45,343:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-12 23:57:45,343:INFO:IT_DI.csv created
+2020-05-12 23:57:45,343:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop/tab\Generated DI
+2020-05-12 23:57:45,343:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-12 23:57:45,343:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-12 23:57:45,343:INFO:PLC_DO.awl created
+2020-05-12 23:57:45,351:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-12 23:57:45,351:INFO:PLC_DO_DB.db created
+2020-05-12 23:57:45,351:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-12 23:57:45,351:INFO:PLC_DO_Symbol.sdf created
+2020-05-12 23:57:45,351:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-12 23:57:45,351:INFO:IT_DO.csv created
+2020-05-12 23:57:45,351:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop/tab\Generated DO
+2020-05-12 23:57:45,351:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-12 23:57:45,351:INFO:PLC_Valves.awl created
+2020-05-12 23:57:45,351:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop/tab\Generated Valve
+2020-05-12 23:57:45,351:INFO:STOP

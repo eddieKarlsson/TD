@@ -4,7 +4,7 @@ import logging
 import settings as s
 
 # Logging settings
-logging.basicConfig(filename='log.log', level=logging.DEBUG,
+logging.basicConfig(filename='../log.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 logging.info('START')
 
