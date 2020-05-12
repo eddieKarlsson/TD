@@ -59,17 +59,17 @@ class TD_UI:
         """Create window contents"""
         # Excel button
         self.excelButton = tk.Button(root, text="Select Excel...", bg=self.button_bg, fg=self.button_fg, command=self.browseExcel)
-        self.excelButton.place(relx=0.03, rely=0.1, relheight=0.08, relwidth=self.buttonWidth)
+        self.excelButton.place(relx=0.03, rely=0.07, relheight=0.08, relwidth=self.buttonWidth)
         # Excel path label
         self.excelLabel = tk.Label(frame, bg=self.button_bg, fg=self.button_fg, text=(user_data['excel_path']))
-        self.excelLabel.place(relx=0.23, rely=0.1, relheight=0.08)
+        self.excelLabel.place(relx=0.23, rely=0.07, relheight=0.08)
 
         # Output path button
         self.outpathButton = tk.Button(root, text="Output path...", bg=self.button_bg, fg=self.button_fg, command=self.outputPath)
-        self.outpathButton.place(relx=0.03, rely=0.1 + self.buttonYSpacing, relheight=0.08, relwidth=self.buttonWidth)
+        self.outpathButton.place(relx=0.03, rely=0.07 + self.buttonYSpacing, relheight=0.08, relwidth=self.buttonWidth)
         # Output path label
         self.outpathLabel = tk.Label(frame, bg=self.button_bg, fg=self.button_fg, text=(user_data['output_path']))
-        self.outpathLabel.place(relx=0.23, rely=0.1 + self.buttonYSpacing, relheight=0.08)
+        self.outpathLabel.place(relx=0.23, rely=0.07 + self.buttonYSpacing, relheight=0.08)
 
     def browseExcel(self):
         excelPath = filedialog.askopenfilename(filetypes=(("Excel files", "*.xlsx"), ("all files", "*.*")))
@@ -92,7 +92,9 @@ class TD_UI:
         print('did nothing')
 
 
-# Call
+
+
+# Calls
 root = tk.Tk()
 root.title('MC TD Gen')
 b = TD_UI(root)
