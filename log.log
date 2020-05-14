@@ -122,3 +122,28 @@
 2020-05-12 23:57:45,351:INFO:PLC_Valves.awl created
 2020-05-12 23:57:45,351:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop/tab\Generated Valve
 2020-05-12 23:57:45,351:INFO:STOP
+2020-05-14 08:09:32,619:INFO:START
+2020-05-14 08:09:33,338:INFO:Generated from row: 6 to 45 of varin<Worksheet "DI">
+2020-05-14 08:09:33,338:INFO:Generated from row: 6 to 45 of codebodyin<Worksheet "DI">
+2020-05-14 08:09:33,338:INFO:PLC_DI.awl created
+2020-05-14 08:09:33,338:INFO:Generated from row: 6 to 45 of db_varin<Worksheet "DI">
+2020-05-14 08:09:33,338:INFO:PLC_DI_DB.db created
+2020-05-14 08:09:33,350:INFO:Generated from row: 6 to 45 of symbolin<Worksheet "DI">
+2020-05-14 08:09:33,350:INFO:PLC_DI_Symbol.sdf created
+2020-05-14 08:09:33,350:INFO:Generated from row: 6 to 45 of Intouchin<Worksheet "DI">
+2020-05-14 08:09:33,350:INFO:IT_DI.csv created
+2020-05-14 08:09:33,350:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-05-14 08:09:33,350:INFO:Generated from row: 6 to 15 of varin<Worksheet "DO">
+2020-05-14 08:09:33,358:INFO:Generated from row: 6 to 15 of codebodyin<Worksheet "DO">
+2020-05-14 08:09:33,358:INFO:PLC_DO.awl created
+2020-05-14 08:09:33,358:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "DO">
+2020-05-14 08:09:33,358:INFO:PLC_DO_DB.db created
+2020-05-14 08:09:33,358:INFO:Generated from row: 6 to 15 of symbolin<Worksheet "DO">
+2020-05-14 08:09:33,358:INFO:PLC_DO_Symbol.sdf created
+2020-05-14 08:09:33,358:INFO:Generated from row: 6 to 15 of Intouchin<Worksheet "DO">
+2020-05-14 08:09:33,358:INFO:IT_DO.csv created
+2020-05-14 08:09:33,358:INFO:Generated DO files put in C:/Users/EddieKarlsson/Desktop\Generated DO
+2020-05-14 08:09:33,368:INFO:Generated from row: 6 to 26 of codebodyin<Worksheet "Valves">
+2020-05-14 08:09:33,368:INFO:PLC_Valves.awl created
+2020-05-14 08:09:33,368:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-05-14 08:09:33,368:INFO:STOP

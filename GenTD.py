@@ -1,4 +1,3 @@
-# Version 0.95
 import sys
 import logging
 import os
@@ -17,6 +16,10 @@ except ModuleNotFoundError:
     logging.error('openpyxl module not found, please install it')
     sys.exit()
 
+"""Version variable"""
+version = ('Version', str(0.95))
+
+print(version)
 """Load user data if it exists, otherwise create dictionary"""
 EXCEL_PATH_START_VALUE = 'No excel specified'
 OUTPUT_PATH_START_VALUE = 'No path specified'
@@ -58,10 +61,16 @@ class TdUI(tk.Frame):
 
     def create_window(self):
         """Create window"""
+        # Title and program-icon
+        self.master.title('MC TD Gen')
+        # self.master.iconbitmap('C:\') TODO Program Icon
+
         self.canvas = tk.Canvas(self.master, height=self.height, width=self.width)
         self.canvas.pack()
         self.frame = tk.Frame(self.master, bg=self.frameColor)
         self.frame.place(relwidth=1, relheight=1)
+
+
 
     def create_dropdown(self):
         """Create drop-down menu"""
@@ -80,6 +89,10 @@ class TdUI(tk.Frame):
         self.viewSubMenu.add_command(label="Settings file", command=self.open_settings)
         self.viewSubMenu.add_command(label="Config files", command=self.open_config_path)
 
+        # about submenu
+        self.aboutSubMenu = tk.Menu(self.menu, tearoff=0)
+        self.menu.add_cascade(label="About", menu=self.aboutSubMenu)
+        self.aboutSubMenu.add_command(label="Version", command=self.create_about_window)
 
     def create_window_contents(self):
         """Create window contents"""
@@ -145,13 +158,18 @@ class TdUI(tk.Frame):
         path = os.path.realpath(path)
         os.startfile(path)
 
+    def create_about_window(self):
+        self.about = tk.Toplevel()
+        self.about.title('About')
+        # self.about.iconbitmap('C:\') TODO Program Icon
+        self.label = tk.Label(self.about, text=version).pack()
+
+
 
 class GenTD:
     def __init__(self, excel_path, output_path):
         self.excel_path = excel_path
         self.output_path = output_path
-
-
 
         self.generate()
 
@@ -186,7 +204,6 @@ class GenTD:
             self.td_gen_valve()
 
         logging.info('STOP')
-
 
     def open_td_excel(self):
         try:
@@ -529,7 +546,6 @@ class GenTD:
 
 # Call UI
 root = tk.Tk()
-root.title('MC TD Gen')
 app = TdUI(master=root)
 app.mainloop()
 
