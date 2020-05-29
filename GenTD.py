@@ -70,8 +70,6 @@ class TdUI(tk.Frame):
         self.frame = tk.Frame(self.master, bg=self.frameColor)
         self.frame.place(relwidth=1, relheight=1)
 
-
-
     def create_dropdown(self):
         """Create drop-down menu"""
         self.menu = tk.Menu(self.master)
@@ -165,7 +163,6 @@ class TdUI(tk.Frame):
         self.label = tk.Label(self.about, text=version).pack()
 
 
-
 class GenTD:
     def __init__(self, excel_path, output_path):
         self.excel_path = excel_path
@@ -240,7 +237,7 @@ class GenTD:
 
         return inst_data
 
-    def td_multiple(self, config_file, ref_txt, excelsheet):
+    def td_multiple(self, config_file, ref_txt, excelsheet, udt_size=30, udt_offset=14):
         """Get text lines from config file and replace by data in excel, then append the new lines to memory"""
         # Try to open excelsheet, otherwise prompt user
         try:
@@ -257,13 +254,13 @@ class GenTD:
             inst_data = ''
             begin = '[gen.' + ref_txt + '_begin]'
             end = '[gen.' + ref_txt + '_end]'
-            zero_index = 0
+            one_index = 0
 
             for i in range(s.ROW, active_sheet.max_row + 1):
                 cell_id = active_sheet.cell(row=i, column=s.COL_ID)
                 cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
                 cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
-                zero_index += 1
+                one_index += 1
 
                 if cell_id.value is None:
                     break
@@ -277,7 +274,16 @@ class GenTD:
 
                         if cell_config.value is not None:
                             line = line.replace(s.CONFIG_REPLACE, cell_config.value)
-                        line = line.replace(s.INDEX_REPLACE, str(zero_index))
+
+                        # Replace index
+                        line = line.replace(s.INDEX_REPLACE, str(one_index))
+
+                        # Replace address
+                        addressIndex = one_index - 1
+                        print("one_index is:", one_index)
+                        print("address_index is:", addressIndex)
+                        adress = (addressIndex * udt_size) + udt_offset  # calculate address by offset & datatype udt_size
+                        line = line.replace(s.ADR_REPLACE, str(adress))
 
                         # check if comment exists, if insert empty string
                         if cell_comment.value is None:
@@ -514,8 +520,9 @@ class GenTD:
     def td_gen_valve(self):
         """Create and concetenate all text lines to different files"""
         # setup variables
-        config_file = s.CONFIG_PATH_VALVE
+        config_file = os.path.join(s.CONFIG_PATH_VALVE, 'Config_valve.txt')
         sheet = 'Valves'
+
 
         # Check what output path to use, if 'None' create in current directory, otherwise as specified
         if self.output_path is None:
@@ -528,6 +535,8 @@ class GenTD:
         if not os.path.exists(file_path):
             os.makedirs(file_path)
 
+        #TODO funkar inte
+        """ 
         # PLC function, concatenate data
         codebody_data = self.td_multiple_config(config_file, 'codebody', sheet)
 
@@ -540,6 +549,23 @@ class GenTD:
             print(filename, 'created')
             logging.info(filename + ' created')
 
+        print('Generated files put in...', file_path)
+        logging.info('Generated Valve files put in ' + file_path)
+        """
+
+        """Intouch IO:Int"""
+        it_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        it_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14)
+
+        if it_IOInt_data != '' and it_IOInt_header != '':
+            filename = 'IT_' + sheet + '.csv'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w') as itFile:
+                data = it_IOInt_header
+                data += it_IOInt_data
+                itFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated Valve files put in ' + file_path)
 

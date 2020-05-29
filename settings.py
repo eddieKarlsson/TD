@@ -13,9 +13,13 @@ COMMENT_REPLACE = '@CMT'  # string to be replaced in config file
 COL_COMMENT = 3  # Excel column index of Comment, 3 = C column
 
 CONFIG_REPLACE = '@CFG'  # string to be replaced in config file
-COL_CONFIG = 4  # Excel column index of Config, 4 = D column
+COL_CONFIG = 7  # Excel column index of Config, 4 = G column
+
+"""S7-PLC settings"""
+ADR_REPLACE = '@ADR'  # string to be replaced in config file
+
 
 """Disable options"""
-DI_DISABLE = False
-DO_DISABLE = False
+DI_DISABLE = True
+DO_DISABLE = True
 VALVE_DISABLE = False
