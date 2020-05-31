@@ -17,16 +17,15 @@ except ModuleNotFoundError:
     sys.exit()
 
 """Version variable"""
-version = ('Version', str(0.95))
-
+version = ('Version', str(0.97))
 print(version)
+
 """Load user data if it exists, otherwise create dictionary"""
 EXCEL_PATH_START_VALUE = 'No excel specified'
 OUTPUT_PATH_START_VALUE = 'No path specified'
 if path.exists('user_data.pickle'):
     with open('user_data.pickle', 'rb') as f:
         user_data = pickle.load(f)
-        print("Loaded user data")
 else:
     # if file doesn't exist initialize data to start-values
     user_data = {
@@ -237,7 +236,7 @@ class GenTD:
 
         return inst_data
 
-    def td_multiple(self, config_file, ref_txt, excelsheet, udt_size=30, udt_offset=14):
+    def td_multiple(self, config_file, ref_txt, excelsheet, udt_size=30, udt_offset=14, start_index=0):
         """Get text lines from config file and replace by data in excel, then append the new lines to memory"""
         # Try to open excelsheet, otherwise prompt user
         try:
@@ -254,19 +253,19 @@ class GenTD:
             inst_data = ''
             begin = '[gen.' + ref_txt + '_begin]'
             end = '[gen.' + ref_txt + '_end]'
-            one_index = 0
+            addressIndex = start_index - 1  # subtract 1 as the index is increased directly in loop below
 
             for i in range(s.ROW, active_sheet.max_row + 1):
                 cell_id = active_sheet.cell(row=i, column=s.COL_ID)
                 cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
                 cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
-                one_index += 1
+                addressIndex += 1
 
                 if cell_id.value is None:
                     break
 
                 config.seek(0, 0)  # Seek to beginning of file
-                for index, line in enumerate(config, start=1):
+                for lineIndex, line in enumerate(config, start=1):
                     if end in str(line):
                         section_found = False
                     if section_found:
@@ -276,13 +275,11 @@ class GenTD:
                             line = line.replace(s.CONFIG_REPLACE, cell_config.value)
 
                         # Replace index
-                        line = line.replace(s.INDEX_REPLACE, str(one_index))
+                        line = line.replace(s.INDEX_REPLACE, str(addressIndex))
 
-                        # Replace address
-                        addressIndex = one_index - 1
-                        print("one_index is:", one_index)
-                        print("address_index is:", addressIndex)
-                        adress = (addressIndex * udt_size) + udt_offset  # calculate address by offset & datatype udt_size
+                        # calculate address by offset & datatype udt_size
+                        adress = (addressIndex * udt_size) + udt_offset
+                        # Replace '@ADR'
                         line = line.replace(s.ADR_REPLACE, str(adress))
 
                         # check if comment exists, if insert empty string
@@ -432,7 +429,7 @@ class GenTD:
                 logging.info(filename + ' created')
 
         # Intouch
-        it_data = self.td_multiple(config_file, 'Intouch', sheet)
+        it_data = self.td_multiple(config_file, 'Intouch', sheet, start_index=s.DI_START_INDEX)
         if it_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
@@ -506,7 +503,7 @@ class GenTD:
                 logging.info(filename + ' created')
 
         # Intouch
-        it_data = self.td_multiple(config_file, 'Intouch', sheet)
+        it_data = self.td_multiple(config_file, 'Intouch', sheet, start_index=s.DO_START_INDEX)
         if it_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
@@ -523,7 +520,6 @@ class GenTD:
         config_file = os.path.join(s.CONFIG_PATH_VALVE, 'Config_valve.txt')
         sheet = 'Valves'
 
-
         # Check what output path to use, if 'None' create in current directory, otherwise as specified
         if self.output_path is None:
             file_path = 'Generated Valve'
@@ -535,7 +531,7 @@ class GenTD:
         if not os.path.exists(file_path):
             os.makedirs(file_path)
 
-        #TODO funkar inte
+        # TODO funkar inte
         """ 
         # PLC function, concatenate data
         codebody_data = self.td_multiple_config(config_file, 'codebody', sheet)
@@ -555,7 +551,8 @@ class GenTD:
 
         """Intouch IO:Int"""
         it_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
-        it_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14)
+        it_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14,
+                                         start_index=s.VALVE_START_INDEX)
 
         if it_IOInt_data != '' and it_IOInt_header != '':
             filename = 'IT_' + sheet + '.csv'
@@ -578,4 +575,3 @@ app.mainloop()
 # Dump user data
 with open('user_data.pickle', 'wb') as f:
     pickle.dump(user_data, f)
-    print("Dumped user data")
