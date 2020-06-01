@@ -374,3 +374,98 @@
 2020-05-29 16:05:51,929:INFO:IT_Valves.csv created
 2020-05-29 16:05:51,932:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
 2020-05-29 16:05:51,932:INFO:STOP
+2020-06-01 08:57:33,430:INFO:START
+2020-06-01 08:57:35,709:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-01 08:57:35,711:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-01 08:57:35,777:INFO:PLC_DI.awl created
+2020-06-01 08:57:35,830:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-01 08:57:35,901:INFO:PLC_DI_DB.db created
+2020-06-01 08:57:35,913:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-01 08:57:35,979:INFO:PLC_DI_Symbol.sdf created
+2020-06-01 08:57:35,989:INFO:Generated from row: 6 to 18 of Intouchin<Worksheet "DI">
+2020-06-01 08:57:36,052:INFO:IT_DI.csv created
+2020-06-01 08:57:36,105:INFO:Generated DI files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated DI
+2020-06-01 08:57:36,120:WARNING:var in config file not found!
+2020-06-01 08:57:36,121:WARNING:codebody in config file not found!
+2020-06-01 08:57:36,181:INFO:PLC_DO.awl created
+2020-06-01 08:57:36,189:WARNING:db_var in config file not found!
+2020-06-01 08:57:36,189:WARNING:symbol in config file not found!
+2020-06-01 08:57:36,190:WARNING:Intouch in config file not found!
+2020-06-01 08:57:36,190:INFO:Generated DO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated DO
+2020-06-01 08:57:36,217:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 08:57:36,219:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 08:57:36,255:INFO:IT_Valves.csv created
+2020-06-01 08:57:36,280:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 08:57:36,280:INFO:STOP
+2020-06-01 09:00:21,869:INFO:START
+2020-06-01 09:00:26,731:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:00:26,731:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:00:26,746:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:00:26,748:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:00:27,475:INFO:IT_Valves.csv created
+2020-06-01 09:00:27,513:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:00:27,513:INFO:STOP
+2020-06-01 09:02:25,289:INFO:START
+2020-06-01 09:02:26,386:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:02:26,386:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:02:26,393:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:02:26,396:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:02:26,412:INFO:IT_Valves.csv created
+2020-06-01 09:02:26,421:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:02:26,421:INFO:STOP
+2020-06-01 09:11:43,761:INFO:START
+2020-06-01 09:11:44,831:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:11:44,832:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:11:44,845:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:11:44,847:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:11:44,869:INFO:IT_Valves.csv created
+2020-06-01 09:11:44,879:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:11:44,879:INFO:STOP
+2020-06-01 09:12:51,926:INFO:START
+2020-06-01 09:12:54,022:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:12:54,022:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:12:54,056:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:12:54,058:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:12:54,553:INFO:IT_Valves.csv created
+2020-06-01 09:12:54,812:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:12:54,812:INFO:STOP
+2020-06-01 09:13:16,463:INFO:START
+2020-06-01 09:13:17,530:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:13:17,530:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:13:17,551:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:13:17,553:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:13:17,567:INFO:IT_Valves.csv created
+2020-06-01 09:13:17,577:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:13:17,577:INFO:STOP
+2020-06-01 09:53:06,737:INFO:START
+2020-06-01 09:53:07,696:WARNING:DI not generated, disabled in settings file
+2020-06-01 09:53:07,696:WARNING:DO not generated, Disabled in settings file
+2020-06-01 09:53:07,709:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 09:53:07,712:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 09:53:07,730:INFO:IT_Valves.csv created
+2020-06-01 09:53:07,758:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 09:53:07,758:INFO:STOP
+2020-06-01 10:20:34,586:INFO:START
+2020-06-01 10:20:35,698:WARNING:DI not generated, disabled in settings file
+2020-06-01 10:20:35,698:WARNING:DO not generated, Disabled in settings file
+2020-06-01 10:20:35,707:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 10:20:35,708:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 10:20:35,728:INFO:IT_Valves.csv created
+2020-06-01 10:20:35,749:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Valve
+2020-06-01 10:20:35,763:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 10:20:35,764:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 10:20:35,797:INFO:IT_Motors.csv created
+2020-06-01 10:20:35,812:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/generated_tags\Generated Motor
+2020-06-01 10:20:35,812:INFO:STOP
+2020-06-01 10:21:23,816:INFO:START
+2020-06-01 10:21:25,351:WARNING:DI not generated, disabled in settings file
+2020-06-01 10:21:25,351:WARNING:DO not generated, Disabled in settings file
+2020-06-01 10:21:25,382:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 10:21:25,383:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 10:21:25,419:INFO:IT_Valves.csv created
+2020-06-01 10:21:25,447:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Valve
+2020-06-01 10:21:25,500:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 10:21:25,501:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 10:21:25,536:INFO:IT_Motors.csv created
+2020-06-01 10:21:25,561:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Motor
+2020-06-01 10:21:25,561:INFO:STOP

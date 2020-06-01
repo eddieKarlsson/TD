@@ -17,12 +17,17 @@ COL_CONFIG = 7  # Excel column index of Config, 4 = G column
 
 ADR_REPLACE = '@ADR'  # string to be replaced in config file
 
-DI_DISABLE = False  # If set to True no files will be generated for DI
+PLC_NAME = 'PLC1'  # Used in Intouch
+PLC_REPLACE = '@PLC'  # string to be replaced in config file
+
+DI_DISABLE = True  # If set to True no files will be generated for DI
 DI_START_INDEX = 0  # Start-position index in datablock, used for HMI tags that are absolute.
 
-DO_DISABLE = False
+DO_DISABLE = True
 DO_START_INDEX = 0
 
 VALVE_DISABLE = False
 VALVE_START_INDEX = 0
 
+MOTOR_DISABLE = False
+MOTOR_START_INDEX = 0

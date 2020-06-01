@@ -170,7 +170,6 @@ class GenTD:
         self.generate()
 
     def generate(self):
-
         """Logging settings"""
         logging.basicConfig(filename='log.log', level=logging.DEBUG,
                             format='%(asctime)s:%(levelname)s:%(message)s')
@@ -198,6 +197,13 @@ class GenTD:
             logging.warning('Valve not generated, Disabled in settings file')
         else:
             self.td_gen_valve()
+
+        # Motor
+        if s.MOTOR_DISABLE:
+            print('Motor not generated, disabled in settings file')
+            logging.warning('Motor not generated, Disabled in settings file')
+        else:
+            self.td_gen_motor()
 
         logging.info('STOP')
 
@@ -281,6 +287,9 @@ class GenTD:
                         adress = (addressIndex * udt_size) + udt_offset
                         # Replace '@ADR'
                         line = line.replace(s.ADR_REPLACE, str(adress))
+
+                        # Replace PLC
+                        line = line.replace(s.PLC_REPLACE, s.PLC_NAME)
 
                         # check if comment exists, if insert empty string
                         if cell_comment.value is None:
@@ -531,40 +540,69 @@ class GenTD:
         if not os.path.exists(file_path):
             os.makedirs(file_path)
 
-        # TODO funkar inte
-        """ 
-        # PLC function, concatenate data
-        codebody_data = self.td_multiple_config(config_file, 'codebody', sheet)
-
-        # Create file and put it inside path created above
-        filename = 'PLC_' + sheet + '.awl'
-        file_and_path = os.path.join(file_path, filename)
-        with open(file_and_path, 'w') as functionFile:
-            data = codebody_data
-            functionFile.write(data)
-            print(filename, 'created')
-            logging.info(filename + ' created')
-
-        print('Generated files put in...', file_path)
-        logging.info('Generated Valve files put in ' + file_path)
-        """
-
         """Intouch IO:Int"""
-        it_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
-        it_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14,
+        IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14,
                                          start_index=s.VALVE_START_INDEX)
 
-        if it_IOInt_data != '' and it_IOInt_header != '':
+        """Intouch Memory:Int"""
+        IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
+        IT_MemInt_data = self.td_multiple(config_file, 'IT_MemInt_Tag', sheet, start_index=s.VALVE_START_INDEX)
+
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
             with open(file_and_path, 'w') as itFile:
-                data = it_IOInt_header
-                data += it_IOInt_data
+                data = IT_IOInt_header
+                data += IT_IOInt_data
+                data += IT_MemInt_header
+                data += IT_MemInt_data
+
                 itFile.write(data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated Valve files put in ' + file_path)
+
+    def td_gen_motor(self):
+        """Create and concetenate all text lines to different files"""
+        # setup variables
+        config_file = os.path.join(s.CONFIG_PATH, 'Config_motor.txt')
+        sheet = 'Motors'
+
+        # Check what output path to use, if 'None' create in current directory, otherwise as specified
+        if self.output_path is None:
+            file_path = 'Generated Motor'
+        elif self.output_path == OUTPUT_PATH_START_VALUE:
+            file_path = 'Generated Motor'
+        else:
+            file_path = os.path.join(self.output_path, 'Generated Motor')
+        # Create sub-directory if it doesn't exist
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
+
+        """Intouch IO:Int"""
+        IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=30, udt_offset=14,
+                                         start_index=s.MOTOR_START_INDEX)
+        """Intouch Memory:Int"""
+        IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
+        IT_MemInt_data = self.td_multiple(config_file, 'IT_MemInt_Tag', sheet, start_index=s.MOTOR_START_INDEX)
+
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
+            filename = 'IT_' + sheet + '.csv'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w') as itFile:
+                data = IT_IOInt_header
+                data += IT_IOInt_data
+                data += IT_MemInt_header
+                data += IT_MemInt_data
+
+                itFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
+        print('Generated files put in...', file_path)
+        logging.info('Generated Motor files put in ' + file_path)
 
 
 # Call UI
