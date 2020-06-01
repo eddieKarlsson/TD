@@ -478,7 +478,7 @@ class GenTD:
         if it_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 itFile.write(it_data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
@@ -552,7 +552,7 @@ class GenTD:
         if it_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 itFile.write(it_data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
@@ -588,7 +588,7 @@ class GenTD:
         if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
                 data += IT_MemInt_header
@@ -628,7 +628,7 @@ class GenTD:
         if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
                 data += IT_MemInt_header
@@ -674,7 +674,7 @@ class GenTD:
                 and IT_IOReal_data != '' and IT_IOReal_header != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
                 data += IT_MemInt_header
@@ -721,7 +721,7 @@ class GenTD:
                 and IT_IOReal_data != '' and IT_IOReal_header != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as itFile:
+            with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
                 data += IT_MemInt_header

@@ -699,3 +699,138 @@
 2020-06-01 14:05:17,858:INFO:IT_AO.csv created
 2020-06-01 14:05:17,860:INFO:Generated AO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AO
 2020-06-01 14:05:17,860:INFO:STOP
+2020-06-01 15:56:29,886:INFO:START
+2020-06-01 15:56:30,498:WARNING:DI not generated, disabled in settings file
+2020-06-01 15:56:30,498:WARNING:DO not generated, Disabled in settings file
+2020-06-01 15:56:30,499:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 15:56:30,501:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 15:56:30,505:INFO:IT_Valves.csv created
+2020-06-01 15:56:30,506:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Valve
+2020-06-01 15:56:30,507:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 15:56:30,508:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 15:56:30,512:INFO:IT_Motors.csv created
+2020-06-01 15:56:30,514:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Motor
+2020-06-01 15:56:30,515:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 15:56:30,516:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 15:56:30,517:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 15:56:30,523:INFO:IT_AI.csv created
+2020-06-01 15:56:30,524:INFO:Generated AI files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AI
+2020-06-01 15:56:30,525:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 15:56:30,526:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 15:56:30,527:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 15:56:30,532:INFO:IT_AO.csv created
+2020-06-01 15:56:30,534:INFO:Generated AO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AO
+2020-06-01 15:56:30,534:INFO:STOP
+2020-06-01 16:08:26,446:INFO:START
+2020-06-01 16:08:27,004:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:08:27,004:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:08:27,008:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 16:08:27,010:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 16:08:27,013:INFO:IT_Valves.csv created
+2020-06-01 16:08:27,015:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Valve
+2020-06-01 16:08:27,019:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 16:08:27,020:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 16:08:27,024:INFO:IT_Motors.csv created
+2020-06-01 16:08:27,026:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Motor
+2020-06-01 16:08:27,030:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 16:08:27,032:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 16:08:27,033:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 16:08:27,037:INFO:IT_AI.csv created
+2020-06-01 16:08:27,038:INFO:Generated AI files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AI
+2020-06-01 16:08:27,043:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 16:08:27,044:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 16:08:27,045:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 16:08:27,049:INFO:IT_AO.csv created
+2020-06-01 16:08:27,052:INFO:Generated AO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AO
+2020-06-01 16:08:27,052:INFO:STOP
+2020-06-01 16:09:12,185:INFO:START
+2020-06-01 16:09:12,743:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:09:12,743:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:09:12,745:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 16:09:12,746:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 16:09:12,750:INFO:IT_Valves.csv created
+2020-06-01 16:09:12,753:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Valve
+2020-06-01 16:09:12,754:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 16:09:12,755:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 16:09:12,759:INFO:IT_Motors.csv created
+2020-06-01 16:09:12,760:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Motor
+2020-06-01 16:09:12,762:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 16:09:12,763:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 16:09:12,764:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 16:09:12,769:INFO:IT_AI.csv created
+2020-06-01 16:09:12,770:INFO:Generated AI files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AI
+2020-06-01 16:09:12,771:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 16:09:12,772:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 16:09:12,773:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 16:09:12,777:INFO:IT_AO.csv created
+2020-06-01 16:09:12,779:INFO:Generated AO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AO
+2020-06-01 16:09:12,779:INFO:STOP
+2020-06-01 16:09:32,154:INFO:START
+2020-06-01 16:09:32,729:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:09:32,730:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:10:23,000:INFO:START
+2020-06-01 16:10:23,563:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:10:23,563:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:10:23,568:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 16:10:23,570:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 16:10:23,574:INFO:IT_Valves.csv created
+2020-06-01 16:10:23,576:INFO:Generated Valve files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Valve
+2020-06-01 16:10:23,577:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 16:10:23,578:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 16:10:23,582:INFO:IT_Motors.csv created
+2020-06-01 16:10:23,584:INFO:Generated Motor files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated Motor
+2020-06-01 16:10:23,586:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 16:10:23,587:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 16:10:23,589:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 16:10:23,599:INFO:IT_AI.csv created
+2020-06-01 16:10:23,601:INFO:Generated AI files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AI
+2020-06-01 16:10:23,604:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 16:10:23,607:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 16:10:23,608:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 16:10:23,614:INFO:IT_AO.csv created
+2020-06-01 16:10:23,616:INFO:Generated AO files put in P:/MC Template/30 Program exempel/Tank_To_Tank_Transfer/Intouch/Tags/generated_tags\Generated AO
+2020-06-01 16:10:23,616:INFO:STOP
+2020-06-01 16:11:14,396:INFO:START
+2020-06-01 16:11:14,951:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:11:14,952:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:11:14,953:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 16:11:14,955:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 16:11:14,955:INFO:IT_Valves.csv created
+2020-06-01 16:11:14,955:INFO:Generated Valve files put in C:/Generated Valve
+2020-06-01 16:11:14,957:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 16:11:14,957:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 16:11:14,958:INFO:IT_Motors.csv created
+2020-06-01 16:11:14,958:INFO:Generated Motor files put in C:/Generated Motor
+2020-06-01 16:11:14,960:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 16:11:14,961:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 16:11:14,962:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 16:11:14,963:INFO:IT_AI.csv created
+2020-06-01 16:11:14,963:INFO:Generated AI files put in C:/Generated AI
+2020-06-01 16:11:14,964:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 16:11:14,965:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 16:11:14,967:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 16:11:14,967:INFO:IT_AO.csv created
+2020-06-01 16:11:14,967:INFO:Generated AO files put in C:/Generated AO
+2020-06-01 16:11:14,968:INFO:STOP
+2020-06-01 16:12:31,177:INFO:START
+2020-06-01 16:12:31,736:WARNING:DI not generated, disabled in settings file
+2020-06-01 16:12:31,736:WARNING:DO not generated, Disabled in settings file
+2020-06-01 16:12:31,738:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-01 16:12:31,739:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-01 16:12:31,740:INFO:IT_Valves.csv created
+2020-06-01 16:12:31,740:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-01 16:12:31,741:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-01 16:12:31,742:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-01 16:12:31,743:INFO:IT_Motors.csv created
+2020-06-01 16:12:31,743:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-01 16:12:31,746:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-01 16:12:31,747:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-01 16:12:31,748:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-01 16:12:31,748:INFO:IT_AI.csv created
+2020-06-01 16:12:31,749:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-01 16:12:31,750:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-01 16:12:31,751:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-01 16:12:31,752:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-01 16:12:31,752:INFO:IT_AO.csv created
+2020-06-01 16:12:31,752:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-01 16:12:31,752:INFO:STOP
