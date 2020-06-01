@@ -13,7 +13,16 @@ COMMENT_REPLACE = '@CMT'  # string to be replaced in config file
 COL_COMMENT = 3  # Excel column index of Comment, 3 = C column
 
 CONFIG_REPLACE = '@CFG'  # string to be replaced in config file
-COL_CONFIG = 7  # Excel column index of Config, 4 = G column
+COL_CONFIG = 7  # Excel column index of Config, 7 = G column
+
+ENG_UNIT_REPLACE = '@ENGUNIT'  # string to be replaced in config file
+COL_ENG_UNIT = 11  # Excel column index of Config, 11 = K column
+
+ENG_MIN_REPLACE = '@ENGMIN'  # string to be replaced in config file
+COL_ENG_MIN = 14  # Excel column index of Config, 14 = O column
+
+ENG_MAX_REPLACE = '@ENGMAX'  # string to be replaced in config file
+COL_ENG_MAX = 15  # Excel column index of Config, 15 = O column
 
 ADR_REPLACE = '@ADR'  # string to be replaced in config file
 
@@ -31,3 +40,6 @@ VALVE_START_INDEX = 0
 
 MOTOR_DISABLE = False
 MOTOR_START_INDEX = 0
+
+AI_DISABLE = False
+AI_START_INDEX = 0

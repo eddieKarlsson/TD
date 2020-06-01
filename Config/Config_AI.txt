@@ -5,7 +5,7 @@
 [gen.IT_IOInt_Header_end]
 
 [gen.IT_IOInt_Tag_begin]
-"@ID_IND","$System","",No,No,0,No,No,0,0,"",0,-32767,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,-32767,32767,Linear,"@PLC",No,"DB210,B@ADR",No,"",0,0,0,0,0,0,0,0,"","","","","","","",""
+"@ID_IND","$System","",No,No,0,No,No,0,0,"@ENGUNIT",0,-32767,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,-32767,32767,Linear,"@PLC",No,"DB201,B@ADR",No,"",0,0,0,0,0,0,0,0,"","","","","","","",""
 [gen.IT_IOInt_Tag_end]
 
 # Intouch :MemoryInt
@@ -16,3 +16,12 @@
 [gen.IT_MemInt_Tag_begin]
 "@ID_PTR","$System","",No,No,0,No,No,0,0,"",@INDEX,-32768,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,"",0,0,0,0,0,0,0,0,"","","","","","","",""
 [gen.IT_MemInt_Tag_end]
+
+# Intouch :IOReal
+[gen.IT_IOReal_Header_begin]
+:IOReal,Group,Comment,Logged,EventLogged,EventLoggingPriority,RetentiveValue,RetentiveAlarmParameters,AlarmValueDeadband,AlarmDevDeadband,EngUnits,InitialValue,MinEU,MaxEU,Deadband,LogDeadband,LoLoAlarmState,LoLoAlarmValue,LoLoAlarmPri,LoAlarmState,LoAlarmValue,LoAlarmPri,HiAlarmState,HiAlarmValue,HiAlarmPri,HiHiAlarmState,HiHiAlarmValue,HiHiAlarmPri,MinorDevAlarmState,MinorDevAlarmValue,MinorDevAlarmPri,MajorDevAlarmState,MajorDevAlarmValue,MajorDevAlarmPri,DevTarget,ROCAlarmState,ROCAlarmValue,ROCAlarmPri,ROCTimeBase,MinRaw,MaxRaw,Conversion,AccessName,ItemUseTagname,ItemName,ReadOnly,AlarmComment,AlarmAckModel,LoLoAlarmDisable,LoAlarmDisable,HiAlarmDisable,HiHiAlarmDisable,MinDevAlarmDisable,MajDevAlarmDisable,RocAlarmDisable,LoLoAlarmInhibitor,LoAlarmInhibitor,HiAlarmInhibitor,HiHiAlarmInhibitor,MinDevAlarmInhibitor,MajDevAlarmInhibitor,RocAlarmInhibitor,SymbolicName
+[gen.IT_IOReal_Header_end]
+
+[gen.IT_IOReal_Tag_begin]
+"@ID_EuValue","$System","",Yes,No,0,No,No,0,0,"@ENGUNIT",0,@ENGMIN,@ENGMAX,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,@ENGMIN,@ENGMAX,Linear,"@PLC",No,"DB201,REAL@ADR",No,"",0,0,0,0,0,0,0,0,"","","","","","","",""
+[gen.IT_IOReal_Tag_end]

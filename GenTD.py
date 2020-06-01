@@ -205,6 +205,13 @@ class GenTD:
         else:
             self.td_gen_motor()
 
+        # AI
+        if s.AI_DISABLE:
+            print('AI not generated, disabled in settings file')
+            logging.warning('AI not generated, Disabled in settings file')
+        else:
+            self.td_gen_AI()
+
         logging.info('STOP')
 
     def open_td_excel(self):
@@ -265,6 +272,10 @@ class GenTD:
                 cell_id = active_sheet.cell(row=i, column=s.COL_ID)
                 cell_config = active_sheet.cell(row=i, column=s.COL_CONFIG)
                 cell_comment = active_sheet.cell(row=i, column=s.COL_COMMENT)
+                cell_engunit = active_sheet.cell(row=i, column=s.COL_ENG_UNIT)
+                cell_engmin = active_sheet.cell(row=i, column=s.COL_ENG_MIN)
+                cell_engmax = active_sheet.cell(row=i, column=s.COL_ENG_MAX)
+
                 addressIndex += 1
 
                 if cell_id.value is None:
@@ -291,7 +302,25 @@ class GenTD:
                         # Replace PLC
                         line = line.replace(s.PLC_REPLACE, s.PLC_NAME)
 
-                        # check if comment exists, if insert empty string
+                        # check if eng unit exists, if not insert empty string
+                        if cell_engunit.value is None:
+                            line = line.replace(s.ENG_UNIT_REPLACE, '')
+                        else:
+                            line = line.replace(s.ENG_UNIT_REPLACE, cell_engunit.value)
+
+                        # check if eng min exists, if not insert 0
+                        if cell_engmin.value is None:
+                            line = line.replace(s.ENG_MIN_REPLACE, '0')
+                        else:
+                            line = line.replace(s.ENG_MIN_REPLACE, str(cell_engmin.value))
+
+                        # check if eng max exists, if not insert 100
+                        if cell_engmax.value is None:
+                            line = line.replace(s.ENG_MAX_REPLACE, '100')
+                        else:
+                            line = line.replace(s.ENG_MAX_REPLACE, str(cell_engmax.value))
+
+                        # check if comment exists, if not insert empty string
                         if cell_comment.value is None:
                             line = line.replace(s.COMMENT_REPLACE, '')
                         else:
@@ -603,6 +632,52 @@ class GenTD:
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated Motor files put in ' + file_path)
+
+    def td_gen_AI(self):
+        """Create and concetenate all text lines to different files"""
+        # setup variables
+        config_file = os.path.join(s.CONFIG_PATH, 'Config_AI.txt')
+        sheet = 'AI'
+
+        # Check what output path to use, if 'None' create in current directory, otherwise as specified
+        if self.output_path is None:
+            file_path = 'Generated AI'
+        elif self.output_path == OUTPUT_PATH_START_VALUE:
+            file_path = 'Generated AI'
+        else:
+            file_path = os.path.join(self.output_path, 'Generated AI')
+        # Create sub-directory if it doesn't exist
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
+
+        """Intouch IO:Int"""
+        IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=20, udt_offset=0,
+                                         start_index=s.AI_START_INDEX)
+        """Intouch Memory:Int"""
+        IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
+        IT_MemInt_data = self.td_multiple(config_file, 'IT_MemInt_Tag', sheet, start_index=s.AI_START_INDEX)
+
+        """Intouch IO:Real"""
+        IT_IOReal_header = self.td_single(config_file, 'IT_IOReal_Header')
+        IT_IOReal_data = self.td_multiple(config_file, 'IT_IOReal_Tag', sheet, udt_size=20, udt_offset=16,
+                                          start_index=s.AI_START_INDEX)
+
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
+            filename = 'IT_' + sheet + '.csv'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w') as itFile:
+                data = IT_IOInt_header
+                data += IT_IOInt_data
+                data += IT_MemInt_header
+                data += IT_MemInt_data
+                data += IT_IOReal_header
+                data += IT_IOReal_data
+                itFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
+        print('Generated files put in...', file_path)
+        logging.info('Generated AI files put in ' + file_path)
 
 
 # Call UI
