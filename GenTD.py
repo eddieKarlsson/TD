@@ -210,7 +210,14 @@ class GenTD:
             print('AI not generated, disabled in settings file')
             logging.warning('AI not generated, Disabled in settings file')
         else:
-            self.td_gen_AI()
+            self.td_gen_ai()
+
+        # AO
+        if s.AO_DISABLE:
+            print('AO not generated, disabled in settings file')
+            logging.warning('AO not generated, Disabled in settings file')
+        else:
+            self.td_gen_ao()
 
         logging.info('STOP')
 
@@ -633,7 +640,7 @@ class GenTD:
         print('Generated files put in...', file_path)
         logging.info('Generated Motor files put in ' + file_path)
 
-    def td_gen_AI(self):
+    def td_gen_ai(self):
         """Create and concetenate all text lines to different files"""
         # setup variables
         config_file = os.path.join(s.CONFIG_PATH, 'Config_AI.txt')
@@ -652,7 +659,7 @@ class GenTD:
 
         """Intouch IO:Int"""
         IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
-        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=20, udt_offset=0,
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=24, udt_offset=0,
                                          start_index=s.AI_START_INDEX)
         """Intouch Memory:Int"""
         IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
@@ -660,10 +667,11 @@ class GenTD:
 
         """Intouch IO:Real"""
         IT_IOReal_header = self.td_single(config_file, 'IT_IOReal_Header')
-        IT_IOReal_data = self.td_multiple(config_file, 'IT_IOReal_Tag', sheet, udt_size=20, udt_offset=16,
+        IT_IOReal_data = self.td_multiple(config_file, 'IT_IOReal_Tag', sheet, udt_size=24, udt_offset=20,
                                           start_index=s.AI_START_INDEX)
 
-        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '' \
+                and IT_IOReal_data != '' and IT_IOReal_header != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
             with open(file_and_path, 'w') as itFile:
@@ -678,6 +686,53 @@ class GenTD:
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated AI files put in ' + file_path)
+
+    def td_gen_ao(self):
+        """Create and concetenate all text lines to different files"""
+        # setup variables
+        config_file = os.path.join(s.CONFIG_PATH, 'Config_AO.txt')
+        sheet = 'AO'
+
+        # Check what output path to use, if 'None' create in current directory, otherwise as specified
+        if self.output_path is None:
+            file_path = 'Generated AO'
+        elif self.output_path == OUTPUT_PATH_START_VALUE:
+            file_path = 'Generated AO'
+        else:
+            file_path = os.path.join(self.output_path, 'Generated AO')
+        # Create sub-directory if it doesn't exist
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
+
+        """Intouch IO:Int"""
+        IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=24, udt_offset=0,
+                                         start_index=s.AO_START_INDEX)
+        """Intouch Memory:Int"""
+        IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
+        IT_MemInt_data = self.td_multiple(config_file, 'IT_MemInt_Tag', sheet, start_index=s.AO_START_INDEX)
+
+        """Intouch IO:Real"""
+        IT_IOReal_header = self.td_single(config_file, 'IT_IOReal_Header')
+        IT_IOReal_data = self.td_multiple(config_file, 'IT_IOReal_Tag', sheet, udt_size=24, udt_offset=18,
+                                          start_index=s.AO_START_INDEX)
+
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '' \
+                and IT_IOReal_data != '' and IT_IOReal_header != '':
+            filename = 'IT_' + sheet + '.csv'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w') as itFile:
+                data = IT_IOInt_header
+                data += IT_IOInt_data
+                data += IT_MemInt_header
+                data += IT_MemInt_data
+                data += IT_IOReal_header
+                data += IT_IOReal_data
+                itFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
+        print('Generated files put in...', file_path)
+        logging.info('Generated AO files put in ' + file_path)
 
 
 # Call UI
