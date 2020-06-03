@@ -29,7 +29,7 @@ ADR_REPLACE = '@ADR'  # string to be replaced in config file
 PLC_NAME = 'PLC1'  # Used in Intouch
 PLC_REPLACE = '@PLC'  # string to be replaced in config file
 
-DI_DISABLE = True  # If set to True no files will be generated for DI
+DI_DISABLE = False  # If set to True no files will be generated for DI
 DI_START_INDEX = 0  # Start-position index in datablock, used for HMI tags that are absolute.
 
 DO_DISABLE = True

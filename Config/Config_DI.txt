@@ -23,7 +23,7 @@ VERSION : 0.1
 
 BEGIN
 [gen.funcHeader_end]
-# Code body template, the config will created for each item
+
 [gen.codebody_begin]
 NETWORK
 TITLE = @ID - @CMT
@@ -31,14 +31,13 @@ TITLE = @ID - @CMT
       (  IN                          := #"I*@ID" ,
          Config                      := #"@CFG" ,
          DI                          := "DI".@ID ,
-         "DI:HMI"                    := "DI HMI".DI[@INDEX]
       );
 [gen.codebody_end]
-# Footer of function
+
 [gen.footer_begin]
 END_FUNCTION
 [gen.footer_end]
-# Datablock header
+
 [gen.db_header_begin]
 DATA_BLOCK "DI"
 { S7_Optimized_Access := 'FALSE' }
@@ -63,7 +62,25 @@ END_DATA_BLOCK
 "I*@ID","%@INDEX.0","Bool","True","True","False","@CMT","","True"
 [gen.symbol_end]
 
-[gen.Intouch_begin]
-"IOI_@ID_SW","$System","@ID",No,No,0,No,No,0,0,"",0,0,30000000,0,0,Off,0,1,Off,0,1,Off,0,1,Off,32676,1,Off,0,1,Off,0,1,0,Off,0,1,Min,0,30000000,Linear,"IOSERVER",Yes,"IOI_@ID_SW",Yes,"@ID Fault",0,0,0,0,0,0,0,0,"","","","","","","",""
-[gen.Intouch_end]
+# Intouch :IOInt
+[gen.IT_IOInt_Header_begin]
+:mode=update
+:IOInt,Group,Comment,Logged,EventLogged,EventLoggingPriority,RetentiveValue,RetentiveAlarmParameters,AlarmValueDeadband,AlarmDevDeadband,EngUnits,InitialValue,MinEU,MaxEU,Deadband,LogDeadband,LoLoAlarmState,LoLoAlarmValue,LoLoAlarmPri,LoAlarmState,LoAlarmValue,LoAlarmPri,HiAlarmState,HiAlarmValue,HiAlarmPri,HiHiAlarmState,HiHiAlarmValue,HiHiAlarmPri,MinorDevAlarmState,MinorDevAlarmValue,MinorDevAlarmPri,MajorDevAlarmState,MajorDevAlarmValue,MajorDevAlarmPri,DevTarget,ROCAlarmState,ROCAlarmValue,ROCAlarmPri,ROCTimeBase,MinRaw,MaxRaw,Conversion,AccessName,ItemUseTagname,ItemName,ReadOnly,AlarmComment,AlarmAckModel,LoLoAlarmDisable,LoAlarmDisable,HiAlarmDisable,HiHiAlarmDisable,MinDevAlarmDisable,MajDevAlarmDisable,RocAlarmDisable,LoLoAlarmInhibitor,LoAlarmInhibitor,HiAlarmInhibitor,HiHiAlarmInhibitor,MinDevAlarmInhibitor,MajDevAlarmInhibitor,RocAlarmInhibitor,SymbolicName
+[gen.IT_IOInt_Header_end]
+
+[gen.IT_IOInt_Tag_begin]
+"@ID_IND","$System","",No,No,0,No,No,0,0,"",0,-32767,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,-32767,32767,Linear,"@PLC",No,"DB212,B@ADR",No,"",0,0,0,0,0,0,0,0,"","","","","","","",""
+[gen.IT_IOInt_Tag_end]
+
+# Intouch :MemoryInt
+[gen.IT_MemInt_Header_begin]
+:MemoryInt,Group,Comment,Logged,EventLogged,EventLoggingPriority,RetentiveValue,RetentiveAlarmParameters,AlarmValueDeadband,AlarmDevDeadband,EngUnits,InitialValue,MinValue,MaxValue,Deadband,LogDeadband,LoLoAlarmState,LoLoAlarmValue,LoLoAlarmPri,LoAlarmState,LoAlarmValue,LoAlarmPri,HiAlarmState,HiAlarmValue,HiAlarmPri,HiHiAlarmState,HiHiAlarmValue,HiHiAlarmPri,MinorDevAlarmState,MinorDevAlarmValue,MinorDevAlarmPri,MajorDevAlarmState,MajorDevAlarmValue,MajorDevAlarmPri,DevTarget,ROCAlarmState,ROCAlarmValue,ROCAlarmPri,ROCTimeBase,AlarmComment,AlarmAckModel,LoLoAlarmDisable,LoAlarmDisable,HiAlarmDisable,HiHiAlarmDisable,MinDevAlarmDisable,MajDevAlarmDisable,RocAlarmDisable,LoLoAlarmInhibitor,LoAlarmInhibitor,HiAlarmInhibitor,HiHiAlarmInhibitor,MinDevAlarmInhibitor,MajDevAlarmInhibitor,RocAlarmInhibitor,SymbolicName
+[gen.IT_MemInt_Header_end]
+
+[gen.IT_MemInt_Tag_begin]
+"@ID_PTR","$System","",No,No,0,No,No,0,0,"",@INDEX,-32768,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,"",0,0,0,0,0,0,0,0,"","","","","","","",""
+[gen.IT_MemInt_Tag_end]
+
+
+
 

@@ -17,7 +17,7 @@ except ModuleNotFoundError:
     sys.exit()
 
 """Version variable"""
-version = ('Version', str(0.97))
+version = ('Version', str(0.98))
 print(version)
 
 """Load user data if it exists, otherwise create dictionary"""
@@ -167,6 +167,7 @@ class GenTD:
         self.excel_path = excel_path
         self.output_path = output_path
 
+        self.all_it_files = []  # Create an empty list
         self.generate()
 
     def generate(self):
@@ -218,6 +219,8 @@ class GenTD:
             logging.warning('AO not generated, Disabled in settings file')
         else:
             self.td_gen_ao()
+
+        self.combine_all_it_tags()
 
         logging.info('STOP')
 
@@ -410,6 +413,30 @@ class GenTD:
                 'Generated from row: ' + str(s.ROW) + ' to ' + str(i - 1) + ' of ' + ref_txt + 'in' + str(active_sheet))
         return inst_data
 
+    def combine_all_it_tags(self):
+        """Combine contents of all it.csv files and combine all lines to one file"""
+        output_file_and_path = os.path.join(self.output_path, 'All_IT.csv')
+
+        with open(output_file_and_path, 'w', encoding='cp1252') as of:  # open outputfile with the set output path
+            modeEncounter = 0
+            for paths in self.all_it_files:  # loop through all files
+                with open(paths, 'r', encoding='cp1252') as f:  # open file
+                    for line in f:  # read contents of line
+                        skipLine = False
+                        # Check if string is in line, if it is skip that line, but not if it's the first time
+                        if ":mode=" in line:
+                            modeEncounter += 1
+                            if modeEncounter > 1:
+                                skipLine = True
+
+                        if not skipLine:
+                            of.write(line)  # write line to output file
+
+
+
+
+
+
     def td_gen_di(self):
         """Create and concetenate all text lines to different files"""
         # setup variables
@@ -474,12 +501,26 @@ class GenTD:
                 logging.info(filename + ' created')
 
         # Intouch
-        it_data = self.td_multiple(config_file, 'Intouch', sheet, start_index=s.DI_START_INDEX)
-        if it_data != '':
+        """Intouch IO:Int"""
+        IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
+        IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=12, udt_offset=0,
+                                         start_index=s.DI_START_INDEX)
+
+        """Intouch Memory:Int"""
+        IT_MemInt_header = self.td_single(config_file, 'IT_MemInt_Header')
+        IT_MemInt_data = self.td_multiple(config_file, 'IT_MemInt_Tag', sheet, start_index=s.DI_START_INDEX)
+
+        if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
+            self.all_it_files.append(file_and_path)  # Append full path to list, will be used in another function
             with open(file_and_path, 'w', encoding='cp1252') as itFile:
-                itFile.write(it_data)
+                data = IT_IOInt_header
+                data += IT_IOInt_data
+                data += IT_MemInt_header
+                data += IT_MemInt_data
+
+                itFile.write(data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
@@ -588,6 +629,7 @@ class GenTD:
         if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
+            self.all_it_files.append(file_and_path)  # Append full path to list, will be used in another function
             with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
@@ -628,6 +670,7 @@ class GenTD:
         if IT_IOInt_data != '' and IT_IOInt_header != '' and IT_MemInt_header != '' and IT_MemInt_data != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
+            self.all_it_files.append(file_and_path)  # Append full path to list, will be used in another function
             with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
@@ -674,6 +717,7 @@ class GenTD:
                 and IT_IOReal_data != '' and IT_IOReal_header != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
+            self.all_it_files.append(file_and_path)  # Append full path to list, will be used in another function
             with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
@@ -721,6 +765,7 @@ class GenTD:
                 and IT_IOReal_data != '' and IT_IOReal_header != '':
             filename = 'IT_' + sheet + '.csv'
             file_and_path = os.path.join(file_path, filename)
+            self.all_it_files.append(file_and_path)  # Append full path to list, will be used in another function
             with open(file_and_path, 'w', encoding='cp1252') as itFile:
                 data = IT_IOInt_header
                 data += IT_IOInt_data
@@ -733,7 +778,6 @@ class GenTD:
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated AO files put in ' + file_path)
-
 
 # Call UI
 root = tk.Tk()
