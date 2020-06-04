@@ -25,3 +25,23 @@
 [gen.IT_IOReal_Tag_begin]
 "@ID_EuValue","$System","",Yes,No,0,No,No,0,0,"@ENGUNIT",0,@ENGMIN,@ENGMAX,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,@ENGMIN,@ENGMAX,Linear,"@PLC",No,"DB201,REAL@ADR",No,"",0,0,0,0,0,0,0,0,"","","","","","","",""
 [gen.IT_IOReal_Tag_end]
+
+[gen.db_header_begin]
+DATA_BLOCK "AI"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+   STRUCT
+[gen.db_header_end]
+# Datablock item generator template, for each item
+[gen.db_var_begin]
+      @ID : "MC UDT AI";   // @CMT
+[gen.db_var_end]
+# Data block footer
+[gen.db_footer_begin]
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+[gen.db_footer_end]

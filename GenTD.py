@@ -17,7 +17,7 @@ except ModuleNotFoundError:
     sys.exit()
 
 """Version variable"""
-version = ('Version', str(0.98))
+version = ('Version', str(0.99))
 print(version)
 
 """Load user data if it exists, otherwise create dictionary"""
@@ -431,11 +431,8 @@ class GenTD:
 
                         if not skipLine:
                             of.write(line)  # write line to output file
-
-
-
-
-
+        print('Combined all Intouch files and created', output_file_and_path)
+        logging.info('Combined all Intouch files and created' + output_file_and_path)
 
     def td_gen_di(self):
         """Create and concetenate all text lines to different files"""
@@ -465,7 +462,7 @@ class GenTD:
         # Create file and put it inside path created above
         filename = 'PLC_' + sheet + '.awl'
         file_and_path = os.path.join(file_path, filename)
-        with open(file_and_path, 'w') as functionFile:
+        with open(file_and_path, 'w', encoding='cp1252') as functionFile:
             data = header_data
             data += var_data
             data += func_header_data
@@ -482,7 +479,7 @@ class GenTD:
         if db_header_data != '' and db_var_data != '' and db_footer_data != '':
             filename = 'PLC_' + sheet + '_DB.db'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as dbFile:
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
                 data = db_header_data
                 data += db_var_data
                 data += db_footer_data
@@ -495,7 +492,7 @@ class GenTD:
         if symbol_data != '':
             filename = 'PLC_' + sheet + '_Symbol.sdf'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as symbolFile:
+            with open(file_and_path, 'w', encoding='cp1252') as symbolFile:
                 symbolFile.write(symbol_data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
@@ -553,7 +550,7 @@ class GenTD:
         # Create file and put it inside path created above
         filename = 'PLC_' + sheet + '.awl'
         file_and_path = os.path.join(file_path, filename)
-        with open(file_and_path, 'w') as functionFile:
+        with open(file_and_path, 'w', encoding='cp1252') as functionFile:
             data = header_data
             data += var_data
             data += func_header_data
@@ -570,7 +567,7 @@ class GenTD:
         if db_header_data != '' and db_var_data != '' and db_footer_data != '':
             filename = 'PLC_' + sheet + '_DB.db'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as dbFile:
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
                 data = db_header_data
                 data += db_var_data
                 data += db_footer_data
@@ -583,7 +580,7 @@ class GenTD:
         if symbol_data != '':
             filename = 'PLC_' + sheet + '_Symbol.sdf'
             file_and_path = os.path.join(file_path, filename)
-            with open(file_and_path, 'w') as symbolFile:
+            with open(file_and_path, 'w', encoding='cp1252') as symbolFile:
                 symbolFile.write(symbol_data)
                 print(filename, 'created')
                 logging.info(filename + ' created')
@@ -604,7 +601,7 @@ class GenTD:
         """Create and concetenate all text lines to different files"""
         # setup variables
         config_file = os.path.join(s.CONFIG_PATH_VALVE, 'Config_valve.txt')
-        sheet = 'Valves'
+        sheet = 'Valve'
 
         # Check what output path to use, if 'None' create in current directory, otherwise as specified
         if self.output_path is None:
@@ -616,6 +613,22 @@ class GenTD:
         # Create sub-directory if it doesn't exist
         if not os.path.exists(file_path):
             os.makedirs(file_path)
+
+        """PLC"""
+        # PLC Datablock, if all elements exists concatenate data and create file
+        db_header_data = self.td_single(config_file, 'db_header')
+        db_var_data = self.td_multiple(config_file, 'db_var', sheet)
+        db_footer_data = self.td_single(config_file, 'db_footer')
+        if db_header_data != '' and db_var_data != '' and db_footer_data != '':
+            filename = 'PLC_' + sheet + '_DB.db'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
+                data = db_header_data
+                data += db_var_data
+                data += db_footer_data
+                dbFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
 
         """Intouch IO:Int"""
         IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
@@ -646,7 +659,7 @@ class GenTD:
         """Create and concetenate all text lines to different files"""
         # setup variables
         config_file = os.path.join(s.CONFIG_PATH, 'Config_motor.txt')
-        sheet = 'Motors'
+        sheet = 'Motor'
 
         # Check what output path to use, if 'None' create in current directory, otherwise as specified
         if self.output_path is None:
@@ -658,6 +671,22 @@ class GenTD:
         # Create sub-directory if it doesn't exist
         if not os.path.exists(file_path):
             os.makedirs(file_path)
+
+        """PLC"""
+        # PLC Datablock, if all elements exists concatenate data and create file
+        db_header_data = self.td_single(config_file, 'db_header')
+        db_var_data = self.td_multiple(config_file, 'db_var', sheet)
+        db_footer_data = self.td_single(config_file, 'db_footer')
+        if db_header_data != '' and db_var_data != '' and db_footer_data != '':
+            filename = 'PLC_' + sheet + '_DB.db'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
+                data = db_header_data
+                data += db_var_data
+                data += db_footer_data
+                dbFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
 
         """Intouch IO:Int"""
         IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
@@ -699,6 +728,23 @@ class GenTD:
         # Create sub-directory if it doesn't exist
         if not os.path.exists(file_path):
             os.makedirs(file_path)
+
+        """PLC"""
+        # PLC Datablock, if all elements exists concatenate data and create file
+        db_header_data = self.td_single(config_file, 'db_header')
+        db_var_data = self.td_multiple(config_file, 'db_var', sheet)
+        db_footer_data = self.td_single(config_file, 'db_footer')
+        if db_header_data != '' and db_var_data != '' and db_footer_data != '':
+            filename = 'PLC_' + sheet + '_DB.db'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
+                data = db_header_data
+                data += db_var_data
+                data += db_footer_data
+                dbFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
+
 
         """Intouch IO:Int"""
         IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
@@ -748,6 +794,23 @@ class GenTD:
         if not os.path.exists(file_path):
             os.makedirs(file_path)
 
+        """PLC"""
+        # PLC Datablock, if all elements exists concatenate data and create file
+        db_header_data = self.td_single(config_file, 'db_header')
+        db_var_data = self.td_multiple(config_file, 'db_var', sheet)
+        db_footer_data = self.td_single(config_file, 'db_footer')
+        if db_header_data != '' and db_var_data != '' and db_footer_data != '':
+            filename = 'PLC_' + sheet + '_DB.db'
+            file_and_path = os.path.join(file_path, filename)
+            with open(file_and_path, 'w', encoding='cp1252') as dbFile:
+                data = db_header_data
+                data += db_var_data
+                data += db_footer_data
+                dbFile.write(data)
+                print(filename, 'created')
+                logging.info(filename + ' created')
+
+
         """Intouch IO:Int"""
         IT_IOInt_header = self.td_single(config_file, 'IT_IOInt_Header')
         IT_IOInt_data = self.td_multiple(config_file, 'IT_IOInt_Tag', sheet, udt_size=24, udt_offset=0,
@@ -778,6 +841,7 @@ class GenTD:
                 logging.info(filename + ' created')
         print('Generated files put in...', file_path)
         logging.info('Generated AO files put in ' + file_path)
+
 
 # Call UI
 root = tk.Tk()

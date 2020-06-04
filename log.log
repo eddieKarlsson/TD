@@ -1346,3 +1346,515 @@
 2020-06-03 14:36:44,848:INFO:IT_AO.csv created
 2020-06-03 14:36:44,848:INFO:Generated AO files put in C:/gen_tmp\Generated AO
 2020-06-03 14:36:44,857:INFO:STOP
+2020-06-04 09:49:50,112:INFO:START
+2020-06-04 09:49:50,661:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 09:49:50,663:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 09:49:50,664:INFO:PLC_DI.awl created
+2020-06-04 09:49:50,666:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 09:49:50,668:INFO:PLC_DI_DB.db created
+2020-06-04 09:49:50,670:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 09:49:50,671:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 09:49:50,674:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 09:49:50,675:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 09:49:50,677:INFO:IT_DI.csv created
+2020-06-04 09:49:50,677:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 09:49:50,678:WARNING:DO not generated, Disabled in settings file
+2020-06-04 09:49:50,680:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-04 09:49:50,682:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-04 09:49:50,682:INFO:IT_Valves.csv created
+2020-06-04 09:49:50,682:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 09:49:50,684:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-04 09:49:50,685:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-04 09:49:50,685:INFO:IT_Motors.csv created
+2020-06-04 09:49:50,686:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 09:49:50,687:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 09:49:50,688:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 09:49:50,690:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 09:49:50,690:INFO:IT_AI.csv created
+2020-06-04 09:49:50,690:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 09:49:50,692:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 09:49:50,694:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 09:49:50,695:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 09:49:50,695:INFO:IT_AO.csv created
+2020-06-04 09:49:50,696:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 09:49:50,723:INFO:STOP
+2020-06-04 09:53:06,360:INFO:START
+2020-06-04 09:53:06,917:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 09:53:06,920:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 09:53:06,921:INFO:PLC_DI.awl created
+2020-06-04 09:53:06,923:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 09:53:06,923:INFO:PLC_DI_DB.db created
+2020-06-04 09:53:06,924:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 09:53:06,924:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 09:53:06,927:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 09:53:06,928:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 09:53:06,929:INFO:IT_DI.csv created
+2020-06-04 09:53:06,930:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 09:53:06,930:WARNING:DO not generated, Disabled in settings file
+2020-06-04 09:53:06,932:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-04 09:53:06,933:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-04 09:53:06,933:INFO:IT_Valves.csv created
+2020-06-04 09:53:06,934:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 09:53:06,935:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-04 09:53:06,940:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-04 09:53:06,941:INFO:IT_Motors.csv created
+2020-06-04 09:53:06,941:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 09:53:06,942:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 09:53:06,943:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 09:53:06,945:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 09:53:06,946:INFO:IT_AI.csv created
+2020-06-04 09:53:06,946:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 09:53:06,947:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 09:53:06,948:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 09:53:06,949:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 09:53:06,950:INFO:IT_AO.csv created
+2020-06-04 09:53:06,950:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 09:53:06,990:INFO:STOP
+2020-06-04 10:36:30,894:INFO:START
+2020-06-04 10:36:31,437:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:36:31,440:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:36:31,440:INFO:PLC_DI.awl created
+2020-06-04 10:36:31,442:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:36:31,443:INFO:PLC_DI_DB.db created
+2020-06-04 10:36:31,444:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:36:31,445:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:36:31,446:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:36:31,449:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:36:31,452:INFO:IT_DI.csv created
+2020-06-04 10:36:31,452:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:36:31,453:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:36:31,454:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-04 10:36:31,456:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-04 10:36:31,456:INFO:IT_Valves.csv created
+2020-06-04 10:36:31,456:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:36:31,457:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-04 10:36:31,459:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-04 10:36:31,459:INFO:IT_Motors.csv created
+2020-06-04 10:36:31,459:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:36:31,460:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:36:31,462:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:36:31,464:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:36:31,464:INFO:IT_AI.csv created
+2020-06-04 10:36:31,464:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:36:31,466:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:36:31,468:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:36:31,470:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:36:31,471:INFO:IT_AO.csv created
+2020-06-04 10:36:31,471:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:36:31,489:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:36:31,489:INFO:STOP
+2020-06-04 10:46:14,996:INFO:START
+2020-06-04 10:46:15,568:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:46:15,573:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:46:15,574:INFO:PLC_DI.awl created
+2020-06-04 10:46:15,577:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:46:15,577:INFO:PLC_DI_DB.db created
+2020-06-04 10:46:15,579:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:46:15,580:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:46:15,583:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:46:15,585:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:46:15,586:INFO:IT_DI.csv created
+2020-06-04 10:46:15,586:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:46:15,587:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:46:15,589:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valves">
+2020-06-04 10:46:15,592:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valves">
+2020-06-04 10:46:15,593:INFO:IT_Valves.csv created
+2020-06-04 10:46:15,593:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:46:15,595:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valves">
+2020-06-04 10:46:15,595:INFO:PLC_Valves_DB.db created
+2020-06-04 10:46:15,597:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motors">
+2020-06-04 10:46:15,598:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motors">
+2020-06-04 10:46:15,598:INFO:IT_Motors.csv created
+2020-06-04 10:46:15,599:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:46:15,600:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:46:15,602:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:46:15,610:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:46:15,610:INFO:IT_AI.csv created
+2020-06-04 10:46:15,611:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:46:15,612:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:46:15,613:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:46:15,614:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:46:15,615:INFO:IT_AO.csv created
+2020-06-04 10:46:15,615:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:46:15,627:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:46:15,627:INFO:STOP
+2020-06-04 10:51:32,907:INFO:START
+2020-06-04 10:51:33,497:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:51:33,501:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:51:33,502:INFO:PLC_DI.awl created
+2020-06-04 10:51:33,504:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:51:33,504:INFO:PLC_DI_DB.db created
+2020-06-04 10:51:33,506:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:51:33,507:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:51:33,509:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:51:33,511:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:51:33,512:INFO:IT_DI.csv created
+2020-06-04 10:51:33,515:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:51:33,516:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:51:33,518:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:51:33,519:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:51:33,521:INFO:IT_Valve.csv created
+2020-06-04 10:51:33,522:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:51:33,524:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:51:33,525:INFO:PLC_Valve_DB.db created
+2020-06-04 10:51:33,528:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:51:33,532:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:51:33,535:INFO:IT_Motor.csv created
+2020-06-04 10:51:33,536:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:51:33,538:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:51:33,540:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:51:33,542:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:51:33,543:INFO:IT_AI.csv created
+2020-06-04 10:51:33,544:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:51:33,548:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:51:33,552:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:51:33,555:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:51:33,555:INFO:IT_AO.csv created
+2020-06-04 10:51:33,556:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:51:33,570:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:51:33,570:INFO:STOP
+2020-06-04 10:52:02,849:INFO:START
+2020-06-04 10:52:03,509:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:52:03,514:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:52:03,514:INFO:PLC_DI.awl created
+2020-06-04 10:52:03,516:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:52:03,517:INFO:PLC_DI_DB.db created
+2020-06-04 10:52:03,520:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:52:03,521:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:52:03,523:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:52:03,526:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:52:03,529:INFO:IT_DI.csv created
+2020-06-04 10:52:03,529:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:52:03,530:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:52:03,532:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:52:03,534:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:52:03,535:INFO:IT_Valve.csv created
+2020-06-04 10:52:03,535:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:52:03,536:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:52:03,537:INFO:PLC_Valve_DB.db created
+2020-06-04 10:52:03,541:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:52:03,543:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:52:03,544:INFO:IT_Motor.csv created
+2020-06-04 10:52:03,544:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:52:03,546:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:52:03,548:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:52:03,551:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:52:03,552:INFO:IT_AI.csv created
+2020-06-04 10:52:03,552:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:52:03,553:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:52:03,555:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:52:03,556:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:52:03,557:INFO:IT_AO.csv created
+2020-06-04 10:52:03,559:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:52:03,569:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:52:03,569:INFO:STOP
+2020-06-04 10:56:43,774:INFO:START
+2020-06-04 10:56:44,356:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:56:44,361:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:56:44,362:INFO:PLC_DI.awl created
+2020-06-04 10:56:44,364:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:56:44,365:INFO:PLC_DI_DB.db created
+2020-06-04 10:56:44,366:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:56:44,367:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:56:44,369:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:56:44,370:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:56:44,372:INFO:IT_DI.csv created
+2020-06-04 10:56:44,372:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:56:44,373:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:56:44,375:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:56:44,379:INFO:PLC_Valve_DB.db created
+2020-06-04 10:56:44,381:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:56:44,383:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:56:44,384:INFO:IT_Valve.csv created
+2020-06-04 10:56:44,384:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:56:44,385:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 10:56:44,386:INFO:PLC_Motor_DB.db created
+2020-06-04 10:56:44,387:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:56:44,389:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:56:44,390:INFO:IT_Motor.csv created
+2020-06-04 10:56:44,391:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:56:44,393:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:56:44,395:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:56:44,396:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:56:44,397:INFO:IT_AI.csv created
+2020-06-04 10:56:44,397:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:56:44,399:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:56:44,400:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:56:44,401:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:56:44,401:INFO:IT_AO.csv created
+2020-06-04 10:56:44,401:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:56:44,415:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:56:44,415:INFO:STOP
+2020-06-04 10:58:22,526:INFO:START
+2020-06-04 10:58:23,164:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:58:23,168:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:58:23,169:INFO:PLC_DI.awl created
+2020-06-04 10:58:23,175:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:58:23,176:INFO:PLC_DI_DB.db created
+2020-06-04 10:58:23,180:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:58:23,181:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:58:23,184:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:58:23,188:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:58:23,190:INFO:IT_DI.csv created
+2020-06-04 10:58:23,191:INFO:Generated DI files put in C:/Users/EddieKarlsson/Desktop\Generated DI
+2020-06-04 10:58:23,192:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:58:23,194:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:58:23,196:INFO:PLC_Valve_DB.db created
+2020-06-04 10:58:23,198:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:58:23,200:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:58:23,202:INFO:IT_Valve.csv created
+2020-06-04 10:58:23,206:INFO:Generated Valve files put in C:/Users/EddieKarlsson/Desktop\Generated Valve
+2020-06-04 10:58:23,208:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 10:58:23,208:INFO:PLC_Motor_DB.db created
+2020-06-04 10:58:23,210:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:58:23,212:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:58:23,215:INFO:IT_Motor.csv created
+2020-06-04 10:58:23,219:INFO:Generated Motor files put in C:/Users/EddieKarlsson/Desktop\Generated Motor
+2020-06-04 10:58:23,222:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:58:23,224:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:58:23,225:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:58:23,226:INFO:IT_AI.csv created
+2020-06-04 10:58:23,226:INFO:Generated AI files put in C:/Users/EddieKarlsson/Desktop\Generated AI
+2020-06-04 10:58:23,229:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:58:23,231:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:58:23,232:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:58:23,234:INFO:IT_AO.csv created
+2020-06-04 10:58:23,235:INFO:Generated AO files put in C:/Users/EddieKarlsson/Desktop\Generated AO
+2020-06-04 10:58:23,251:INFO:Combined all Intouch files and createdC:/Users/EddieKarlsson/Desktop\All_IT.csv
+2020-06-04 10:58:23,251:INFO:STOP
+2020-06-04 10:59:21,582:INFO:START
+2020-06-04 10:59:22,147:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:59:22,149:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:59:22,149:INFO:PLC_DI.awl created
+2020-06-04 10:59:22,152:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:59:22,153:INFO:PLC_DI_DB.db created
+2020-06-04 10:59:22,157:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:59:22,158:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:59:22,162:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:59:22,164:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:59:22,166:INFO:IT_DI.csv created
+2020-06-04 10:59:22,167:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:59:22,167:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:59:22,170:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:59:22,171:INFO:PLC_Valve_DB.db created
+2020-06-04 10:59:22,173:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:59:22,175:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:59:22,176:INFO:IT_Valve.csv created
+2020-06-04 10:59:22,177:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:59:22,179:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 10:59:22,179:INFO:PLC_Motor_DB.db created
+2020-06-04 10:59:22,181:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:59:22,182:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:59:22,182:INFO:IT_Motor.csv created
+2020-06-04 10:59:22,183:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:59:22,184:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:59:22,186:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:59:22,188:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:59:22,189:INFO:IT_AI.csv created
+2020-06-04 10:59:22,189:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:59:22,191:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:59:22,192:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:59:22,193:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:59:22,194:INFO:IT_AO.csv created
+2020-06-04 10:59:22,194:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:59:22,205:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:59:22,205:INFO:STOP
+2020-06-04 10:59:31,173:INFO:START
+2020-06-04 10:59:31,752:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 10:59:31,755:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 10:59:31,756:INFO:PLC_DI.awl created
+2020-06-04 10:59:31,758:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 10:59:31,758:INFO:PLC_DI_DB.db created
+2020-06-04 10:59:31,760:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 10:59:31,760:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 10:59:31,762:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 10:59:31,763:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 10:59:31,763:INFO:IT_DI.csv created
+2020-06-04 10:59:31,763:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 10:59:31,764:WARNING:DO not generated, Disabled in settings file
+2020-06-04 10:59:31,765:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 10:59:31,766:INFO:PLC_Valve_DB.db created
+2020-06-04 10:59:31,768:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 10:59:31,769:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 10:59:31,770:INFO:IT_Valve.csv created
+2020-06-04 10:59:31,770:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 10:59:31,772:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 10:59:31,772:INFO:PLC_Motor_DB.db created
+2020-06-04 10:59:31,773:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 10:59:31,775:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 10:59:31,775:INFO:IT_Motor.csv created
+2020-06-04 10:59:31,776:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 10:59:31,777:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 10:59:31,779:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 10:59:31,781:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 10:59:31,782:INFO:IT_AI.csv created
+2020-06-04 10:59:31,782:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 10:59:31,783:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 10:59:31,784:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 10:59:31,785:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 10:59:31,786:INFO:IT_AO.csv created
+2020-06-04 10:59:31,786:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 10:59:31,797:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 10:59:31,798:INFO:STOP
+2020-06-04 12:44:40,095:INFO:START
+2020-06-04 12:44:40,656:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 12:44:40,658:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 12:44:40,660:INFO:PLC_DI.awl created
+2020-06-04 12:44:40,662:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 12:44:40,663:INFO:PLC_DI_DB.db created
+2020-06-04 12:44:40,665:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 12:44:40,665:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 12:44:40,667:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 12:44:40,669:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 12:44:40,670:INFO:IT_DI.csv created
+2020-06-04 12:44:40,670:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 12:44:40,670:WARNING:DO not generated, Disabled in settings file
+2020-06-04 12:44:40,672:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 12:44:40,672:INFO:PLC_Valve_DB.db created
+2020-06-04 12:44:40,674:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 12:44:40,676:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 12:44:40,676:INFO:IT_Valve.csv created
+2020-06-04 12:44:40,677:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 12:44:40,679:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 12:44:40,679:INFO:PLC_Motor_DB.db created
+2020-06-04 12:44:40,681:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 12:44:40,682:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 12:44:40,682:INFO:IT_Motor.csv created
+2020-06-04 12:44:40,682:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 12:44:40,685:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "AI">
+2020-06-04 12:44:40,686:INFO:PLC_AI_DB.db created
+2020-06-04 12:44:40,688:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 12:44:40,689:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 12:44:40,691:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 12:44:40,691:INFO:IT_AI.csv created
+2020-06-04 12:44:40,692:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 12:44:40,693:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 12:44:40,694:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 12:44:40,696:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 12:44:40,697:INFO:IT_AO.csv created
+2020-06-04 12:44:40,697:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 12:44:40,711:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 12:44:40,711:INFO:STOP
+2020-06-04 12:57:33,899:INFO:START
+2020-06-04 12:57:34,460:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 12:57:34,463:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 12:57:34,464:INFO:PLC_DI.awl created
+2020-06-04 12:57:34,466:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 12:57:34,467:INFO:PLC_DI_DB.db created
+2020-06-04 12:57:34,469:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 12:57:34,469:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 12:57:34,471:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 12:57:34,472:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 12:57:34,473:INFO:IT_DI.csv created
+2020-06-04 12:57:34,473:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 12:57:34,473:WARNING:DO not generated, Disabled in settings file
+2020-06-04 12:57:34,475:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 12:57:34,476:INFO:PLC_Valve_DB.db created
+2020-06-04 12:57:34,478:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 12:57:34,481:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 12:57:34,481:INFO:IT_Valve.csv created
+2020-06-04 12:57:34,482:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 12:57:34,484:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 12:57:34,484:INFO:PLC_Motor_DB.db created
+2020-06-04 12:57:34,485:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 12:57:34,487:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 12:57:34,487:INFO:IT_Motor.csv created
+2020-06-04 12:57:34,487:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 12:57:34,489:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "AI">
+2020-06-04 12:57:34,491:INFO:PLC_AI_DB.db created
+2020-06-04 12:57:34,492:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 12:57:34,494:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 12:57:34,496:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 12:57:34,496:INFO:IT_AI.csv created
+2020-06-04 12:57:34,497:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 12:57:34,498:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "AO">
+2020-06-04 12:57:34,498:INFO:PLC_AO_DB.db created
+2020-06-04 12:57:34,500:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 12:57:34,502:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 12:57:34,503:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 12:57:34,503:INFO:IT_AO.csv created
+2020-06-04 12:57:34,503:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 12:57:34,512:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 12:57:34,512:INFO:STOP
+2020-06-04 13:01:40,213:INFO:START
+2020-06-04 13:01:40,764:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 13:01:40,767:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 13:01:40,768:INFO:PLC_DI.awl created
+2020-06-04 13:01:40,771:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 13:01:40,772:INFO:PLC_DI_DB.db created
+2020-06-04 13:01:40,775:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 13:01:40,775:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 13:01:40,777:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 13:01:40,779:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 13:01:40,781:INFO:IT_DI.csv created
+2020-06-04 13:01:40,781:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 13:01:40,782:WARNING:DO not generated, Disabled in settings file
+2020-06-04 13:01:40,785:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 13:01:40,785:INFO:PLC_Valve_DB.db created
+2020-06-04 13:01:40,788:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 13:01:40,790:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 13:01:40,790:INFO:IT_Valve.csv created
+2020-06-04 13:01:40,791:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 13:01:40,794:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 13:01:40,794:INFO:PLC_Motor_DB.db created
+2020-06-04 13:01:40,796:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 13:01:40,797:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 13:01:40,798:INFO:IT_Motor.csv created
+2020-06-04 13:01:40,798:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 13:01:40,802:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "AI">
+2020-06-04 13:01:40,804:INFO:PLC_AI_DB.db created
+2020-06-04 13:01:40,806:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 13:01:40,807:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 13:01:40,809:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 13:01:40,809:INFO:IT_AI.csv created
+2020-06-04 13:01:40,810:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 13:01:40,811:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "AO">
+2020-06-04 13:01:40,811:INFO:PLC_AO_DB.db created
+2020-06-04 13:01:40,814:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 13:01:40,815:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 13:01:40,817:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 13:01:40,818:INFO:IT_AO.csv created
+2020-06-04 13:01:40,818:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 13:01:40,828:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 13:01:40,828:INFO:STOP
+2020-06-04 13:03:52,086:INFO:START
+2020-06-04 13:03:52,645:INFO:Generated from row: 6 to 18 of varin<Worksheet "DI">
+2020-06-04 13:03:52,647:INFO:Generated from row: 6 to 18 of codebodyin<Worksheet "DI">
+2020-06-04 13:03:52,648:INFO:PLC_DI.awl created
+2020-06-04 13:03:52,650:INFO:Generated from row: 6 to 18 of db_varin<Worksheet "DI">
+2020-06-04 13:03:52,650:INFO:PLC_DI_DB.db created
+2020-06-04 13:03:52,652:INFO:Generated from row: 6 to 18 of symbolin<Worksheet "DI">
+2020-06-04 13:03:52,652:INFO:PLC_DI_Symbol.sdf created
+2020-06-04 13:03:52,654:INFO:Generated from row: 6 to 18 of IT_IOInt_Tagin<Worksheet "DI">
+2020-06-04 13:03:52,656:INFO:Generated from row: 6 to 18 of IT_MemInt_Tagin<Worksheet "DI">
+2020-06-04 13:03:52,656:INFO:IT_DI.csv created
+2020-06-04 13:03:52,657:INFO:Generated DI files put in C:/gen_tmp\Generated DI
+2020-06-04 13:03:52,657:WARNING:DO not generated, Disabled in settings file
+2020-06-04 13:03:52,659:INFO:Generated from row: 6 to 21 of db_varin<Worksheet "Valve">
+2020-06-04 13:03:52,659:INFO:PLC_Valve_DB.db created
+2020-06-04 13:03:52,661:INFO:Generated from row: 6 to 21 of IT_IOInt_Tagin<Worksheet "Valve">
+2020-06-04 13:03:52,662:INFO:Generated from row: 6 to 21 of IT_MemInt_Tagin<Worksheet "Valve">
+2020-06-04 13:03:52,664:INFO:IT_Valve.csv created
+2020-06-04 13:03:52,664:INFO:Generated Valve files put in C:/gen_tmp\Generated Valve
+2020-06-04 13:03:52,665:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "Motor">
+2020-06-04 13:03:52,665:INFO:PLC_Motor_DB.db created
+2020-06-04 13:03:52,666:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "Motor">
+2020-06-04 13:03:52,667:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "Motor">
+2020-06-04 13:03:52,668:INFO:IT_Motor.csv created
+2020-06-04 13:03:52,668:INFO:Generated Motor files put in C:/gen_tmp\Generated Motor
+2020-06-04 13:03:52,670:INFO:Generated from row: 6 to 15 of db_varin<Worksheet "AI">
+2020-06-04 13:03:52,670:INFO:PLC_AI_DB.db created
+2020-06-04 13:03:52,673:INFO:Generated from row: 6 to 15 of IT_IOInt_Tagin<Worksheet "AI">
+2020-06-04 13:03:52,676:INFO:Generated from row: 6 to 15 of IT_MemInt_Tagin<Worksheet "AI">
+2020-06-04 13:03:52,678:INFO:Generated from row: 6 to 15 of IT_IOReal_Tagin<Worksheet "AI">
+2020-06-04 13:03:52,678:INFO:IT_AI.csv created
+2020-06-04 13:03:52,678:INFO:Generated AI files put in C:/gen_tmp\Generated AI
+2020-06-04 13:03:52,680:INFO:Generated from row: 6 to 10 of db_varin<Worksheet "AO">
+2020-06-04 13:03:52,680:INFO:PLC_AO_DB.db created
+2020-06-04 13:03:52,682:INFO:Generated from row: 6 to 10 of IT_IOInt_Tagin<Worksheet "AO">
+2020-06-04 13:03:52,684:INFO:Generated from row: 6 to 10 of IT_MemInt_Tagin<Worksheet "AO">
+2020-06-04 13:03:52,685:INFO:Generated from row: 6 to 10 of IT_IOReal_Tagin<Worksheet "AO">
+2020-06-04 13:03:52,685:INFO:IT_AO.csv created
+2020-06-04 13:03:52,685:INFO:Generated AO files put in C:/gen_tmp\Generated AO
+2020-06-04 13:03:52,696:INFO:Combined all Intouch files and createdC:/gen_tmp\All_IT.csv
+2020-06-04 13:03:52,696:INFO:STOP
