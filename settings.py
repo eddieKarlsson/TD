@@ -1,48 +1,97 @@
-"""General settings for Gen_TD.py"""
-CONFIG_PATH = 'Config'  # sub-directory of config files
-CONFIG_PATH_VALVE = 'Config/Valve'  # sub-directory for valve config
+import json
+import os
 
-"""Settings"""
-ROW = 6  # Excel start row of data
-INDEX_REPLACE = '@INDEX'  # string to be replaced in config file
 
-ID_REPLACE = '@ID'  # string to be replaced in config file
-COL_ID = 2  # Excel column index of ID, 2 = B column
+class Settings:
+    """A class to store all settings, user-data in JSON format."""
 
-COMMENT_REPLACE = '@CMT'  # string to be replaced in config file
-COL_COMMENT = 3  # Excel column index of Comment, 3 = C column
+    def __init__(self):
+        """Initiliaze settings."""
 
-CONFIG_REPLACE = '@CFG'  # string to be replaced in config file
-COL_CONFIG = 7  # Excel column index of Config, 7 = G column
+        # Static setings
+        self.debug_level = 0
 
-ENG_UNIT_REPLACE = '@ENGUNIT'  # string to be replaced in config file
-COL_ENG_UNIT = 11  # Excel column index of Config, 11 = K column
+        # internal var, used below in functions
+        self.json_file = 'user_settings.json'
+        self.indent = 1
 
-ENG_MIN_REPLACE = '@ENGMIN'  # string to be replaced in config file
-COL_ENG_MIN = 14  # Excel column index of Config, 14 = O column
+        self.version = 2.0
 
-ENG_MAX_REPLACE = '@ENGMAX'  # string to be replaced in config file
-COL_ENG_MAX = 15  # Excel column index of Config, 15 = O column
+        # TD Settings
+        self.CONFIG_PATH = 'Config'  # sub-directory of config files
+        self.CONFIG_PATH_VALVE = 'Config/Valve'  # sub-dir for valve config
 
-ADR_REPLACE = '@ADR'  # string to be replaced in config file
+        """Settings"""
+        self.ROW = 6  # Excel start row of data
+        self.INDEX_REPLACE = '@INDEX'  # string to be replaced in config file
 
-PLC_NAME = 'PLC1'  # Used in Intouch
-PLC_REPLACE = '@PLC'  # string to be replaced in config file
+        self.ID_REPLACE = '@ID'  # string to be replaced in config file
+        self.COL_ID = 2  # Excel column index of ID, 2 = B column
 
-DI_DISABLE = False  # If set to True no files will be generated for DI
-DI_START_INDEX = 0  # Start-position index in datablock, used for HMI tags that are absolute.
+        self.COMMENT_REPLACE = '@CMT'  # string to be replaced in config file
+        self.COL_COMMENT = 3  # Excel column index of Comment, 3 = C column
 
-DO_DISABLE = True
-DO_START_INDEX = 0
+        self.CONFIG_REPLACE = '@CFG'  # string to be replaced in config file
+        self.COL_CONFIG = 7  # Excel column index of Config, 7 = G column
 
-VALVE_DISABLE = False
-VALVE_START_INDEX = 0
+        self.ENG_UNIT_REPLACE = '@ENGUNIT'  # string to be replaced
+        self.COL_ENG_UNIT = 11  # Excel column index of Config, 11 = K column
 
-MOTOR_DISABLE = False
-MOTOR_START_INDEX = 0
+        self.ENG_MIN_REPLACE = '@ENGMIN'  # string to be replaced
+        self.COL_ENG_MIN = 14  # Excel column index of Config, 14 = O column
 
-AI_DISABLE = False
-AI_START_INDEX = 0
+        self.ENG_MAX_REPLACE = '@ENGMAX'  # string to be replaced
+        self.COL_ENG_MAX = 15  # Excel column index of Config, 15 = O column
 
-AO_DISABLE = False
-AO_START_INDEX = 0
+        self.ADR_REPLACE = '@ADR'  # string to be replaced in config file
+
+        self.PLC_NAME = 'PLC1'  # Used in Intouch
+        self.PLC_REPLACE = '@PLC'  # string to be replaced in config file
+
+        self.DI_DISABLE = False
+        self.DI_START_INDEX = 0  # Start-position index in datablock
+
+        self.DO_DISABLE = True
+        self.DO_START_INDEX = 0
+
+        self.VALVE_DISABLE = False
+        self.VALVE_START_INDEX = 0
+
+        self.MOTOR_DISABLE = False
+        self.MOTOR_START_INDEX = 0
+
+        self.AI_DISABLE = False
+        self.AI_START_INDEX = 0
+
+        self.AO_DISABLE = False
+        self.AO_START_INDEX = 0
+
+    def _create_user_settings(self):
+        """Create dict which contains all user data"""
+        user_settings = {
+            'excel_path': 'No excel specified',
+            'output_path': 'No path specified',
+
+        }
+
+        return user_settings
+
+    def load_user_settings(self):
+        """Load stored user settings, otherwise create .json file"""
+
+        # Check if settings file already exists, else create it.
+        if os.path.isfile(self.json_file):
+            with open(self.json_file, 'r') as f:
+                user_settings = json.load(f)
+        else:
+            user_settings = self._create_user_settings()
+
+            with open(self.json_file, 'w') as f:
+                json.dump(user_settings, f, indent=self.indent)
+
+        return user_settings
+
+    def store_user_settings(self, user_settings):
+        """Dump Dict to JSON file"""
+        with open(self.json_file, 'w') as f:
+            json.dump(user_settings, f, indent=self.indent)
