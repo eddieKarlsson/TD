@@ -6,57 +6,16 @@ from settings import Settings
 
 
 class GenTD:
+    """Various functions to interact with excel workbook in TD format"""
     def __init__(self, excel_path, output_path):
         self.excel_path = excel_path
         self.output_path = output_path
-
-        self.all_it_files = []  # Create an empty list
-        self.generate()
         self.s = Settings()
+        self.all_it_files = []  # Create an empty list
 
-    def generate(self):
-        """Logging settings"""
-        print('Version', self.s.version)
+        self.generate()
 
-        self.open_td_excel()
-
-        # DI
-        if self.s.DI_DISABLE:
-            print('DI not generated, disabled in settings file')
-        else:
-            self.td_gen_di()
-
-        # DO
-        if self.s.DO_DISABLE:
-            print('DO not generated, disabled in settings file')
-        else:
-            self.td_gen_do()
-
-        # Valve
-        if self.s.VALVE_DISABLE:
-            print('Valve not generated, disabled in settings file')
-        else:
-            self.td_gen_valve()
-
-        # Motor
-        if self.s.MOTOR_DISABLE:
-            print('Motor not generated, disabled in settings file')
-        else:
-            self.td_gen_motor()
-
-        # AI
-        if self.s.AI_DISABLE:
-            print('AI not generated, disabled in settings file')
-        else:
-            self.td_gen_ai()
-
-        # AO
-        if self.s.AO_DISABLE:
-            print('AO not generated, disabled in settings file')
-        else:
-            self.td_gen_ao()
-
-    def open_td_excel(self):
+    def _open_td_excel(self):
         try:
             wb = xl.load_workbook(self.excel_path, data_only=True)
         except FileNotFoundError as e:
@@ -65,6 +24,66 @@ class GenTD:
             sys.exit()
         else:
             self.wb = wb
+
+    def td_copy_excel_data_to_dictionaries(self):
+        """Open excel and read all relevant object-data to dict"""
+        self._open_td_excel()
+
+        # Create all dictionaries, if enabled in settings
+        if not self.s.DI_DISABLE:
+            self.di_dict = self._td_copy_obj_data_to_dict(self.s.DI_SHEETNAME)
+        if not self.s.DO_DISABLE:
+            self.do_dict = self._td_copy_obj_data_to_dict(self.s.DO_SHEETNAME)
+        if not self.s.VALVE_DISABLE:
+            self.valve_dict = self._td_copy_obj_data_to_dict(
+                                          self.s.VALVE_SHEETNAME, config=True)
+        if not self.s.MOTOR_DISABLE:
+            self.motor_dict = self._td_copy_obj_data_to_dict(
+                                          self.s.MOTOR_SHEETNAME)
+        if not self.s.AI_DISABLE:
+            self.ai_dict = self._td_copy_obj_data_to_dict(self.s.AI_SHEETNAME,
+                                                          eng_var=True)
+        if not self.s.AO_DISABLE:
+            self.ao_dict = self._td_copy_obj_data_to_dict(self.s.AO_SHEETNAME,
+                                                          eng_var=True)
+
+    def _td_copy_obj_data_to_dict(self, sheet, config=False, eng_var=False):
+        """Read all object data to dict"""
+
+        # Open excel sheet
+        try:
+            ws = self.wb[sheet]
+        except KeyError:
+            msg = f'Error! {sheet} sheet does not exist, prog will exit'
+            print(msg)
+            sys.exit()
+
+        # Loop through object list and add key-value pairs to object dict
+        # then append each object-dict to list
+        obj_list = []
+        idx = 0
+        for i in range(self.s.ROW, ws.max_row + 1):
+            # Always insert these key-value pairs
+            obj = {
+                'id': ws.cell(row=i, column=self.s.COL_ID),
+                'comment': ws.cell(row=i, column=self.s.COL_COMMENT),
+                'index': idx,
+            }
+
+            # Add conditional key-value pairs
+            if config:
+                obj['config'] = ws.cell(row=i, column=self.s.COL_CONFIG)
+
+            if eng_var:
+                obj['comment'] = ws.cell(row=i, column=self.s.COL_COMMENT)
+                obj['eng_unit'] = ws.cell(row=i, column=self.s.COL_ENG_UNIT)
+                obj['eng_min'] = ws.cell(row=i, column=self.s.COL_ENG_MIN)
+                obj['eng_max'] = ws.cell(row=i, column=self.s.COL_ENG_MAX)
+
+            obj_list.append(obj)
+            idx += 1
+
+        return obj_list
 
     def td_single(self, config_file, ref_txt):
         """Read a text file and copy the data inside notifiers to memory"""
@@ -250,3 +269,46 @@ class GenTD:
             print('Generated from row:', self.s.ROW, 'to',
                   i - 1, 'of', ref_txt, 'in', active_sheet)
         return inst_data
+
+    def generate(self):
+        """Logging settings"""
+        print('Version', self.s.version)
+
+        self.open_td_excel()  # TODO ta bort denna då vi kallar på den
+        #                           i annan funktion
+
+        # DI
+        if self.s.DI_DISABLE:
+            print('DI not generated, disabled in settings file')
+        else:
+            self.td_gen_di()
+
+        # DO
+        if self.s.DO_DISABLE:
+            print('DO not generated, disabled in settings file')
+        else:
+            self.td_gen_do()
+
+        # Valve
+        if self.s.VALVE_DISABLE:
+            print('Valve not generated, disabled in settings file')
+        else:
+            self.td_gen_valve()
+
+        # Motor
+        if self.s.MOTOR_DISABLE:
+            print('Motor not generated, disabled in settings file')
+        else:
+            self.td_gen_motor()
+
+        # AI
+        if self.s.AI_DISABLE:
+            print('AI not generated, disabled in settings file')
+        else:
+            self.td_gen_ai()
+
+        # AO
+        if self.s.AO_DISABLE:
+            print('AO not generated, disabled in settings file')
+        else:
+            self.td_gen_ao()

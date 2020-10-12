@@ -50,21 +50,27 @@ class Settings:
 
         self.DI_DISABLE = False
         self.DI_START_INDEX = 0  # Start-position index in datablock
+        self.DI_SHEETNAME = 'DI'
 
         self.DO_DISABLE = True
         self.DO_START_INDEX = 0
+        self.DO_SHEETNAME = 'DO'
 
         self.VALVE_DISABLE = False
         self.VALVE_START_INDEX = 0
+        self.VALVE_SHEETNAME = 'Valve'
 
         self.MOTOR_DISABLE = False
         self.MOTOR_START_INDEX = 0
+        self.MOTOR_SHEETNAME = 'Motor'
 
         self.AI_DISABLE = False
         self.AI_START_INDEX = 0
+        self.AI_SHEETNAME = 'AI'
 
         self.AO_DISABLE = False
         self.AO_START_INDEX = 0
+        self.AO_SHEETNAME = 'AO'
 
     def _create_user_settings(self):
         """Create dict which contains all user data"""
