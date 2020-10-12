@@ -31,23 +31,26 @@ class GenTD:
 
         # Create all dictionaries, if enabled in settings
         if not self.s.DI_DISABLE:
-            self.di_dict = self._td_copy_obj_data_to_dict(self.s.DI_SHEETNAME)
+            self.di_dict = self._td_copy_obj_data_to_dict(
+                        self.s.DI_SHEETNAME, self.s.DI_START_INDEX)
         if not self.s.DO_DISABLE:
-            self.do_dict = self._td_copy_obj_data_to_dict(self.s.DO_SHEETNAME)
+            self.do_dict = self._td_copy_obj_data_to_dict(
+                        self.s.DO_SHEETNAME, self.s.DO_START_INDEX)
         if not self.s.VALVE_DISABLE:
             self.valve_dict = self._td_copy_obj_data_to_dict(
-                                          self.s.VALVE_SHEETNAME, config=True)
+                self.s.VALVE_SHEETNAME, self.s.VALVE_START_INDEX, config=True)
         if not self.s.MOTOR_DISABLE:
             self.motor_dict = self._td_copy_obj_data_to_dict(
-                                          self.s.MOTOR_SHEETNAME)
+                            self.s.MOTOR_SHEETNAME, self.s.VALVE_START_INDEX)
         if not self.s.AI_DISABLE:
-            self.ai_dict = self._td_copy_obj_data_to_dict(self.s.AI_SHEETNAME,
-                                                          eng_var=True)
+            self.ai_dict = self._td_copy_obj_data_to_dict(
+                self.s.AI_SHEETNAME, self.s.AI_START_INDEX, eng_var=True)
         if not self.s.AO_DISABLE:
-            self.ao_dict = self._td_copy_obj_data_to_dict(self.s.AO_SHEETNAME,
-                                                          eng_var=True)
+            self.ao_dict = self._td_copy_obj_data_to_dict(
+                    self.s.AO_SHEETNAME, self.s.AO_START_INDEX, eng_var=True)
 
-    def _td_copy_obj_data_to_dict(self, sheet, config=False, eng_var=False):
+    def _td_obj_data_to_dict(self, sheet, start_index,
+                             config=False, eng_var=False):
         """Read all object data to dict"""
 
         # Open excel sheet
@@ -61,11 +64,16 @@ class GenTD:
         # Loop through object list and add key-value pairs to object dict
         # then append each object-dict to list
         obj_list = []
-        idx = 0
+        idx = start_index
         for i in range(self.s.ROW, ws.max_row + 1):
+            # Break if we get a blank ID cell
+            cell_id = ws.cell(row=i, column=self.s.COL_ID)
+            if cell_id.value is None:
+                break
+
             # Always insert these key-value pairs
             obj = {
-                'id': ws.cell(row=i, column=self.s.COL_ID),
+                'id': cell_id,
                 'comment': ws.cell(row=i, column=self.s.COL_COMMENT),
                 'index': idx,
             }
