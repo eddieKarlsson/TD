@@ -12,6 +12,7 @@ class GenTD:
         self.output_path = output_path
         self.s = Settings()
         self.all_it_files = []  # Create an empty list
+        self.dict_list = []
 
         self.generate()
 
@@ -31,25 +32,35 @@ class GenTD:
 
         # Create all dictionaries, if enabled in settings
         if not self.s.DI_DISABLE:
-            self.di_dict = self._td_copy_obj_data_to_dict(
-                        self.s.DI_SHEETNAME, self.s.DI_START_INDEX)
+            self.di_dict = self._td_obj_data_to_dict(
+                        self.s.DI_SHEETNAME, self.s.DI_START_INDEX, 'di')
+            self.dict_list.append(self.di_dict)
         if not self.s.DO_DISABLE:
-            self.do_dict = self._td_copy_obj_data_to_dict(
-                        self.s.DO_SHEETNAME, self.s.DO_START_INDEX)
+            self.do_dict = self._td_obj_data_to_dict(
+                        self.s.DO_SHEETNAME, self.s.DO_START_INDEX, 'do')
+            self.dict_list.append(self.do_dict)
         if not self.s.VALVE_DISABLE:
-            self.valve_dict = self._td_copy_obj_data_to_dict(
-                self.s.VALVE_SHEETNAME, self.s.VALVE_START_INDEX, config=True)
+            self.valve_dict = self._td_obj_data_to_dict(
+                self.s.VALVE_SHEETNAME, self.s.VALVE_START_INDEX, 'valve',
+                config=True)
+            self.dict_list.append(self.valve_dict)
         if not self.s.MOTOR_DISABLE:
-            self.motor_dict = self._td_copy_obj_data_to_dict(
-                            self.s.MOTOR_SHEETNAME, self.s.VALVE_START_INDEX)
+            self.motor_dict = self._td_obj_data_to_dict(
+                            self.s.MOTOR_SHEETNAME, self.s.MOTOR_START_INDEX,
+                            'motor')
+            self.dict_list.append(self.motor_dict)
         if not self.s.AI_DISABLE:
-            self.ai_dict = self._td_copy_obj_data_to_dict(
-                self.s.AI_SHEETNAME, self.s.AI_START_INDEX, eng_var=True)
+            self.ai_dict = self._td_obj_data_to_dict(
+                self.s.AI_SHEETNAME, self.s.AI_START_INDEX, 'ai',
+                eng_var=True)
+            self.dict_list.append(self.ai_dict)
         if not self.s.AO_DISABLE:
-            self.ao_dict = self._td_copy_obj_data_to_dict(
-                    self.s.AO_SHEETNAME, self.s.AO_START_INDEX, eng_var=True)
+            self.ao_dict = self._td_obj_data_to_dict(
+                    self.s.AO_SHEETNAME, self.s.AO_START_INDEX, 'ao',
+                    eng_var=True)
+            self.dict_list.append(self.ao_dict)
 
-    def _td_obj_data_to_dict(self, sheet, start_index,
+    def _td_obj_data_to_dict(self, sheet, start_index, type,
                              config=False, eng_var=False):
         """Read all object data to dict"""
 
@@ -68,25 +79,30 @@ class GenTD:
         for i in range(self.s.ROW, ws.max_row + 1):
             # Break if we get a blank ID cell
             cell_id = ws.cell(row=i, column=self.s.COL_ID)
+            cell_comment = ws.cell(row=i, column=self.s.COL_COMMENT)
             if cell_id.value is None:
                 break
 
             # Always insert these key-value pairs
             obj = {
-                'id': cell_id,
-                'comment': ws.cell(row=i, column=self.s.COL_COMMENT),
+                'type': type,
+                'id': cell_id.value,
+                'comment': cell_comment.value,
                 'index': idx,
             }
 
             # Add conditional key-value pairs
             if config:
-                obj['config'] = ws.cell(row=i, column=self.s.COL_CONFIG)
+                cell_config = ws.cell(row=i, column=self.s.COL_CONFIG)
+                obj['config'] = cell_config.value
 
             if eng_var:
-                obj['comment'] = ws.cell(row=i, column=self.s.COL_COMMENT)
-                obj['eng_unit'] = ws.cell(row=i, column=self.s.COL_ENG_UNIT)
-                obj['eng_min'] = ws.cell(row=i, column=self.s.COL_ENG_MIN)
-                obj['eng_max'] = ws.cell(row=i, column=self.s.COL_ENG_MAX)
+                cell_eng_unit = ws.cell(row=i, column=self.s.COL_ENG_UNIT)
+                obj['eng_unit'] = cell_eng_unit.value
+                cell_eng_min = ws.cell(row=i, column=self.s.COL_ENG_MIN)
+                obj['eng_min'] = cell_eng_min.value
+                cell_eng_max = ws.cell(row=i, column=self.s.COL_ENG_MAX)
+                obj['eng_max'] = cell_eng_max.value
 
             obj_list.append(obj)
             idx += 1
@@ -282,9 +298,15 @@ class GenTD:
         """Logging settings"""
         print('Version', self.s.version)
 
-        self.open_td_excel()  # TODO ta bort denna då vi kallar på den
-        #                           i annan funktion
+        self.td_copy_excel_data_to_dictionaries()
 
+        if self.s.debug_level > 0:
+            for dict in self.dict_list:
+                for obj in dict:
+                    print(obj)
+
+
+"""
         # DI
         if self.s.DI_DISABLE:
             print('DI not generated, disabled in settings file')
@@ -320,3 +342,4 @@ class GenTD:
             print('AO not generated, disabled in settings file')
         else:
             self.td_gen_ao()
+"""

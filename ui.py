@@ -165,3 +165,6 @@ class TdUI(tk.Frame):
         self.about.title('About')
         # self.about.iconbitmap('C:\') TODO Program Icon
         self.label = tk.Label(self.about, text=self.s.version).pack()
+
+    def get_user_settings(self):
+        return self.user_data

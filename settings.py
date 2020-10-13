@@ -9,7 +9,7 @@ class Settings:
         """Initiliaze settings."""
 
         # Static setings
-        self.debug_level = 0
+        self.debug_level = 1
 
         # internal var, used below in functions
         self.json_file = 'user_settings.json'
