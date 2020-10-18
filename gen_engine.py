@@ -5,8 +5,10 @@ import openpyxl as xl
 from settings import Settings
 
 
-class GenTD:
-    """Various functions to interact with excel workbook in TD format"""
+class GenEngine:
+    """Multiple functions to interact with worbook and sub-classes in obj_lib,
+    and ui.
+    """
     def __init__(self, excel_path, output_path):
         self.excel_path = excel_path
         self.output_path = output_path
@@ -16,7 +18,7 @@ class GenTD:
 
         self.generate()
 
-    def _open_td_excel(self):
+    def _open_gen_excel(self):
         try:
             wb = xl.load_workbook(self.excel_path, data_only=True)
         except FileNotFoundError as e:
@@ -26,42 +28,42 @@ class GenTD:
         else:
             self.wb = wb
 
-    def td_copy_excel_data_to_dictionaries(self):
+    def copy_excel_data_to_dictionaries(self):
         """Open excel and read all relevant object-data to dict"""
-        self._open_td_excel()
+        self._open_gen_excel()
 
         # Create all dictionaries, if enabled in settings
         if not self.s.DI_DISABLE:
-            self.di_dict = self._td_obj_data_to_dict(
+            self.di_dict = self._obj_data_to_dict(
                         self.s.DI_SHEETNAME, self.s.DI_START_INDEX, 'di')
             self.dict_list.append(self.di_dict)
         if not self.s.DO_DISABLE:
-            self.do_dict = self._td_obj_data_to_dict(
+            self.do_dict = self._obj_data_to_dict(
                         self.s.DO_SHEETNAME, self.s.DO_START_INDEX, 'do')
             self.dict_list.append(self.do_dict)
         if not self.s.VALVE_DISABLE:
-            self.valve_dict = self._td_obj_data_to_dict(
+            self.valve_dict = self._obj_data_to_dict(
                 self.s.VALVE_SHEETNAME, self.s.VALVE_START_INDEX, 'valve',
                 config=True)
             self.dict_list.append(self.valve_dict)
         if not self.s.MOTOR_DISABLE:
-            self.motor_dict = self._td_obj_data_to_dict(
+            self.motor_dict = self._obj_data_to_dict(
                             self.s.MOTOR_SHEETNAME, self.s.MOTOR_START_INDEX,
                             'motor')
             self.dict_list.append(self.motor_dict)
         if not self.s.AI_DISABLE:
-            self.ai_dict = self._td_obj_data_to_dict(
+            self.ai_dict = self._obj_data_to_dict(
                 self.s.AI_SHEETNAME, self.s.AI_START_INDEX, 'ai',
                 eng_var=True)
             self.dict_list.append(self.ai_dict)
         if not self.s.AO_DISABLE:
-            self.ao_dict = self._td_obj_data_to_dict(
+            self.ao_dict = self._obj_data_to_dict(
                     self.s.AO_SHEETNAME, self.s.AO_START_INDEX, 'ao',
                     eng_var=True)
             self.dict_list.append(self.ao_dict)
 
-    def _td_obj_data_to_dict(self, sheet, start_index, type,
-                             config=False, eng_var=False):
+    def _obj_data_to_dict(self, sheet, start_index, type,
+                          config=False, eng_var=False):
         """Read all object data to dict"""
 
         # Open excel sheet
@@ -72,14 +74,63 @@ class GenTD:
             print(msg)
             sys.exit()
 
+        # Set column indexes, automatically or hard-coded
+        if self.s.FIND_HEADERS_AUTOMATICALLY:
+            # Loop header and set the corresponding variables to
+            # the integer number
+            for i in range(1, 20):
+                cell = ws.cell(row=self.s.HEADER_ROW, column=i)
+                cellval = str(cell.value)
+
+                # If cell is empty (NoneType) skip it
+                if cellval is None:
+                    continue
+
+                if self.s.COL_ID_NAME in cellval:
+                    column_id = i
+                if self.s.COL_COMMENT_NAME in cellval:
+                    column_comment = i
+
+                if config:
+                    if self.s.COL_CONFIG_NAME in cellval:
+                        column_config = i
+
+                if eng_var:
+                    if self.s.COL_ENG_UNIT_NAME in cellval:
+                        column_eng_unit = i
+                    if self.s.COL_ENG_MIN_NAME in cellval:
+                        column_eng_min = i
+                    if self.s.COL_ENG_MAX_NAME in cellval:
+                        column_eng_max = i
+        else:
+            column_id = self.s.COL_ID
+            column_comment = self.s.COL_COMMENT
+            if config:
+                column_config = self.s.COL_CONFIG
+            if eng_var:
+                column_eng_unit = self.s.COL_ENG_UNIT
+                column_eng_min = self.s.COL_ENG_MIN
+                column_eng_max = self.s.COL_ENG_MAX
+
+        if self.s.debug_level > 0:
+            print('SHEET:', sheet)
+            print('\t', 'column_id:', column_id)
+            print('\t', 'column_comment:', column_comment)
+            if config:
+                print('\t', 'column_config:', column_config)
+            if eng_var:
+                print('\t', 'column_eng_unit:', column_eng_unit)
+                print('\t', 'column_eng_min:', column_eng_min)
+                print('\t', 'column_eng_max:', column_eng_max)
+
         # Loop through object list and add key-value pairs to object dict
         # then append each object-dict to list
         obj_list = []
         idx = start_index
         for i in range(self.s.ROW, ws.max_row + 1):
             # Break if we get a blank ID cell
-            cell_id = ws.cell(row=i, column=self.s.COL_ID)
-            cell_comment = ws.cell(row=i, column=self.s.COL_COMMENT)
+            cell_id = ws.cell(row=i, column=column_id)
+            cell_comment = ws.cell(row=i, column=column_comment)
             if cell_id.value is None:
                 break
 
@@ -93,15 +144,15 @@ class GenTD:
 
             # Add conditional key-value pairs
             if config:
-                cell_config = ws.cell(row=i, column=self.s.COL_CONFIG)
+                cell_config = ws.cell(row=i, column=column_config)
                 obj['config'] = cell_config.value
 
             if eng_var:
-                cell_eng_unit = ws.cell(row=i, column=self.s.COL_ENG_UNIT)
+                cell_eng_unit = ws.cell(row=i, column=column_eng_unit)
                 obj['eng_unit'] = cell_eng_unit.value
-                cell_eng_min = ws.cell(row=i, column=self.s.COL_ENG_MIN)
+                cell_eng_min = ws.cell(row=i, column=column_eng_min)
                 obj['eng_min'] = cell_eng_min.value
-                cell_eng_max = ws.cell(row=i, column=self.s.COL_ENG_MAX)
+                cell_eng_max = ws.cell(row=i, column=column_eng_max)
                 obj['eng_max'] = cell_eng_max.value
 
             obj_list.append(obj)
@@ -109,7 +160,7 @@ class GenTD:
 
         return obj_list
 
-    def td_single(self, config_file, ref_txt):
+    def single(self, config_file, ref_txt):
         """Read a text file and copy the data inside notifiers to memory"""
         with open(config_file, 'r') as config:
             exists_in_config = False
@@ -131,8 +182,8 @@ class GenTD:
 
         return inst_data
 
-    def td_multiple(self, config_file, ref_txt, excelsheet, udt_size=30,
-                    udt_offset=14, start_index=0):
+    def multiple(self, config_file, ref_txt, excelsheet, udt_size=30,
+                 udt_offset=14, start_index=0):
         """Get text lines from config file and replace by data in excel,
            then append the new lines to memory"""
         # Try to open excelsheet, otherwise prompt user
@@ -233,7 +284,7 @@ class GenTD:
 
         return inst_data
 
-    def td_multiple_config(self, sub_dir, ref_txt, excelsheet):
+    def multiple_config(self, sub_dir, ref_txt, excelsheet):
         """Same as td_multiple, but config stored in different files"""
         # Try to open excelsheet, otherwise prompt user
         try:
@@ -298,7 +349,7 @@ class GenTD:
         """Logging settings"""
         print('Version', self.s.version)
 
-        self.td_copy_excel_data_to_dictionaries()
+        self.copy_excel_data_to_dictionaries()
 
         if self.s.debug_level > 0:
             for dict in self.dict_list:

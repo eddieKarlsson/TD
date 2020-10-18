@@ -1,5 +1,5 @@
 import tkinter as tk
-from ui import TdUI
+from ui import GenUI
 from settings import Settings
 
 # Instanciate settings
@@ -7,7 +7,7 @@ s = Settings()
 
 # Call UI
 root = tk.Tk()
-ui_app = TdUI(master=root)
+ui_app = GenUI(master=root)
 ui_app.mainloop()
 
 # when app exits save user Settings

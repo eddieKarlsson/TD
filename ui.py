@@ -3,10 +3,10 @@ from tkinter import filedialog
 import os
 import os.path
 from settings import Settings
-from td_functions import GenTD
+from gen_engine import GenEngine
 
 
-class TdUI(tk.Frame):
+class GenUI(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self.master = master
@@ -17,7 +17,7 @@ class TdUI(tk.Frame):
 
         # Constants
         self.height = 200
-        self.width = 500
+        self.width = 600
         self.frameColor = "#2b2b2b"
         self.buttonWidth = 0.2
         self.buttonHeight = 0.12
@@ -38,7 +38,7 @@ class TdUI(tk.Frame):
     def create_window(self):
         """Create window"""
         # Title and program-icon
-        self.master.title('MC TD Gen')
+        self.master.title('Generate it')
         # self.master.iconbitmap('C:\') TODO Program Icon
 
         self.canvas = tk.Canvas(self.master, height=self.height,
@@ -60,8 +60,6 @@ class TdUI(tk.Frame):
         # view submenu
         self.viewSubMenu = tk.Menu(self.menu, tearoff=0)
         self.menu.add_cascade(label="View", menu=self.viewSubMenu)
-        self.viewSubMenu.add_command(label="Log file",
-                                     command=self.open_logfile)
         self.viewSubMenu.add_command(label="Settings file",
                                      command=self.open_settings)
         self.viewSubMenu.add_command(label="Config files",
@@ -153,7 +151,7 @@ class TdUI(tk.Frame):
             self.run_self.configure(state=tk.DISABLED)
 
     def run_self(self):
-        GenTD(self.user_data['excel_path'], self.user_data['output_path'])
+        GenEngine(self.user_data['excel_path'], self.user_data['output_path'])
 
     def open_config_path(self):
         c_path = self.s.CONFIG_PATH
