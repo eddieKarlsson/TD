@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 import os.path
 import openpyxl as xl
 from settings import Settings
@@ -160,7 +160,58 @@ class GenEngine:
 
         return obj_list
 
-    def single(self, config_file, ref_txt):
+    def _replace_keywords(self, line, obj, data_size, data_offset):
+        """Take in a line and convert all the identifiers to obj data"""
+
+        # Replace the keywords that always exists
+        line = line.replace(self.s.ID_REPLACE, obj['id'])
+
+        # check if comment exists, if not insert empty string
+        if obj['comment'] is None:
+            line = line.replace(self.s.COMMENT_REPLACE, '')
+        else:
+            line = line.replace(self.s.COMMENT_REPLACE,
+                                obj['comment'])
+
+        # Replace index
+        line = line.replace(self.s.INDEX_REPLACE, obj['index'])
+
+        # calculate address by offset & datatype data_size
+        adress = (obj['index'] * data_size) + data_offset
+        # Replace '@ADR'
+        line = line.replace(self.s.ADR_REPLACE, str(adress))
+
+        # Replace PLC
+        line = line.replace(self.s.PLC_REPLACE,
+                            self.s.PLC_NAME)
+
+        # Replace the keywords that are optional (check if they exist)
+
+        if obj.get('config') is not None:
+            line = line.replace(self.s.CONFIG_REPLACE, obj['config'])
+
+        if obj.get('eng_unit') is not None:
+            line = line.replace(self.s.ENG_UNIT_REPLACE,
+                                obj['eng_unit')
+        else:
+            line = line.replace(self.s.ENG_UNIT_REPLACE, '')
+
+        if obj.get('eng_min') is not None:
+            line = line.replace(self.s.ENG_MIN_REPLACE,
+                                obj['eng_min')
+        else:
+            line = line.replace(self.s.ENG_MIN_REPLACE, '0')
+
+        if obj.get('eng_max') is not None:
+            line = line.replace(self.s.ENG_MAX_REPLACE,
+                                obj['eng_max')
+        else:
+            line = line.replace(self.s.ENG_MAX_REPLACE, '100')
+
+        return line
+
+    @staticmethod
+    def single(config_file, ref_txt):
         """Read a text file and copy the data inside notifiers to memory"""
         with open(config_file, 'r') as config:
             exists_in_config = False
@@ -178,21 +229,28 @@ class GenEngine:
                     exists_in_config = True
                     section_found = True
         if not exists_in_config:
-            print(ref_txt, 'not found in config file!')
+            resultOk = False
+            resultMsg = 'ref_txt not found in config file'
+        else:
+            resultOk = True
+            resultMsg = None
 
-        return inst_data
+        # Return a dictionary with the result
+        result = {
+            'ref_txt': ref_txt,
+            'excelsheet': None,
+            'from_row': None,
+            'to_row': None,
+            'resultOk': resultOk,
+            'badResultMsg': resultMsg
+        }
 
-    def multiple(self, config_file, ref_txt, excelsheet, udt_size=30,
-                 udt_offset=14, start_index=0):
-        """Get text lines from config file and replace by data in excel,
-           then append the new lines to memory"""
-        # Try to open excelsheet, otherwise prompt user
-        try:
-            active_sheet = self.wb[excelsheet]  # open sheet
-        except KeyError:
-            msg = f'Error! {excelsheet} sheet does not exist, prog will exit'
-            print(msg)
-            sys.exit()
+        return inst_data, result
+
+    def multiple(self, obj_list, config_file, ref_txt, excelsheet,
+                 data_size=30, data_offset=14):
+        """Get text lines from config file and replace by data in excel for
+            each item, then append the new lines to memory"""
 
         with open(config_file, 'r') as config:
             exists_in_config = False
@@ -200,89 +258,38 @@ class GenEngine:
             inst_data = ''
             begin = '[gen.' + ref_txt + '_begin]'
             end = '[gen.' + ref_txt + '_end]'
-            adrIndx = start_index - 1  # -1 to have first 0
 
-            for i in range(self.s.ROW, active_sheet.max_row + 1):
-                cell_id = active_sheet.cell(row=i, column=self.s.COL_ID)
-                cell_config = active_sheet.cell(row=i,
-                                                column=self.s.COL_CONFIG)
-                cell_comment = active_sheet.cell(row=i,
-                                                 column=self.s.COL_COMMENT)
-                cell_engunit = active_sheet.cell(row=i,
-                                                 column=self.s.COL_ENG_UNIT)
-                cell_engmin = active_sheet.cell(row=i,
-                                                column=self.s.COL_ENG_MIN)
-                cell_engmax = active_sheet.cell(row=i,
-                                                column=self.s.COL_ENG_MAX)
-
-                adrIndx += 1
-
-                if cell_id.value is None:
-                    break
-
+            for obj in obj_list:
                 config.seek(0, 0)  # Seek to beginning of file
                 for lineIndex, line in enumerate(config, start=1):
                     if end in str(line):
                         section_found = False
                     if section_found:
-                        line = line.replace(self.s.ID_REPLACE, cell_id.value)
-
-                        if cell_config.value is not None:
-                            line = line.replace(self.s.CONFIG_REPLACE,
-                                                cell_config.value)
-
-                        # Replace index
-                        line = line.replace(self.s.INDEX_REPLACE, str(adrIndx))
-
-                        # calculate address by offset & datatype udt_size
-                        adress = (adrIndx * udt_size) + udt_offset
-                        # Replace '@ADR'
-                        line = line.replace(self.s.ADR_REPLACE, str(adress))
-
-                        # Replace PLC
-                        line = line.replace(self.s.PLC_REPLACE,
-                                            self.s.PLC_NAME)
-
-                        # check if eng unit exists, if not insert empty string
-                        if cell_engunit.value is None:
-                            line = line.replace(self.s.ENG_UNIT_REPLACE, '')
-                        else:
-                            line = line.replace(self.s.ENG_UNIT_REPLACE,
-                                                cell_engunit.value)
-
-                        # check if eng min exists, if not insert 0
-                        if cell_engmin.value is None:
-                            line = line.replace(self.s.ENG_MIN_REPLACE, '0')
-                        else:
-                            line = line.replace(self.s.ENG_MIN_REPLACE,
-                                                str(cell_engmin.value))
-
-                        # check if eng max exists, if not insert 100
-                        if cell_engmax.value is None:
-                            line = line.replace(self.s.ENG_MAX_REPLACE, '100')
-                        else:
-                            line = line.replace(self.s.ENG_MAX_REPLACE,
-                                                str(cell_engmax.value))
-
-                        # check if comment exists, if not insert empty string
-                        if cell_comment.value is None:
-                            line = line.replace(self.s.COMMENT_REPLACE, '')
-                        else:
-                            line = line.replace(self.s.COMMENT_REPLACE,
-                                                cell_comment.value)
-
-                        inst_data += line  # Create instance data
+                        line = self._replace_keywords(line, obj,
+                                                      data_size, data_offset)
+                        inst_data += line
                     if begin in str(line):
                         exists_in_config = True
                         section_found = True
             if not exists_in_config:
-                print(ref_txt, 'in config file not found!')
+                resultOk = False
+                resultMsg = 'ref_txt not found in config file'
             else:
-                print('Generated from row:',
-                      self.s.ROW, 'to', i - 1, 'of', ref_txt, 'in',
-                      active_sheet)
+                resultOk = True
+                resultMsg = None
 
-        return inst_data
+            # Return a dictionary with the result
+            result = {
+                'ref_txt': ref_txt,
+                'excelsheet': active_sheet,
+                'from_row': self.s.row,
+                'to_row': i - 1,
+                'resultOk': resultOk,
+                'badResultMsg': resultMsg
+            }
+
+
+        return inst_data, result
 
     def multiple_config(self, sub_dir, ref_txt, excelsheet):
         """Same as td_multiple, but config stored in different files"""
