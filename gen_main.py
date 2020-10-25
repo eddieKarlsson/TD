@@ -1,7 +1,7 @@
 import sys
 import openpyxl as xl
 from settings import Settings
-from valve import Valve
+from obj_lib.valve import Valve
 
 
 class GenMain:
