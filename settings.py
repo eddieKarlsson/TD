@@ -18,7 +18,7 @@ class Settings:
         self.version = 2.0
 
         """Settings"""
-        self.CONFIG_PATH = 'Config'  # sub-directory of config files
+        self.CONFIG_PATH = 'config'  # sub-directory of config files
 
         self.HEADER_ROW = 3  # Excel header
         self.ROW = 6  # Excel start row of data
@@ -69,7 +69,7 @@ class Settings:
         self.VALVE_DISABLE = False
         self.VALVE_START_INDEX = 0
         self.VALVE_SHEETNAME = 'Valve'
-        self.CONFIG_PATH_VALVE = 'Config/Valve'  # sub-dir for valve config
+        self.CONFIG_PATH_VALVE = 'config/valve'  # sub-dir for valve config
 
         self.MOTOR_DISABLE = False
         self.MOTOR_START_INDEX = 0

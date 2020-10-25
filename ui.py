@@ -3,7 +3,7 @@ from tkinter import filedialog
 import os
 import os.path
 from settings import Settings
-from gen_engine import GenEngine
+from gen_main import GenMain
 
 
 class GenUI(tk.Frame):
@@ -151,7 +151,7 @@ class GenUI(tk.Frame):
             self.run_self.configure(state=tk.DISABLED)
 
     def run_self(self):
-        GenEngine(self.user_data['excel_path'], self.user_data['output_path'])
+        GenMain(self.user_data['excel_path'], self.user_data['output_path'])
 
     def open_config_path(self):
         c_path = self.s.CONFIG_PATH
