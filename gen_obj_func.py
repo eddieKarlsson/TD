@@ -60,7 +60,7 @@ class GenObjFunc:
         return line
 
     @staticmethod
-    def single(config_file, ref_txt):
+    def single(config_file, ref_txt, list_result):
         """Read a text file and copy the data inside notifiers to memory"""
         with open(config_file, 'r') as config:
             exists_in_config = False
@@ -79,7 +79,7 @@ class GenObjFunc:
                     section_found = True
         if not exists_in_config:
             resultOk = False
-            resultMsg = 'ref_txt not found in config file'
+            resultMsg = ref_txt + ' not found in config file'
         else:
             resultOk = True
             resultMsg = None
@@ -92,10 +92,10 @@ class GenObjFunc:
             'badResultMsg': resultMsg
         }
 
-        # TODO return result
+        list_result.append(result)
         return inst_data
 
-    def multiple(self, obj_list, config_file, ref_txt,
+    def multiple(self, obj_list, config_file, ref_txt, list_result,
                  data_size=30, data_offset=14):
         """Get text lines from config file and replace by data in excel for
             each item, then append the new lines to memory"""
@@ -137,9 +137,10 @@ class GenObjFunc:
                 'badResultMsg': resultMsg
             }
 
-        # TODO return result
+        list_result.append(result)
         return inst_data
-    def multiple_config(self, obj_list, sub_dir, ref_txt,
+
+    def multiple_config(self, obj_list, sub_dir, ref_txt, list_result,
                         data_size=30, data_offset=14):
         """Same as td_multiple, but config stored in different files"""
         # Setup variables
@@ -183,5 +184,20 @@ class GenObjFunc:
                 'resultOk': resultOk,
                 'badResultMsg': resultMsg
             }
-        # TODO return result
+        list_result.append(result)
         return inst_data
+
+    @staticmethod
+    def result(list_with_dicts, type='lol'):
+        """Check all result dicts and sum them, then print info to user"""
+        print('\n')
+        print(type)
+
+        good_results = []  # Empty list
+        for dict in list_with_dicts:
+            if dict['resultOk']:
+                good_results.append(dict['ref_txt'])
+            else:
+                print('\t', 'ERROR:', dict['badResultMsg'])
+
+        print('\t', 'INFO: processed objects', good_results)
