@@ -19,18 +19,27 @@ class Valve:
 
         self.gen = genfunc(gen_main)
 
-        self.type = 'valve'
+        self.type = 'Valve'
 
         self.rl = []  # Create empty list "result list"
 
         self.generate()
 
-    def _s7plc_db(self):
-        data = self.gen.single(self.cf, self.rl, 'S7PLC_DB_Header')
-        data += self.gen.multiple(self.ol, self.cf, self.rl, 'S7PLC_DB_Var')
-        data += self.gen.single(self.cf, self.rl, 'S7PLC_DB_Footer')
+    def _tia_db(self):
+        data = self.gen.single(self.cf, self.rl, 'TIA_DB_Header')
+        data += self.gen.multiple(self.ol, self.cf, self.rl, 'TIA_DB_Var')
+        data += self.gen.single(self.cf, self.rl, 'TIA_DB_Footer')
 
-        filename = 'S7PLC_' + self.type + '_DB.db'
+        filename = 'PLC_' + self.type + '_DB.db'
+        file_and_path = os.path.join(self.out_file_path, filename)
+        with open(file_and_path, 'w', encoding='cp1252') as f:
+            f.write(data)
+
+    def _tia_symbol(self):
+        data = self.gen.multiple_config(self.ol, self.cp, self.rl,
+                                        'TIA_Symbol')
+
+        filename = 'PLC_' + self.type + '_Symbols.sdf'
         file_and_path = os.path.join(self.out_file_path, filename)
         with open(file_and_path, 'w', encoding='cp1252') as f:
             f.write(data)
@@ -41,7 +50,8 @@ class Valve:
         if not os.path.exists(self.out_file_path):
             os.makedirs(self.out_file_path)
 
-        self._s7plc_db()
+        self._tia_db()
+        self._tia_symbol()
 
         #  self._intouch()
 

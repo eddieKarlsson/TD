@@ -1,14 +1,14 @@
-<S7PLC_Codebody>
+<TIA_Codebody>
 this is codebody    valve2
 # ID    @ID
 # CFG   @CFG
 # CMT   @CMT
-</S7PLC_Codebody>
+</TIA_Codebody>
 
-<S7PLC_Var>
+<TIA_Var>
 "I*@ID" : Bool;
-</S7PLC_Var>
+</TIA_Var>
 
-<S7PLC_Symbol>
+<TIA_Symbol>
 "Q*@ID","%@INDEX.0","Bool","True","True","False","@CMT","","True"
-</S7PLC_Symbol>
+</TIA_Symbol>

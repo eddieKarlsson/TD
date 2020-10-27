@@ -9,22 +9,22 @@
 "@ID_PTR","$System","",No,No,0,No,No,0,0,"",@INDEX,-32768,32767,0,0,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,Off,0,1,0,Off,0,1,Min,"",0,0,0,0,0,0,0,0,"","","","","","","",""
 </Intouch_Tag>
 
-<S7PLC_DB_Header>
+<TIA_DB_Header>
 DATA_BLOCK "Valve"
 { S7_Optimized_Access := 'FALSE' }
 VERSION : 0.1
    STRUCT
-</S7PLC_DB_Header>
+</TIA_DB_Header>
 
-<S7PLC_DB_Var>
+<TIA_DB_Var>
       @ID : "MC UDT VALVE";   // @CMT
-</S7PLC_DB_Var>
+</TIA_DB_Var>
 
-<S7PLC_DB_Footer>
+<TIA_DB_Footer>
    END_STRUCT;
 
 
 BEGIN
 
 END_DATA_BLOCK
-</S7PLC_DB_Footer>
+</TIA_DB_Footer>
