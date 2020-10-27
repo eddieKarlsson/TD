@@ -2,6 +2,8 @@ import tkinter as tk
 from ui import GenUI
 from settings import Settings
 
+"""Top-level script to call the UI and handle program flow"""
+
 # Instanciate settings
 s = Settings()
 

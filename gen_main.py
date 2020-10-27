@@ -221,7 +221,6 @@ class GenMain:
 
         self.valve = Valve(self, self.output_path, self.valve_dict)
 
-
 """
         # DI
         if self.s.DI_DISABLE:

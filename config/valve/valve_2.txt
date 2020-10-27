@@ -1,14 +1,14 @@
-[gen.codebody_begin]
+<S7PLC_Codebody>
 this is codebody    valve2
 # ID    @ID
 # CFG   @CFG
 # CMT   @CMT
-[gen.codebody_end]
+</S7PLC_Codebody>
 
-[gen.var_begin]
+<S7PLC_Var>
 "I*@ID" : Bool;
-[gen.var_end]
+</S7PLC_Var>
 
-[gen.symbol_begin]
+<S7PLC_Symbol>
 "Q*@ID","%@INDEX.0","Bool","True","True","False","@CMT","","True"
-[gen.symbol_end]
+</S7PLC_Symbol>

@@ -60,14 +60,14 @@ class GenObjFunc:
         return line
 
     @staticmethod
-    def single(config_file, ref_txt, list_result):
+    def single(config_file, list_result, ref_txt):
         """Read a text file and copy the data inside notifiers to memory"""
         with open(config_file, 'r') as config:
             exists_in_config = False
             section_found = False
             inst_data = ''
-            begin = '[gen.' + ref_txt + '_begin]'
-            end = '[gen.' + ref_txt + '_end]'
+            begin = '<' + ref_txt + '>'
+            end = '</' + ref_txt + '>'
 
             for line in config:
                 if end in str(line):
@@ -79,7 +79,7 @@ class GenObjFunc:
                     section_found = True
         if not exists_in_config:
             resultOk = False
-            resultMsg = ref_txt + ' not found in config file'
+            resultMsg = f"'{ref_txt}' not found in config file"
         else:
             resultOk = True
             resultMsg = None
@@ -95,7 +95,7 @@ class GenObjFunc:
         list_result.append(result)
         return inst_data
 
-    def multiple(self, obj_list, config_file, ref_txt, list_result,
+    def multiple(self, obj_list, config_file, list_result, ref_txt,
                  data_size=30, data_offset=14):
         """Get text lines from config file and replace by data in excel for
             each item, then append the new lines to memory"""
@@ -104,8 +104,8 @@ class GenObjFunc:
             exists_in_config = False
             section_found = False
             inst_data = ''
-            begin = '[gen.' + ref_txt + '_begin]'
-            end = '[gen.' + ref_txt + '_end]'
+            begin = '<' + ref_txt + '>'
+            end = '</' + ref_txt + '>'
 
             for obj in obj_list:
                 config.seek(0, 0)  # Seek to beginning of file
@@ -124,7 +124,7 @@ class GenObjFunc:
                     type = obj['type']
             if not exists_in_config:
                 resultOk = False
-                resultMsg = 'ref_txt not found in config file'
+                resultMsg = f"'{ref_txt}' not found in config file"
             else:
                 resultOk = True
                 resultMsg = None
@@ -140,15 +140,15 @@ class GenObjFunc:
         list_result.append(result)
         return inst_data
 
-    def multiple_config(self, obj_list, sub_dir, ref_txt, list_result,
+    def multiple_config(self, obj_list, sub_dir, list_result, ref_txt,
                         data_size=30, data_offset=14):
         """Same as td_multiple, but config stored in different files"""
         # Setup variables
         exists_in_config = False
         section_found = False
         inst_data = ''
-        begin = '[gen.' + ref_txt + '_begin]'
-        end = '[gen.' + ref_txt + '_end]'
+        begin = '<' + ref_txt + '>'
+        end = '</' + ref_txt + '>'
 
         # loop through excel rows, get value at corresponding cell
         for obj in obj_list:
@@ -172,7 +172,7 @@ class GenObjFunc:
                     type = obj['type']
             if not exists_in_config:
                 resultOk = False
-                resultMsg = 'ref_txt not found in config file'
+                resultMsg = f"'{ref_txt}' not found in config file"
             else:
                 resultOk = True
                 resultMsg = None
@@ -190,14 +190,28 @@ class GenObjFunc:
     @staticmethod
     def result(list_with_dicts, type='lol'):
         """Check all result dicts and sum them, then print info to user"""
+        rOkCnt = 0
+        rBadCnt = 0
         print('\n')
         print(type)
 
         good_results = []  # Empty list
+        bad_results = []  # Empty list
+
         for dict in list_with_dicts:
             if dict['resultOk']:
                 good_results.append(dict['ref_txt'])
+                rOkCnt += 1
             else:
-                print('\t', 'ERROR:', dict['badResultMsg'])
+                #  print(f"\t ERROR: {dict['badResultMsg']}")
+                msg = f"\t ERROR: {dict['badResultMsg']}"
+                bad_results.append(msg)
+                rBadCnt += 1
 
-        print('\t', 'INFO: processed objects', good_results)
+        print(f"\t Succesfully processed {rOkCnt} objects: {good_results}")
+
+        if rBadCnt > 0:
+            print("\n")
+            print(f"\t {rBadCnt} resulted with error:")
+            for r in bad_results:
+                print('\t', r)
