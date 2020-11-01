@@ -6,16 +6,8 @@ class Settings:
     """A class to store all settings, user-data in JSON format."""
 
     def __init__(self):
-        """Initiliaze settings."""
-
-        # Static setings
-        self.debug_level = 1
-
-        # internal var, used below in functions
-        self.json_file = 'user_settings.json'
-        self.indent = 1
-
         self.version = 2.0
+        self.debug_level = 0
 
         """Settings"""
         self.CONFIG_PATH = 'config'  # sub-directory of config files
@@ -82,6 +74,13 @@ class Settings:
         self.AO_DISABLE = False
         self.AO_START_INDEX = 0
         self.AO_SHEETNAME = 'AO'
+
+        self.TIA_DIR = 'TIA'
+        self.INTOUCH_DIR = 'Intouch'
+
+        # internal var, used below in functions
+        self.json_file = 'user_settings.json'
+        self.indent = 1
 
     def _create_user_settings(self):
         """Create dict which contains all user data"""

@@ -1,4 +1,5 @@
 import sys
+import os
 import openpyxl as xl
 from settings import Settings
 from obj_lib.valve import Valve
@@ -209,6 +210,14 @@ class GenMain:
 
         return line
 
+    def create_subdirs(self):
+        """Create all subdirectiories beyond output path"""
+        dirs = [self.s.TIA_DIR, self.s.INTOUCH_DIR]
+        for dir in dirs:
+            newdir = os.path.join(self.output_path, dir)
+            if not os.path.exists(newdir):
+                os.makedirs(newdir)
+
     def generate(self):
         print('Version', self.s.version)
 
@@ -219,42 +228,9 @@ class GenMain:
                 for obj in dict:
                     print(obj)
 
-        self.valve = Valve(self, self.output_path, self.valve_dict)
+        self.create_subdirs()
 
-"""
-        # DI
-        if self.s.DI_DISABLE:
-            print('DI not generated, disabled in settings file')
-        else:
-            self.td_gen_di()
-
-        # DO
-        if self.s.DO_DISABLE:
-            print('DO not generated, disabled in settings file')
-        else:
-            self.td_gen_do()
-
-        # Valve
         if self.s.VALVE_DISABLE:
             print('Valve not generated, disabled in settings file')
         else:
-            self.td_gen_valve()
-
-        # Motor
-        if self.s.MOTOR_DISABLE:
-            print('Motor not generated, disabled in settings file')
-        else:
-            self.td_gen_motor()
-
-        # AI
-        if self.s.AI_DISABLE:
-            print('AI not generated, disabled in settings file')
-        else:
-            self.td_gen_ai()
-
-        # AO
-        if self.s.AO_DISABLE:
-            print('AO not generated, disabled in settings file')
-        else:
-            self.td_gen_ao()
-"""
+            self.valve = Valve(self, self.output_path, self.valve_dict)

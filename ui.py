@@ -19,8 +19,8 @@ class GenUI(tk.Frame):
         self.height = 200
         self.width = 600
         self.frameColor = "#2b2b2b"
-        self.buttonWidth = 0.2
-        self.buttonHeight = 0.12
+        self.buttonWidth = 0.23
+        self.buttonHeight = 0.13
         self.button_bg = "#2b2b2b"
         self.button_fg = "#FFFFFF"  # text color
         self.fontSize = 10
@@ -87,7 +87,7 @@ class GenUI(tk.Frame):
                                    fg=self.button_fg,
                                    text=(self.user_data['excel_path']))
 
-        self.excelLabel.place(relx=0.25, rely=0.1, relheight=self.buttonHeight)
+        self.excelLabel.place(relx=0.27, rely=0.1, relheight=self.buttonHeight)
 
         # Output path button
         self.outpathButton = tk.Button(self.master, text="Output path...",
@@ -103,7 +103,7 @@ class GenUI(tk.Frame):
                                      fg=self.button_fg,
                                      text=(self.user_data['output_path']))
 
-        self.outpathLabel.place(relx=0.25, rely=0.1 + self.buttonYSpacing,
+        self.outpathLabel.place(relx=0.27, rely=0.1 + self.buttonYSpacing,
                                 relheight=self.buttonHeight)
 
         # Run script
