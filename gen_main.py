@@ -9,9 +9,10 @@ class GenMain:
     """Main class called from UI,
     read data from excel and then execute sub-class functions
     """
-    def __init__(self, excel_path, output_path):
+    def __init__(self, excel_path, output_path, config_path):
         self.excel_path = excel_path
         self.output_path = output_path
+        self.config_path = config_path
         self.s = Settings()
         self.all_it_files = []  # Create an empty list
         self.dict_list = []
@@ -233,4 +234,5 @@ class GenMain:
         if self.s.VALVE_DISABLE:
             print('Valve not generated, disabled in settings file')
         else:
-            self.valve = Valve(self, self.output_path, self.valve_dict)
+            self.valve = Valve(self, self.output_path, self.valve_dict,
+                               self.config_path)

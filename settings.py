@@ -10,8 +10,6 @@ class Settings:
         self.debug_level = 0
 
         """Settings"""
-        self.CONFIG_PATH = 'config'  # sub-directory of config files
-
         self.HEADER_ROW = 3  # Excel header
         self.ROW = 6  # Excel start row of data
         self.INDEX_REPLACE = '@INDEX'  # string to be replaced in config file
@@ -61,7 +59,6 @@ class Settings:
         self.VALVE_DISABLE = False
         self.VALVE_START_INDEX = 0
         self.VALVE_SHEETNAME = 'Valve'
-        self.CONFIG_PATH_VALVE = 'config/valve'  # sub-dir for valve config
 
         self.MOTOR_DISABLE = False
         self.MOTOR_START_INDEX = 0
@@ -87,7 +84,7 @@ class Settings:
         user_settings = {
             'excel_path': 'No excel specified',
             'output_path': 'No path specified',
-
+            'config_path': 'config',
         }
 
         return user_settings

@@ -6,11 +6,16 @@ from gen_obj_func import GenObjFunc as genfunc
 class Valve:
     """Object specifik code to concetenate text lines and create files"""
 
-    def __init__(self, gen_main, output_path, obj_list):
+    def __init__(self, gen_main, output_path, obj_list, config_path):
         self.s = gen_main.s  # Instanciate settings
 
-        self.cp = self.s.CONFIG_PATH_VALVE  # Config folder path
-        self.cf = os.path.join(self.s.CONFIG_PATH_VALVE, 'valve.txt')
+        self.type = 'valve'
+
+        self.cp = os.path.join(config_path, self.type)  # Config folder path
+        self.cf = os.path.join(self.cp, self.type + '.txt')  # base config file
+
+        print(self.cp)
+        print(self.cf)
 
         self.output_path = output_path
         self.tia_path = os.path.join(self.output_path, self.s.TIA_DIR)
@@ -19,8 +24,6 @@ class Valve:
         self.ol = obj_list
 
         self.gen = genfunc(gen_main)
-
-        self.type = 'valve'
 
         self.rl = []  # Create empty list "result list"
 

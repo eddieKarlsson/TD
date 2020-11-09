@@ -16,15 +16,15 @@ class GenUI(tk.Frame):
         self.user_data = self.s.load_user_settings()
 
         # Constants
-        self.height = 200
+        self.height = 275
         self.width = 600
         self.frameColor = "#2b2b2b"
         self.buttonWidth = 0.23
-        self.buttonHeight = 0.13
+        self.buttonHeight = 0.09
         self.button_bg = "#2b2b2b"
         self.button_fg = "#FFFFFF"  # text color
         self.fontSize = 10
-        self.buttonYSpacing = 0.20
+        self.buttonYSpacing = 0.18
         self.checkbuttonYSpacing = 0.1
 
         # Call app
@@ -62,7 +62,7 @@ class GenUI(tk.Frame):
         self.menu.add_cascade(label="View", menu=self.viewSubMenu)
         self.viewSubMenu.add_command(label="Settings file",
                                      command=self.open_settings)
-        self.viewSubMenu.add_command(label="Config files",
+        self.viewSubMenu.add_command(label="Config path",
                                      command=self.open_config_path)
 
         # about submenu
@@ -74,11 +74,12 @@ class GenUI(tk.Frame):
     def create_window_contents(self):
         """Create window contents"""
         # Excel button
+        y = 0.1
         self.excelButton = tk.Button(self.master, text="Select Excel...",
                                      bg=self.button_bg, fg=self.button_fg,
                                      command=self.browse_excel)
 
-        self.excelButton.place(relx=0.03, rely=0.1,
+        self.excelButton.place(relx=0.03, rely=y,
                                relheight=self.buttonHeight,
                                relwidth=self.buttonWidth)
 
@@ -87,14 +88,14 @@ class GenUI(tk.Frame):
                                    fg=self.button_fg,
                                    text=(self.user_data['excel_path']))
 
-        self.excelLabel.place(relx=0.27, rely=0.1, relheight=self.buttonHeight)
+        self.excelLabel.place(relx=0.27, rely=y, relheight=self.buttonHeight)
 
         # Output path button
         self.outpathButton = tk.Button(self.master, text="Output path...",
                                        bg=self.button_bg, fg=self.button_fg,
                                        command=self.output_path)
-
-        self.outpathButton.place(relx=0.03, rely=0.1 + self.buttonYSpacing,
+        y += self.buttonYSpacing
+        self.outpathButton.place(relx=0.03, rely=y,
                                  relheight=self.buttonHeight,
                                  relwidth=self.buttonWidth)
 
@@ -103,15 +104,35 @@ class GenUI(tk.Frame):
                                      fg=self.button_fg,
                                      text=(self.user_data['output_path']))
 
-        self.outpathLabel.place(relx=0.27, rely=0.1 + self.buttonYSpacing,
+        self.outpathLabel.place(relx=0.27, rely=y,
                                 relheight=self.buttonHeight)
 
+        y += self.buttonYSpacing
+        # config path button
+        self.cfgpathButton = tk.Button(self.master, text="Config path...",
+                                       bg=self.button_bg, fg=self.button_fg,
+                                       command=self.config_path)
+
+        self.cfgpathButton.place(relx=0.03, rely=y,
+                                 relheight=self.buttonHeight,
+                                 relwidth=self.buttonWidth)
+
+        # config path label
+        self.cfgpathLabel = tk.Label(self.frame, bg=self.button_bg,
+                                     fg=self.button_fg,
+                                     text=(self.user_data['config_path']))
+
+        self.cfgpathLabel.place(relx=0.27, rely=y,
+                                relheight=self.buttonHeight)
+
+        y += self.buttonYSpacing
+        y += self.buttonYSpacing
         # Run script
         self.run_self = tk.Button(self.master, text="Run script",
                                   bg=self.button_bg, fg=self.button_fg,
                                   command=self.run_self, state=tk.DISABLED)
 
-        self.run_self.place(relx=0.03, rely=0.75, relheight=self.buttonHeight,
+        self.run_self.place(relx=0.03, rely=y, relheight=self.buttonHeight,
                             relwidth=self.buttonWidth)
 
     def browse_excel(self):
@@ -135,8 +156,12 @@ class GenUI(tk.Frame):
         # Update label
         self.outpathLabel.config(text=output_path)
 
-    def open_logfile(self):
-        os.system('log.log')
+    def config_path(self):
+        config_path = filedialog.askdirectory()
+        # Write to user_data dictionary, to save it for later.
+        self.user_data['config_path'] = config_path
+        # Update label
+        self.cfgpathLabel.config(text=config_path)
 
     def open_settings(self):
         os.system('settings.py')
@@ -151,10 +176,11 @@ class GenUI(tk.Frame):
             self.run_self.configure(state=tk.DISABLED)
 
     def run_self(self):
-        GenMain(self.user_data['excel_path'], self.user_data['output_path'])
+        GenMain(self.user_data['excel_path'], self.user_data['output_path'],
+                self.user_data['config_path'])
 
     def open_config_path(self):
-        c_path = self.s.CONFIG_PATH
+        c_path = self.user_data['config_path']
         c2_path = os.path.realpath(c_path)
         os.startfile(c2_path)
 
