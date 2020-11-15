@@ -1,5 +1,5 @@
 <TIA_Code_Body>
-this is codebody    valve1
+this is codebody    motor2
 # ID    @ID
 # CFG   @CFG
 # CMT   @CMT

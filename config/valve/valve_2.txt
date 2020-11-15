@@ -1,13 +1,9 @@
-<TIA_Codebody>
+<TIA_Code_Body>
 this is codebody    valve2
 # ID    @ID
 # CFG   @CFG
 # CMT   @CMT
-</TIA_Codebody>
-
-<TIA_Var>
-"I*@ID" : Bool;
-</TIA_Var>
+</TIA_Code_Body>
 
 <TIA_Symbol>
 "Q*@ID","%@INDEX.0","Bool","True","True","False","@CMT","","True"

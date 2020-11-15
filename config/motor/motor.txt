@@ -10,14 +10,14 @@
 </Intouch_Tag>
 
 <TIA_DB_Header>
-DATA_BLOCK "Valve"
+DATA_BLOCK "motor"
 { S7_Optimized_Access := 'FALSE' }
 VERSION : 0.1
    STRUCT
 </TIA_DB_Header>
 
 <TIA_DB_Var>
-      @ID : "MC UDT VALVE";   // @CMT
+      @ID : "MC UDT motor";   // @CMT
 </TIA_DB_Var>
 
 <TIA_DB_Footer>

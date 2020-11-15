@@ -3,6 +3,7 @@ import os
 import openpyxl as xl
 from settings import Settings
 from obj_lib.valve import Valve
+from obj_lib.motor import Motor
 
 
 class GenMain:
@@ -50,7 +51,7 @@ class GenMain:
         if not self.s.MOTOR_DISABLE:
             self.motor_dict = self._obj_data_to_dict(
                             self.s.MOTOR_SHEETNAME, self.s.MOTOR_START_INDEX,
-                            'motor')
+                            'motor', config=True)
             self.dict_list.append(self.motor_dict)
         if not self.s.AI_DISABLE:
             self.ai_dict = self._obj_data_to_dict(
@@ -234,5 +235,11 @@ class GenMain:
         if self.s.VALVE_DISABLE:
             print('Valve not generated, disabled in settings file')
         else:
-            self.valve = Valve(self, self.output_path, self.valve_dict,
-                               self.config_path)
+            #  self.valve = Valve(self, self.output_path, self.valve_dict,
+            #                   self.config_path)
+            Valve(self, self.output_path, self.valve_dict, self.config_path)
+
+        if self.s.MOTOR_DISABLE:
+            print('Motor not generated, disabled in settings file')
+        else:
+            Motor(self, self.output_path, self.motor_dict, self.config_path)
